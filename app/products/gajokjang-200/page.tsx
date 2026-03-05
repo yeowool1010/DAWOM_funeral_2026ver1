@@ -190,7 +190,7 @@ export default function Gajokjang200Page() {
                   </span>
                   <p>
                     그 외, 장례 관련 상담이 필요할 때{" "}
-                    <span className="font-semibold">1666-9784</span>로 연락
+                    <span className="font-semibold">0000-0000</span>로 연락
                     주세요.
                   </p>
                 </li>
