@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
-import { ThemeProvider } from "next-themes";
+import { Noto_Sans_KR } from "next/font/google";
 import "./globals.css";
 
 const defaultUrl = process.env.VERCEL_URL
@@ -9,14 +8,16 @@ const defaultUrl = process.env.VERCEL_URL
 
 export const metadata: Metadata = {
   metadataBase: new URL(defaultUrl),
-  title: "Next.js and Supabase Starter Kit",
-  description: "The fastest way to build apps with Next.js and Supabase",
+  title: "숨김없는 장례의 시작, 고이 - 장례연구소",
+  description:
+    "막막한 상황, 고이가 함께 합니다. 장례식장, 장지 추천부터 상조 서비스, 장례 상담, 임종 접수까지. 숨김없는 장례의 시작.",
 };
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const notoSansKR = Noto_Sans_KR({
+  variable: "--font-noto-sans-kr",
   display: "swap",
   subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 export default function RootLayout({
@@ -25,16 +26,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={`${geistSans.className} antialiased`}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          {children}
-        </ThemeProvider>
+    <html lang="ko" suppressHydrationWarning>
+      <body className={`${notoSansKR.variable} font-sans antialiased`}>
+        {children}
       </body>
     </html>
   );
