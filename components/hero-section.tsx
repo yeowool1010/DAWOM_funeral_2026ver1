@@ -17,7 +17,7 @@ export function HeroSection() {
             장례 상담, 임종 접수까지.
           </p>
           <Link
-            href="/estimate"
+            href="/products"
             className="mt-8 inline-flex items-center gap-2 rounded-full bg-stone-900 px-6 py-3 text-sm font-medium text-white transition hover:bg-stone-800"
           >
             자세히 보기
@@ -26,7 +26,7 @@ export function HeroSection() {
         </div>
         <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-stone-100 lg:aspect-square">
           <Image
-            src="https://images.unsplash.com/photo-1545235617-9465d2a55698?w=800&q=80"
+            src="/images/products/main.jpg"
             alt="조용하고 평화로운 공간"
             fill
             className="object-cover"

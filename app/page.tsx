@@ -12,11 +12,11 @@ export default function Home() {
       <SiteHeader />
       <main>
         <HeroSection />
-        <PromoCards />
-        <FirstTimeSection />
+       {/*   <PromoCards />*/}
+       {/* <FirstTimeSection />*/}
         <PromiseSection />
         <CtaSection />
-        <SiteFooter />
+        <SiteFooter />/
       </main>
     </div>
   );

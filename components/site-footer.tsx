@@ -14,7 +14,7 @@ export function SiteFooter() {
   return (
     <footer className="border-t border-stone-200 bg-white py-12">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-stone-600">
+        {/* <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-stone-600">
           {footerLinks.map((link) => (
             <Link
               key={link.label}
@@ -24,7 +24,7 @@ export function SiteFooter() {
               {link.label}
             </Link>
           ))}
-        </div>
+        </div> */}
         <div className="mt-8 border-t border-stone-200 pt-8 text-center text-sm text-stone-500">
           <p className="font-medium text-stone-700">(주) 다움</p>
           <p className="mt-1">

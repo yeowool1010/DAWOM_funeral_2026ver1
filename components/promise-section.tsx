@@ -52,14 +52,14 @@ export function PromiseSection() {
             );
           })}
         </div>
-        <div className="mt-12 text-center">
+        {/* <div className="mt-12 text-center">
           <a
             href="#"
             className="inline-flex items-center rounded-full bg-stone-900 px-6 py-3 text-sm font-medium text-white transition hover:bg-stone-800"
           >
             다움 표준 서비스 바로가기
           </a>
-        </div>
+        </div> */}
       </div>
     </section>
   );

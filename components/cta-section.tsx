@@ -11,7 +11,9 @@ export function CtaSection() {
         </h2>
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <a
-            href="#"
+            href={process.env.NEXT_PUBLIC_KAKAO_INQUIRY_URL || "https://open.kakao.com/o/sbvElWji"}
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex w-full max-w-xs items-center justify-center gap-2 rounded-full border border-white bg-transparent px-6 py-4 font-medium transition hover:bg-white hover:text-stone-900 sm:w-auto"
           >
             <MessageCircle className="h-5 w-5" />
@@ -26,7 +28,7 @@ export function CtaSection() {
           </a>
         </div>
         <a
-          href="#"
+          href="/about"
           className="mt-8 inline-block text-sm text-stone-400 underline hover:text-white"
         >
           다움, 믿을 만한 곳인가요? 더 알아보기

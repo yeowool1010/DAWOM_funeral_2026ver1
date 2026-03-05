@@ -18,13 +18,13 @@ const cards = [
     cta: "체크리스트 신청하기",
     icon: FileCheck,
   },
-  {
-    title: "장례 예상 견적 계산하기",
-    subtitle: "장례 견적 미리 확인해 보고 내 상황에 따른 상품 추천도 받아보세요",
-    href: "/estimate",
-    cta: "자세히 알아보기",
-    icon: Calculator,
-  },
+  // {
+  //   title: "장례 예상 견적 계산하기",
+  //   subtitle: "장례 견적 미리 확인해 보고 내 상황에 따른 상품 추천도 받아보세요",
+  //   href: "/estimate",
+  //   cta: "자세히 알아보기",
+  //   icon: Calculator,
+  // },
 ];
 
 export function PromoCards() {
