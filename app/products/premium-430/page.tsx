@@ -90,7 +90,7 @@ export default function Premium430Page() {
         {/* 3. 서비스 소개 / 특징 */}
         <section className="border-y bg-white">
           <div className="mx-auto max-w-5xl px-4 py-10 md:py-12">
-            <div className="mb-6 flex gap-2 text-sm font-semibold">
+            {/* <div className="mb-6 flex gap-2 text-sm font-semibold">
               <button className="rounded-full bg-slate-900 px-4 py-1.5 text-white">
                 서비스 소개
               </button>
@@ -100,7 +100,7 @@ export default function Premium430Page() {
               <button className="rounded-full bg-slate-100 px-4 py-1.5 text-slate-500">
                 안내사항
               </button>
-            </div>
+            </div> */}
 
             <h2 className="text-xl font-bold text-slate-900 md:text-2xl">
               프리미엄 장례 특징
@@ -320,7 +320,7 @@ export default function Premium430Page() {
               <div className="grid gap-4 grid-cols-2 sm:grid-cols-3 lg:grid-cols-5">
                 {[
                   {
-                    name: "0.6 오동관",
+                    name: "오동나무 2단관",
                     desc: "화장용",
                     price: "200,000원",
                     discount: null,
@@ -343,10 +343,10 @@ export default function Premium430Page() {
                   },
                   {
                     name: "유골함",
-                    desc: "(오동나무 목함)",
+                    desc: "진공 유골함",
                     price: "무료 제공",
                     free: true,
-                    img: "/images/products/유골함.png",
+                    img: "/images/products/일반유골함.jpg",
                   },
                   {
                     name: "관 장식용 생화",
@@ -354,6 +354,34 @@ export default function Premium430Page() {
                     price: "100,000원",
                     discount: null,
                     img: "/images/products/관 장식용 생화.jpg",
+                  },
+                  {
+                    name: "남자상복/여자상복",
+                    desc: "남자 8벌, 여자 10벌",
+                    price: "무료 제공",
+                    free: true,
+                    img: "/images/products/상복 이미지.png",
+                  },
+                  {
+                    name: "제단지원",
+                    desc: "장례식화단 20만원",
+                    price: "무료 제공",
+                    free: true,
+                    img: "/images/products/장례식화단.jpg",
+                  },
+                  {
+                    name: "헌화용 국화꽃",
+                    desc: "50송이",
+                    price: "무료 제공",
+                    free: true,
+                    img: "/images/products/헌화.jpg",
+                  },
+                  {
+                    name: "영정사진",
+                    desc: "11R 사이즈",
+                    price: "사전가입 고객 한정 무료 제공",
+                    free: true,
+                    img: "/images/products/영정사진.jpg",
                   },
                 ].map((item) => (
                   <div
@@ -488,7 +516,7 @@ export default function Premium430Page() {
                   </div>
                   <div className="p-4">
                     <h4 className="font-semibold text-slate-900">
-                      리무진/장의버스 택1
+                      리무진, 장의버스
                     </h4>
                     <p className="mt-0.5 text-sm leading-snug text-slate-600">
                       리무진: 200km 화장장 편도

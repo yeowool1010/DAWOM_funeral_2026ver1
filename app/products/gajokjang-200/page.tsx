@@ -89,7 +89,7 @@ export default function Gajokjang200Page() {
         {/* 3. 서비스 소개 / 특징 */}
         <section className="border-y bg-white">
           <div className="mx-auto max-w-5xl px-4 py-10 md:py-12">
-            <div className="mb-6 flex gap-2 text-sm font-semibold">
+            {/* <div className="mb-6 flex gap-2 text-sm font-semibold">
               <button className="rounded-full bg-slate-900 px-4 py-1.5 text-white">
                 서비스 소개
               </button>
@@ -99,7 +99,7 @@ export default function Gajokjang200Page() {
               <button className="rounded-full bg-slate-100 px-4 py-1.5 text-slate-500">
                 안내사항
               </button>
-            </div>
+            </div> */}
 
             <h2 className="text-xl font-bold text-slate-900 md:text-2xl">
               가족장 특징
@@ -115,7 +115,7 @@ export default function Gajokjang200Page() {
                 </div>
                 <div className="mt-4 text-sm text-slate-500">접객 도우미</div>
                 <div className="mt-1 text-lg font-semibold text-slate-900">
-                  4명
+                  2명
                 </div>
               </div>
               <div className="flex flex-col items-center rounded-2xl bg-slate-50 px-4 py-6">
@@ -250,7 +250,7 @@ export default function Gajokjang200Page() {
                   </div>
                   <div className="px-3 py-3">없음</div>
                   <div className="bg-orange-50 px-3 py-3 font-semibold text-orange-600">
-                    4명
+                    2명
                   </div>
                   <div className="px-3 py-3">6명</div>
                   <div className="px-3 py-3">8명</div>
@@ -316,44 +316,74 @@ export default function Gajokjang200Page() {
                 <h3 className="text-lg font-bold text-slate-900">장례 용품</h3>
               </div>
               <div className="grid gap-4 grid-cols-2 sm:grid-cols-3 lg:grid-cols-5">
-                {[
-                  {
-                    name: "0.6 오동관",
-                    desc: "화장용",
-                    price: "200,000원",
-                    discount: null,
-                    img: "/images/products/오동관.png",
-                  },
-                  {
-                    name: "화장용 수의",
-                    desc: "(면 50%, 폴리 50%)",
-                    price: "140,000원",
-                    discount: "250,000원",
-                    label: "다움 할인가",
-                    img: "/images/products/화장용 수의.jpg",
-                  },
-                  {
-                    name: "입관 수시 용품",
-                    desc: "15종(염포, 관보 등)",
-                    price: "150,000원",
-                    discount: null,
-                    img: "/images/products/입관 수시 용품.png",
-                  },
-                  {
-                    name: "유골함",
-                    desc: "일반유골함",
-                    price: "무료 제공",
-                    free: true,
-                    img: "/images/products/일반유골함.jpg",
-                  },
-                  {
-                    name: "관 장식용 생화",
-                    desc: "계절 생화, 안개꽃",
-                    price: "100,000원",
-                    discount: null,
-                    img: "/images/products/관 장식용 생화.jpg",
-                  },
-                ].map((item) => (
+                {(
+                  [
+                    {
+                      name: "0.6 오동관",
+                      desc: "화장용",
+                      price: "200,000원",
+                      discount: null,
+                      img: "/images/products/오동관.png",
+                    },
+                    {
+                      name: "화장용 수의",
+                      desc: "(면 50%, 폴리 50%)",
+                      price: "무료 제공",
+                      free: true,
+                      img: "/images/products/화장용 수의.jpg",
+                    },
+                    {
+                      name: "입관 수시 용품",
+                      desc: "15종(염포, 관보 등)",
+                      price: "무료 제공",
+                      free: true,
+                      img: "/images/products/입관 수시 용품.png",
+                    },
+                    {
+                      name: "유골함",
+                      desc: "일반유골함",
+                      price: "무료 제공",
+                      free: true,
+                      img: "/images/products/일반유골함.jpg",
+                    },
+                    {
+                      name: "관 장식용 생화",
+                      desc: "계절 생화, 안개꽃",
+                      price: "100,000원",
+                      discount: null,
+                      img: "/images/products/관 장식용 생화.jpg",
+                    },
+                    {
+                      name: "남자상복/여자상복",
+                      desc: "남자 4벌, 여자 6벌",
+                      price: "무료 제공",
+                      free: true,
+                      img: "/images/products/상복 이미지.png",
+                    },
+                    {
+                      name: "헌화용 국화꽃",
+                      desc: "30송이",
+                      price: "무료 제공",
+                      free: true,
+                      img: "/images/products/헌화.jpg",
+                    },
+                    {
+                      name: "영정사진",
+                      desc: "11R 사이즈",
+                      price: "사전가입 고객 한정 무료 제공",
+                      free: true,
+                      img: "/images/products/영정사진.jpg",
+                    },
+                  ] as Array<{
+                    name: string;
+                    desc: string;
+                    price: string;
+                    img: string;
+                    discount?: string | null;
+                    label?: string;
+                    free?: boolean;
+                  }>
+                ).map((item) => (
                   <div
                     key={item.name}
                     className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"
@@ -486,13 +516,13 @@ export default function Gajokjang200Page() {
                   </div>
                   <div className="p-4">
                     <h4 className="font-semibold text-slate-900">
-                      리무진/장의버스 택1
+                      리무진or장의버스 택1
                     </h4>
                     <p className="mt-0.5 text-sm leading-snug text-slate-600">
-                      리무진: 200km 화장장 편도
+                      리무진: 150km 화장장 편도
                     </p>
                     <p className="text-sm text-slate-600">
-                      장의버스: 200km 왕복
+                      장의버스: 150km 왕복
                     </p>
                     <p className="mt-2 text-lg font-bold text-slate-900">
                       450,000원

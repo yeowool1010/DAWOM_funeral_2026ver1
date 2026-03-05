@@ -90,7 +90,7 @@ export default function Gogeuphyeong330Page() {
         {/* 3. 서비스 소개 / 특징 */}
         <section className="border-y bg-white">
           <div className="mx-auto max-w-5xl px-4 py-10 md:py-12">
-            <div className="mb-6 flex gap-2 text-sm font-semibold">
+            {/* <div className="mb-6 flex gap-2 text-sm font-semibold">
               <button className="rounded-full bg-slate-900 px-4 py-1.5 text-white">
                 서비스 소개
               </button>
@@ -100,7 +100,7 @@ export default function Gogeuphyeong330Page() {
               <button className="rounded-full bg-slate-100 px-4 py-1.5 text-slate-500">
                 안내사항
               </button>
-            </div>
+            </div> */}
 
             <h2 className="text-xl font-bold text-slate-900 md:text-2xl">
               고급형 가족장 특징
@@ -116,7 +116,7 @@ export default function Gogeuphyeong330Page() {
                 </div>
                 <div className="mt-4 text-sm text-slate-500">접객 도우미</div>
                 <div className="mt-1 text-lg font-semibold text-slate-900">
-                  4명
+                  2명
                 </div>
               </div>
               <div className="flex flex-col items-center rounded-2xl bg-slate-50 px-4 py-6">
@@ -134,7 +134,7 @@ export default function Gogeuphyeong330Page() {
                 </div>
                 <div className="mt-4 text-sm text-slate-500">장의 차량</div>
                 <div className="mt-1 text-lg font-semibold text-slate-900">
-                  1대
+                  2대
                 </div>
               </div>
             </div>
@@ -250,9 +250,9 @@ export default function Gogeuphyeong330Page() {
                     접객 도우미
                   </div>
                   <div className="px-3 py-3">없음</div>
-                  <div className="px-3 py-3">4명</div>
+                  <div className="px-3 py-3">2명</div>
                   <div className="bg-orange-50 px-3 py-3 font-semibold text-orange-600">
-                    6명
+                    2명
                   </div>
                   <div className="px-3 py-3">8명</div>
                 </div>
@@ -285,7 +285,7 @@ export default function Gogeuphyeong330Page() {
                   <div className="px-3 py-3">130만원</div>
                   <div className="px-3 py-3">200만원</div>
                   <div className="bg-orange-50 px-3 py-3 font-semibold text-orange-600">
-                    330만원원
+                    330만원
                   </div>
                   <div className="px-3 py-3">430만원</div>
                 </div>
@@ -319,7 +319,7 @@ export default function Gogeuphyeong330Page() {
               <div className="grid gap-4 grid-cols-2 sm:grid-cols-3 lg:grid-cols-5">
                 {[
                   {
-                    name: "0.6 오동관",
+                    name: "오동나무 1단관",
                     desc: "화장용",
                     price: "200,000원",
                     discount: null,
@@ -342,10 +342,10 @@ export default function Gogeuphyeong330Page() {
                   },
                   {
                     name: "유골함",
-                    desc: "(오동나무 목함)",
+                    desc: "일반 유골함",
                     price: "무료 제공",
                     free: true,
-                    img: "/images/products/유골함.png",
+                    img: "/images/products/일반유골함.jpg",
                   },
                   {
                     name: "관 장식용 생화",
@@ -353,6 +353,27 @@ export default function Gogeuphyeong330Page() {
                     price: "100,000원",
                     discount: null,
                     img: "/images/products/관 장식용 생화.jpg",
+                  },
+                  {
+                    name: "남자상복/여자상복",
+                    desc: "남자 5벌, 여자 8벌",
+                    price: "무료 제공",
+                    free: true,
+                    img: "/images/products/상복 이미지.png",
+                  },
+                  {
+                    name: "헌화용 국화꽃",
+                    desc: "30송이",
+                    price: "무료 제공",
+                    free: true,
+                    img: "/images/products/헌화.jpg",
+                  },
+                  {
+                    name: "영정사진",
+                    desc: "11R 사이즈",
+                    price: "사전가입 고객 한정 무료 제공",
+                    free: true,
+                    img: "/images/products/영정사진.jpg",
                   },
                 ].map((item) => (
                   <div
@@ -487,7 +508,7 @@ export default function Gogeuphyeong330Page() {
                   </div>
                   <div className="p-4">
                     <h4 className="font-semibold text-slate-900">
-                      리무진/장의버스 택1
+                      리무진, 장의버스
                     </h4>
                     <p className="mt-0.5 text-sm leading-snug text-slate-600">
                       리무진: 200km 화장장 편도

@@ -92,7 +92,7 @@ export default function Mubinsosang130Page() {
         {/* 3. 서비스 소개 / 특징 */}
         <section className="border-y bg-white">
           <div className="mx-auto max-w-5xl px-4 py-10 md:py-12">
-            <div className="mb-6 flex gap-2 text-sm font-semibold">
+            {/* <div className="mb-6 flex gap-2 text-sm font-semibold">
               <button className="rounded-full bg-slate-900 px-4 py-1.5 text-white">
                 서비스 소개
               </button>
@@ -102,7 +102,7 @@ export default function Mubinsosang130Page() {
               <button className="rounded-full bg-slate-100 px-4 py-1.5 text-slate-500">
                 안내사항
               </button>
-            </div>
+            </div> */}
 
             <h2 className="text-xl font-bold text-slate-900 md:text-2xl">
               무빈소장 특징
