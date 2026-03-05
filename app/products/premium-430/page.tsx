@@ -1,7 +1,16 @@
 import { SiteHeader } from "@/components/site-header";
 import { ProductSubNav430 } from "@/components/product/product-430-sub-nav";
 import { SiteFooter } from "@/components/site-footer";
-import { UserCircle, Package, Bus } from "lucide-react";
+import {
+  UserCircle,
+  Package,
+  Bus,
+  Users2,
+  ArrowRight,
+  Plus,
+  RefreshCw,
+  AlertCircle,
+} from "lucide-react";
 import Image from "next/image";
 
 export const metadata = {
@@ -290,59 +299,425 @@ export default function Premium430Page() {
         <section className="bg-white">
           <div className="mx-auto max-w-5xl px-4 py-10 md:py-12">
             <h2 className="text-xl font-bold text-slate-900 md:text-2xl">
-              프리미엄 일반장 구성품 상세
+              프리미엄 장례 구성품 상세
             </h2>
             <p className="mt-2 text-sm text-slate-600 md:text-base">
               많은 조문객을 맞이하기 위한 프리미엄 구성을 확인하세요.
             </p>
 
-            <div className="mt-6 space-y-8">
-              <div>
-                <h3 className="text-base font-semibold text-slate-900 md:text-lg">
-                  장례 용품
-                </h3>
-                <ul className="mt-3 grid gap-3 text-sm text-slate-700 md:grid-cols-2 md:text-base">
-                  <li>프리미엄 관 및 최고급 수의 세트</li>
-                  <li>헌정·제단·분향대 생화 풀세트</li>
-                  <li>입관 수시 프리미엄 세트</li>
-                  <li>프리미엄 유골함 및 장식 구성</li>
-                </ul>
+            {/* 장례 용품 */}
+            <div className="mt-8">
+              {/* <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-slate-100 px-4 py-2 text-sm font-medium text-slate-700">
+                <Package className="h-4 w-4 text-orange-500" />
+                장례 용품
+              </div> */}
+              <div className="mb-4 flex items-center gap-2">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-200/80 text-slate-600">
+                  <Package className="h-4 w-4 text-orange-500" />
+                </div>
+                <h3 className="text-lg font-bold text-slate-900">장례 용품</h3>
+              </div>
+              <div className="grid gap-4 grid-cols-2 sm:grid-cols-3 lg:grid-cols-5">
+                {[
+                  {
+                    name: "0.6 오동관",
+                    desc: "화장용",
+                    price: "200,000원",
+                    discount: null,
+                    img: "/images/products/오동관.png",
+                  },
+                  {
+                    name: "화장용 수의",
+                    desc: "(면 50%, 폴리 50%)",
+                    price: "140,000원",
+                    discount: "250,000원",
+                    label: "다움 할인가",
+                    img: "/images/products/화장용 수의.jpg",
+                  },
+                  {
+                    name: "입관 수시 용품",
+                    desc: "15종(염포, 관보 등)",
+                    price: "150,000원",
+                    discount: null,
+                    img: "/images/products/입관 수시 용품.png",
+                  },
+                  {
+                    name: "유골함",
+                    desc: "(오동나무 목함)",
+                    price: "무료 제공",
+                    free: true,
+                    img: "/images/products/유골함.png",
+                  },
+                  {
+                    name: "관 장식용 생화",
+                    desc: "계절 생화, 안개꽃",
+                    price: "100,000원",
+                    discount: null,
+                    img: "/images/products/관 장식용 생화.jpg",
+                  },
+                ].map((item) => (
+                  <div
+                    key={item.name}
+                    className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"
+                  >
+                    <div className="relative aspect-square bg-slate-900">
+                      <Image
+                        src={item.img}
+                        alt={item.name}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      />
+                    </div>
+                    <div className="p-4">
+                      <h4 className="font-semibold text-slate-900">{item.name}</h4>
+                      <p className="mt-0.5 text-sm text-slate-600">{item.desc}</p>
+                      {item.label && (
+                        <span className="mt-2 inline-block text-xs font-medium text-orange-600">
+                          {item.label}
+                        </span>
+                      )}
+                      <div className="mt-2 flex items-baseline gap-2">
+                        {item.discount && (
+                          <span className="text-sm text-slate-400 line-through">
+                            {item.discount}
+                          </span>
+                        )}
+                        <span
+                          className={
+                            item.free
+                              ? "font-semibold text-emerald-600"
+                              : "text-lg font-bold text-slate-900"
+                          }
+                        >
+                          {item.price}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* 장례 인력 */}
+            <div className="mt-12">
+              <div className="mb-4 flex items-center gap-2">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-200/80 text-slate-600">
+                  <Users2 className="h-5 w-5" />
+                </div>
+                <h3 className="text-lg font-bold text-slate-900">장례 인력</h3>
+              </div>
+              {/* <div className="grid gap-4 sm:grid-cols-2"> */}
+              <div className="grid gap-4 grid-cols-2 sm:grid-cols-3 lg:grid-cols-5">
+                {[
+                  {
+                    name: "장례지도사",
+                    desc: "1인 3일",
+                    price: "300,000원",
+                    img: "/images/products/장례지도사.png",
+                  },
+                  {
+                    name: "염습상례사",
+                    desc: "1인 1일",
+                    price: "150,000원",
+                    img: "/images/products/염습상례사.png",
+                  },
+                ].map((item) => (
+                  <div
+                    key={item.name}
+                    className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"
+                  >
+                    <div className="relative aspect-[4/3] bg-slate-900">
+                      <Image
+                        src={item.img}
+                        alt={item.name}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 640px) 100vw, 50vw"
+                      />
+                    </div>
+                    <div className="p-4">
+                      <h4 className="font-semibold text-slate-900">{item.name}</h4>
+                      <p className="mt-0.5 text-sm text-slate-600">{item.desc}</p>
+                      <p className="mt-2 text-lg font-bold text-slate-900">
+                        {item.price}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* 장의 차량 */}
+            <div className="mt-12">
+              <div className="mb-4 flex items-center gap-2">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-200/80 text-slate-600">
+                  <Bus className="h-5 w-5" />
+                </div>
+                <h3 className="text-lg font-bold text-slate-900">장의 차량</h3>
+              </div>
+              {/* <div className="grid gap-4 sm:grid-cols-2"> */}
+              <div className="grid gap-4 grid-cols-2 sm:grid-cols-3 lg:grid-cols-5">
+                <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+                  <div className="relative aspect-[4/3] bg-slate-900">
+                    <Image
+                      src="/images/products/고인이송차량.png"
+                      alt="고인이송차량"
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 640px) 100vw, 50vw"
+                    />
+                  </div>
+                  <div className="p-4">
+                    <h4 className="font-semibold text-slate-900">고인이송차량</h4>
+                    <p className="mt-0.5 text-sm text-slate-600">관내 이송</p>
+                    <p className="mt-2 text-lg font-bold text-slate-900">
+                      100,000원
+                    </p>
+                  </div>
+                </div>
+                <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+                  <div className="relative aspect-[4/3] bg-slate-900">
+                    <Image
+                      src="/images/products/리무진.png"
+                      alt="리무진/장의버스"
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 640px) 100vw, 50vw"
+                    />
+                  </div>
+                  <div className="p-4">
+                    <h4 className="font-semibold text-slate-900">
+                      리무진/장의버스 택1
+                    </h4>
+                    <p className="mt-0.5 text-sm leading-snug text-slate-600">
+                      리무진: 200km 화장장 편도
+                    </p>
+                    <p className="text-sm text-slate-600">
+                      장의버스: 200km 왕복
+                    </p>
+                    <p className="mt-2 text-lg font-bold text-slate-900">
+                      450,000원
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* 변경·추가 시 예시 비용 */}
+            <div className="mt-12 rounded-2xl border border-slate-200 bg-slate-50/50 p-6 md:p-8">
+              <h3 className="text-lg font-bold text-slate-900 md:text-xl">
+                용품 변경 혹은 추가를 원하시나요?
+              </h3>
+              <p className="mt-1 text-sm text-slate-600 md:text-base">
+                문의 많은 품목의 추가 비용 예시를 알려드립니다.
+              </p>
+
+              {/* 유골함 변경 시 */}
+              <div className="mt-6 rounded-xl bg-white p-5 shadow-sm">
+                <div className="mb-4 inline-block rounded-full bg-slate-200/80 px-4 py-1.5 text-sm font-medium text-slate-700">
+                  유골함 변경 시
+                </div>
+                <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6">
+                  <div className="flex flex-col items-center text-center">
+                    <div className="relative h-32 w-32 overflow-hidden rounded-lg border-2 border-slate-800 bg-slate-100">
+                      <Image
+                        src="/images/products/유골함.png"
+                        alt="오동나무 목함"
+                        fill
+                        className="object-cover"
+                        sizes="128px"
+                      />
+                    </div>
+                    <p className="mt-2 text-sm font-medium text-slate-900">
+                      오동나무 목함
+                    </p>
+                    <p className="text-sm font-semibold text-emerald-600">
+                      무료 제공
+                    </p>
+                  </div>
+                  <ArrowRight className="h-6 w-6 shrink-0 text-slate-400" />
+                  <div className="flex flex-col items-center text-center">
+                    <div className="relative h-32 w-32 overflow-hidden rounded-lg border border-slate-200 bg-slate-100">
+                      <Image
+                        src="/images/products/일반유골함.jpg"
+                        alt="일반 유골함"
+                        fill
+                        className="object-cover"
+                        sizes="128px"
+                      />
+                    </div>
+                    <p className="mt-2 text-sm font-medium text-slate-900">
+                      일반 유골함
+                    </p>
+                    <p className="text-sm text-slate-400 line-through">
+                      250,000원
+                    </p>
+                    <p className="font-bold text-slate-900">150,000원</p>
+                  </div>
+                </div>
+                <p className="mt-4 text-center font-semibold text-orange-600">
+                  15만원 추가
+                </p>
               </div>
 
-              <div>
-                <h3 className="text-base font-semibold text-slate-900 md:text-lg">
-                  장례 인력
-                </h3>
-                <ul className="mt-3 grid gap-3 text-sm text-slate-700 md:grid-cols-2 md:text-base">
-                  <li>경력 장례지도사 1인 3일</li>
-                  <li>염습 인력 2인 1일</li>
-                  <li>접객 도우미 6명 (시간제)</li>
-                </ul>
+              {/* 수의 변경 시 */}
+              <div className="mt-4 rounded-xl bg-white p-5 shadow-sm">
+                <div className="mb-4 inline-block rounded-full bg-slate-200/80 px-4 py-1.5 text-sm font-medium text-slate-700">
+                  수의 변경 시
+                </div>
+                <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6">
+                  <div className="flex flex-col items-center text-center">
+                    <div className="relative h-28 w-28 overflow-hidden rounded-lg bg-slate-100">
+                      <Image
+                        src="/images/products/화장용 수의.jpg"
+                        alt="화장용 수의"
+                        fill
+                        className="object-cover"
+                        sizes="112px"
+                      />
+                    </div>
+                    <p className="mt-2 text-sm font-medium text-slate-900">
+                      화장용 수의
+                    </p>
+                    <p className="text-sm text-slate-400 line-through">
+                      250,000원
+                    </p>
+                    <p className="font-bold text-slate-900">140,000원</p>
+                  </div>
+                  <ArrowRight className="h-6 w-6 shrink-0 text-slate-400" />
+                  <div className="flex flex-col items-center text-center">
+                    <div className="relative h-28 w-28 overflow-hidden rounded-lg bg-slate-100">
+                      <Image
+                        src="/images/products/고급면수의.jpg"
+                        alt="고급 면 가진수의"
+                        fill
+                        className="object-cover"
+                        sizes="112px"
+                      />
+                    </div>
+                    <p className="mt-2 text-sm font-medium text-slate-900">
+                      고급 면 가진수의
+                    </p>
+                    <p className="text-sm text-slate-400 line-through">
+                      300,000원
+                    </p>
+                    <p className="font-bold text-slate-900">200,000원</p>
+                  </div>
+                </div>
+                <p className="mt-4 text-center font-semibold text-orange-600">
+                  6만원 추가
+                </p>
               </div>
 
-              <div>
-                <h3 className="text-base font-semibold text-slate-900 md:text-lg">
-                  장의 차량
-                </h3>
-                <ul className="mt-3 grid gap-3 text-sm text-slate-700 md:grid-cols-2 md:text-base">
-                  <li>다움 이송 차량 (관내 기준)</li>
-                  <li>장례식장 ↔ 장지 왕복 운구 차량 2대</li>
+              {/* 장의 차량 변경 시 */}
+              <div className="mt-4 rounded-xl bg-white p-5 shadow-sm">
+                <div className="mb-4 inline-block rounded-full bg-slate-200/80 px-4 py-1.5 text-sm font-medium text-slate-700">
+                  장의 차량 변경 시
+                </div>
+                <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6">
+                  <div className="flex flex-col items-center text-center">
+                    <div className="relative h-28 w-36 overflow-hidden rounded-lg bg-slate-100">
+                      <Image
+                        src="/images/products/버스.png"
+                        alt="45인승 장의버스"
+                        fill
+                        className="object-cover"
+                        sizes="144px"
+                      />
+                    </div>
+                    <p className="mt-2 text-sm font-medium text-slate-900">
+                      45인승 장의버스
+                    </p>
+                    <p className="font-bold text-slate-900">450,000원</p>
+                  </div>
+                  <ArrowRight className="h-6 w-6 shrink-0 text-slate-400" />
+                  <div className="flex flex-col items-center text-center">
+                    <div className="relative h-28 w-36 overflow-hidden rounded-lg bg-slate-100">
+                      <Image
+                        src="/images/products/리무진1.png"
+                        alt="리무진"
+                        fill
+                        className="object-cover"
+                        sizes="144px"
+                      />
+                    </div>
+                    <p className="mt-2 text-sm font-medium text-slate-900">
+                      리무진
+                    </p>
+                    <p className="font-bold text-slate-900">450,000원</p>
+                  </div>
+                </div>
+                <ul className="mt-4 space-y-1 text-sm text-slate-600">
+                  <li className="flex items-start gap-2">
+                    <AlertCircle className="mt-0.5 h-4 w-4 shrink-0 text-orange-500" />
+                    200km 초과 시 km당 2천원이 추가됩니다.
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <AlertCircle className="mt-0.5 h-4 w-4 shrink-0 text-orange-500" />
+                    장의버스는 화장장/장지까지 왕복, 리무진은 편도 이용 기준으로
+                    장의 차량 변경 시 참고 부탁드립니다.
+                  </li>
                 </ul>
+                <p className="mt-4 text-center font-bold text-orange-600">
+                  추가 비용 없음
+                </p>
               </div>
 
-              <div>
-                <h3 className="text-base font-semibold text-slate-900 md:text-lg">
-                  변경·추가 시 예시 비용
-                </h3>
-                <ul className="mt-3 space-y-2 text-sm text-slate-700 md:text-base">
-                  <li>용품 상향 변경 시 품목별 차액만 추가 청구</li>
-                  <li>거리·시간 초과 운행 및 접객 인력 추가 시 약관에 따른 추가 요금 부과</li>
-                </ul>
-                <p className="mt-3 text-sm font-semibold text-emerald-700 md:text-base">
+              {/* 매장으로 변경 시 */}
+              <div className="mt-4 rounded-xl bg-white p-5 shadow-sm">
+                <div className="mb-4 inline-block rounded-full bg-slate-200/80 px-4 py-1.5 text-sm font-medium text-slate-700">
+                  매장으로 변경 시
+                </div>
+                <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6">
+                  <div className="flex flex-col items-center text-center">
+                    <div className="relative h-28 w-32 overflow-hidden rounded-lg bg-slate-100">
+                      <Image
+                        src="/images/products/오동관.png"
+                        alt="매장용 관"
+                        fill
+                        className="object-cover"
+                        sizes="128px"
+                      />
+                    </div>
+                    <p className="mt-2 text-sm font-medium text-slate-900">
+                      매장용 관으로 변경
+                    </p>
+                    <p className="font-semibold text-slate-900">10만원 추가</p>
+                  </div>
+                  <Plus className="h-6 w-6 shrink-0 text-slate-500" />
+                  <div className="flex flex-col items-center text-center">
+                    <div className="relative h-28 w-32 overflow-hidden rounded-lg bg-slate-100">
+                      <Image
+                        src="/images/products/입관 수시 용품.png"
+                        alt="매장 용품"
+                        fill
+                        className="object-cover"
+                        sizes="128px"
+                      />
+                    </div>
+                    <p className="mt-2 text-sm font-medium text-slate-900">
+                      매장 용품 추가
+                    </p>
+                    <p className="font-semibold text-slate-900">25만원 추가</p>
+                  </div>
+                </div>
+                <p className="mt-4 text-center text-lg font-bold text-orange-600">
+                  35만원 추가
+                </p>
+              </div>
+
+              {/* 100% 공제 안내 */}
+              <div className="mt-6 flex flex-wrap items-center justify-center gap-3 rounded-xl bg-white p-4 shadow-sm">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-orange-100 text-orange-600">
+                  <RefreshCw className="h-5 w-5" />
+                </div>
+                <p className="text-sm font-medium text-slate-700 md:text-base">
                   사용하지 않은 품목의 비용은 100% 공제됩니다.
                 </p>
               </div>
             </div>
+
           </div>
         </section>
 
