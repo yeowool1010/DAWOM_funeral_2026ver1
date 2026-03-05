@@ -50,7 +50,7 @@ export default function Mubinsosang130Page() {
                 <p className="text-sm text-slate-700">
                   특별 할인을 통해{" "}
                   <span className="font-semibold text-slate-900">
-                    11만원 저렴하게
+                    10만원 저렴하게
                   </span>{" "}
                   이용하세요
                 </p>

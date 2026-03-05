@@ -46,7 +46,7 @@ export default function Gajokjang200Page() {
                 <p className="text-sm text-slate-700">
                   특별 할인을 통해{" "}
                   <span className="font-semibold text-slate-900">
-                    20만원 저렴하게
+                    10만원 저렴하게
                   </span>{" "}
                   이용하세요
                 </p>
