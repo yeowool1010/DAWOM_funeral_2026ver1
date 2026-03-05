@@ -26,10 +26,10 @@ export default function ProductsPage() {
         {/* <PackageTabs /> */}
         <PackageCards />
         <PrimeSection />
-        <FirstSection />
-        <ProductCta />
+       {/*  <FirstSection />/ */}
+       {/*  <ProductCta /> */}
         <ProductFaqSection />
-        <ProductAboutSection />
+        {/*  <ProductAboutSection />*/}
       </main>
       <SiteFooter />
     </div>
