@@ -37,7 +37,14 @@ export default function Mubinsosang130Page() {
               </h1>
               {/* 실제 페이지처럼 일러스트 이미지를 넣고 싶다면
                   public 폴더에 이미지를 추가한 뒤 아래에 Image 컴포넌트를 배치하면 됩니다. */}
-              <div className="mt-8 h-52 rounded-3xl bg-[#D4E5A8]" />
+                  <Image
+                    src="/images/products/mubinsosang/mubinsosang-130_main.png"
+                    alt="무빈소장"
+                    width={600}
+                    height={400}
+                    className="mt-8 rounded-3xl object-cover w-full max-w-xl mx-auto"
+                  />
+              {/* <div className="mt-8 h-52 rounded-3xl bg-[#D4E5A8]" /> */}
 
               <div className="mt-10 border-t border-slate-200 pt-8">
                 <p className="text-sm text-slate-700">
@@ -104,7 +111,7 @@ export default function Mubinsosang130Page() {
               다른 서비스와 구별되는 품목들을 확인해 보세요.
             </p>
 
-            <div className="mt-8 grid gap-6 md:grid-cols-3">
+            <div className="mt-8 grid gap-6 grid-cols-3 md:grid-cols-3">
               <div className="flex flex-col items-center rounded-2xl bg-slate-50 px-4 py-6">
                 <div className="flex h-16 w-16 items-center justify-center rounded-full bg-slate-200/80 text-slate-600">
                   <UserCircle className="h-9 w-9" strokeWidth={1.5} />
@@ -301,18 +308,24 @@ export default function Mubinsosang130Page() {
 
             {/* 장례 용품 */}
             <div className="mt-8">
-              <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-slate-100 px-4 py-2 text-sm font-medium text-slate-700">
+              {/* <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-slate-100 px-4 py-2 text-sm font-medium text-slate-700">
                 <Package className="h-4 w-4 text-orange-500" />
                 장례 용품
+              </div> */}
+              <div className="mb-4 flex items-center gap-2">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-200/80 text-slate-600">
+                  <Package className="h-4 w-4 text-orange-500" />
+                </div>
+                <h3 className="text-lg font-bold text-slate-900">장례 용품</h3>
               </div>
-              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              <div className="grid gap-4 grid-cols-2 sm:grid-cols-3 lg:grid-cols-5">
                 {[
                   {
                     name: "0.6 오동관",
                     desc: "화장용",
                     price: "200,000원",
                     discount: null,
-                    img: "https://picsum.photos/400/300?random=1",
+                    img: "/images/products/오동관.png",
                   },
                   {
                     name: "화장용 수의",
@@ -320,28 +333,28 @@ export default function Mubinsosang130Page() {
                     price: "140,000원",
                     discount: "250,000원",
                     label: "다움 할인가",
-                    img: "https://picsum.photos/400/300?random=2",
+                    img: "/images/products/화장용 수의.jpg",
                   },
                   {
                     name: "입관 수시 용품",
                     desc: "15종(염포, 관보 등)",
                     price: "150,000원",
                     discount: null,
-                    img: "https://picsum.photos/400/300?random=3",
+                    img: "/images/products/입관 수시 용품.png",
                   },
                   {
                     name: "유골함",
                     desc: "(오동나무 목함)",
                     price: "무료 제공",
                     free: true,
-                    img: "https://picsum.photos/400/300?random=4",
+                    img: "/images/products/유골함.png",
                   },
                   {
                     name: "관 장식용 생화",
                     desc: "계절 생화, 안개꽃",
                     price: "100,000원",
                     discount: null,
-                    img: "https://picsum.photos/400/300?random=5",
+                    img: "/images/products/관 장식용 생화.jpg",
                   },
                 ].map((item) => (
                   <div
@@ -395,19 +408,20 @@ export default function Mubinsosang130Page() {
                 </div>
                 <h3 className="text-lg font-bold text-slate-900">장례 인력</h3>
               </div>
-              <div className="grid gap-4 sm:grid-cols-2">
+              {/* <div className="grid gap-4 sm:grid-cols-2"> */}
+              <div className="grid gap-4 grid-cols-2 sm:grid-cols-3 lg:grid-cols-5">
                 {[
                   {
                     name: "장례지도사",
                     desc: "1인 3일",
                     price: "300,000원",
-                    img: "https://picsum.photos/400/300?random=10",
+                    img: "/images/products/장례지도사.png",
                   },
                   {
                     name: "염습상례사",
                     desc: "1인 1일",
                     price: "150,000원",
-                    img: "https://picsum.photos/400/300?random=11",
+                    img: "/images/products/염습상례사.png",
                   },
                 ].map((item) => (
                   <div
@@ -443,11 +457,12 @@ export default function Mubinsosang130Page() {
                 </div>
                 <h3 className="text-lg font-bold text-slate-900">장의 차량</h3>
               </div>
-              <div className="grid gap-4 sm:grid-cols-2">
+              {/* <div className="grid gap-4 sm:grid-cols-2"> */}
+              <div className="grid gap-4 grid-cols-2 sm:grid-cols-3 lg:grid-cols-5">
                 <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
                   <div className="relative aspect-[4/3] bg-slate-900">
                     <Image
-                      src="https://picsum.photos/400/300?random=20"
+                      src="/images/products/고인이송차량.png"
                       alt="고인이송차량"
                       fill
                       className="object-cover"
@@ -465,7 +480,7 @@ export default function Mubinsosang130Page() {
                 <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
                   <div className="relative aspect-[4/3] bg-slate-900">
                     <Image
-                      src="https://picsum.photos/400/300?random=21"
+                      src="/images/products/리무진.png"
                       alt="리무진/장의버스"
                       fill
                       className="object-cover"
@@ -508,7 +523,7 @@ export default function Mubinsosang130Page() {
                   <div className="flex flex-col items-center text-center">
                     <div className="relative h-32 w-32 overflow-hidden rounded-lg border-2 border-slate-800 bg-slate-100">
                       <Image
-                        src="https://picsum.photos/200/200?random=urn1"
+                        src="/images/products/유골함.png"
                         alt="오동나무 목함"
                         fill
                         className="object-cover"
@@ -526,7 +541,7 @@ export default function Mubinsosang130Page() {
                   <div className="flex flex-col items-center text-center">
                     <div className="relative h-32 w-32 overflow-hidden rounded-lg border border-slate-200 bg-slate-100">
                       <Image
-                        src="https://picsum.photos/200/200?random=urn2"
+                        src="/images/products/일반유골함.jpg"
                         alt="일반 유골함"
                         fill
                         className="object-cover"
@@ -556,7 +571,7 @@ export default function Mubinsosang130Page() {
                   <div className="flex flex-col items-center text-center">
                     <div className="relative h-28 w-28 overflow-hidden rounded-lg bg-slate-100">
                       <Image
-                        src="https://picsum.photos/200/200?random=su1"
+                        src="/images/products/화장용 수의.jpg"
                         alt="화장용 수의"
                         fill
                         className="object-cover"
@@ -575,7 +590,7 @@ export default function Mubinsosang130Page() {
                   <div className="flex flex-col items-center text-center">
                     <div className="relative h-28 w-28 overflow-hidden rounded-lg bg-slate-100">
                       <Image
-                        src="https://picsum.photos/200/200?random=su2"
+                        src="/images/products/고급면수의.jpg"
                         alt="고급 면 가진수의"
                         fill
                         className="object-cover"
@@ -605,7 +620,7 @@ export default function Mubinsosang130Page() {
                   <div className="flex flex-col items-center text-center">
                     <div className="relative h-28 w-36 overflow-hidden rounded-lg bg-slate-100">
                       <Image
-                        src="https://picsum.photos/300/200?random=bus"
+                        src="/images/products/버스.png"
                         alt="45인승 장의버스"
                         fill
                         className="object-cover"
@@ -621,7 +636,7 @@ export default function Mubinsosang130Page() {
                   <div className="flex flex-col items-center text-center">
                     <div className="relative h-28 w-36 overflow-hidden rounded-lg bg-slate-100">
                       <Image
-                        src="https://picsum.photos/300/200?random=limo"
+                        src="/images/products/리무진1.png"
                         alt="리무진"
                         fill
                         className="object-cover"
@@ -659,7 +674,7 @@ export default function Mubinsosang130Page() {
                   <div className="flex flex-col items-center text-center">
                     <div className="relative h-28 w-32 overflow-hidden rounded-lg bg-slate-100">
                       <Image
-                        src="https://picsum.photos/200/200?random=coffin"
+                        src="/images/products/오동관.png"
                         alt="매장용 관"
                         fill
                         className="object-cover"
@@ -675,7 +690,7 @@ export default function Mubinsosang130Page() {
                   <div className="flex flex-col items-center text-center">
                     <div className="relative h-28 w-32 overflow-hidden rounded-lg bg-slate-100">
                       <Image
-                        src="https://picsum.photos/200/200?random=items"
+                        src="/images/products/입관 수시 용품.png"
                         alt="매장 용품"
                         fill
                         className="object-cover"

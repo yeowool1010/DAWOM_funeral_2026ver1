@@ -2,6 +2,7 @@ import { SiteHeader } from "@/components/site-header";
 import { ProductSubNav200 } from "@/components/product/product-200-sub-nav";
 import { SiteFooter } from "@/components/site-footer";
 import { UserCircle, Package, Bus } from "lucide-react";
+import Image from "next/image";
 
 export const metadata = {
   title: "가족장 상조 패키지 | 다움",
@@ -25,9 +26,13 @@ export default function Gajokjang200Page() {
               <h1 className="mt-3 text-3xl font-bold text-slate-900 md:text-4xl">
                 가족장
               </h1>
-
-              <div className="mt-8 h-52 rounded-3xl bg-[#F9DEB3]" />
-
+              <Image
+                    src="/images/products/gajokjang/gajokjang-200_main.png"
+                    alt="가족장"
+                    width={600}
+                    height={400}
+                    className="mt-8 rounded-3xl object-cover w-full max-w-xl mx-auto"
+                  />
               <div className="mt-10 border-t border-slate-200 pt-8">
                 <p className="text-sm text-slate-700">
                   특별 할인을 통해{" "}
@@ -40,13 +45,13 @@ export default function Gajokjang200Page() {
                   <div className="text-slate-500">
                     <div>정상가</div>
                     <div className="mt-1 text-base font-medium line-through">
-                      2,890,000원
+                      2,100,000원
                     </div>
                   </div>
                   <div className="text-left text-emerald-700">
                     <div className="text-sm font-semibold">할인가</div>
                     <div className="mt-1 text-2xl font-bold text-emerald-700 md:text-3xl">
-                      2,690,000원
+                      2,000,000원
                     </div>
                   </div>
                 </div>
@@ -94,7 +99,7 @@ export default function Gajokjang200Page() {
               소규모 조문에 맞춘 서비스 구성과 인력을 확인해 보세요.
             </p>
 
-            <div className="mt-8 grid gap-6 md:grid-cols-3">
+            <div className="mt-8 grid gap-6 grid-cols-3 md:grid-cols-3">
               <div className="flex flex-col items-center rounded-2xl bg-slate-50 px-4 py-6">
                 <div className="flex h-16 w-16 items-center justify-center rounded-full bg-slate-200/80 text-slate-600">
                   <UserCircle className="h-9 w-9" strokeWidth={1.5} />
