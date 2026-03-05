@@ -1,5 +1,5 @@
 import { SiteHeader } from "@/components/site-header";
-import { ProductSubNav130 } from "@/components/product/product-130-sub-nav";
+import { ProductSubNav430 } from "@/components/product/product-430-sub-nav";
 import { PrimeHero } from "@/components/prime/prime-hero";
 import { PrimeBenefits } from "@/components/prime/prime-benefits";
 import { PrimeHowItWorks } from "@/components/prime/prime-how-it-works";
@@ -16,7 +16,7 @@ export default function PrimePage() {
   return (
     <div className="min-h-screen bg-white">
       <SiteHeader />
-      <ProductSubNav130 />
+      <ProductSubNav430 />
       <main>
         <PrimeHero />
         <PrimeBenefits />
