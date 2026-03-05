@@ -13,7 +13,7 @@ const TAGS = [
 
 const REVIEWS = [
   {
-    text: "고이를 통해 전세권 장례 지도사님을 만나게 되었습니다. 병원에서 저녁 시간에 어머님이 돌아가시고 정신없이 병원 서류 마무리 하고 장례식장 예약 후 안치실로 가보니 이미 오셔서 기다리고 계시더군요. 여건 상 홀로 임종을 지켜야 했는데, 덕분에 마음이 놓였습니다.",
+    text: "다움을 통해 전세권 장례 지도사님을 만나게 되었습니다. 병원에서 저녁 시간에 어머님이 돌아가시고 정신없이 병원 서류 마무리 하고 장례식장 예약 후 안치실로 가보니 이미 오셔서 기다리고 계시더군요. 여건 상 홀로 임종을 지켜야 했는데, 덕분에 마음이 놓였습니다.",
     author: "김○○님",
     date: "2024년 3월 13일",
   },
@@ -78,7 +78,7 @@ export function ReviewsSection() {
             href="#"
             className="inline-flex items-center gap-2 text-stone-800 font-medium hover:text-stone-600"
           >
-            고이 이용 후기 전체 보기
+            다움 이용 후기 전체 보기
             <ChevronRight className="h-4 w-4" />
           </a>
         </div>

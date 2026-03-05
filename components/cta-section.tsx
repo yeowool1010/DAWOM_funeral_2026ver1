@@ -29,7 +29,7 @@ export function CtaSection() {
           href="#"
           className="mt-8 inline-block text-sm text-stone-400 underline hover:text-white"
         >
-          고이장례연구소 믿을 만한 곳인가요? 더 알아보기
+          다움, 믿을 만한 곳인가요? 더 알아보기
         </a>
       </div>
     </section>

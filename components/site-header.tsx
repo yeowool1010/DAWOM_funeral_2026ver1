@@ -18,10 +18,10 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 w-full border-b border-stone-200 bg-white/95 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
         <Link href="/" className="flex items-center gap-2 font-bold text-stone-800">
-          <span className="text-xl">고이</span>
-          <span className="hidden text-sm font-medium text-stone-500 sm:inline">
+          <span className="text-xl">다움</span>
+          {/* <span className="hidden text-sm font-medium text-stone-500 sm:inline">
             장례연구소
-          </span>
+          </span> */}
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">

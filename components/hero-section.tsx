@@ -13,7 +13,7 @@ export function HeroSection() {
             <span className="text-stone-600">추모하는 방법</span>
           </h1>
           <p className="mt-4 text-stone-600">
-            막막한 상황, 고이가 함께 합니다. 장례식장, 장지 추천부터 상조 서비스,
+            막막한 상황, 다움이 함께 합니다. 장례식장, 장지 추천부터 상조 서비스,
             장례 상담, 임종 접수까지.
           </p>
           <Link

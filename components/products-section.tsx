@@ -9,7 +9,7 @@ export function ProductsSection() {
         <div className="flex flex-col gap-12 lg:flex-row lg:items-center lg:gap-16">
           <div className="flex-1">
             <h2 className="text-2xl font-bold text-stone-900 sm:text-3xl">
-              고이 상품 안내
+              다움 상품 안내
             </h2>
             <p className="mt-4 text-stone-600">
               조문객 없이 장례 진행하는 무빈소장부터 200명이 넘는 조문객도

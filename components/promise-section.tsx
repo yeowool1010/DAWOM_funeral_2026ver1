@@ -16,7 +16,7 @@ const promises = [
   {
     title: "서비스 불만족시 100% 환불",
     description:
-      "고이는 장례 용품 강매, 노잣돈 및 수고비 강요와 같은 부적절한 행위를 엄격히 금지하고 있으며 불만족스러운 부분은 100% 환불해 드립니다.",
+      "다움은 장례 용품 강매, 노잣돈 및 수고비 강요와 같은 부적절한 행위를 엄격히 금지하고 있으며 불만족스러운 부분은 100% 환불해 드립니다.",
     icon: Shield,
   },
 ];
@@ -27,7 +27,7 @@ export function PromiseSection() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="text-center">
           <h2 className="text-2xl font-bold text-stone-900 sm:text-3xl">
-            고이의 변하지 않는 약속
+            다움의 변하지 않는 약속
           </h2>
           <p className="mt-3 text-stone-600">
             장례를 장례답게 만들기 위한 최소한의 원칙이에요
@@ -57,7 +57,7 @@ export function PromiseSection() {
             href="#"
             className="inline-flex items-center rounded-full bg-stone-900 px-6 py-3 text-sm font-medium text-white transition hover:bg-stone-800"
           >
-            고이 표준 서비스 바로가기
+            다움 표준 서비스 바로가기
           </a>
         </div>
       </div>
