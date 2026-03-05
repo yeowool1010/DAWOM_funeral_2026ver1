@@ -5,7 +5,7 @@ const cards = [
   {
     title: "월 100원으로 평생 장례 비용 보장",
     subtitle: "납입금 부담없는 가격 보장형 후불제 상조",
-    href: "#",
+    href: "/prime",
     cta: "100원 상조 알아보기",
     badge: "NEW",
     icon: BadgeCheck,
@@ -21,7 +21,7 @@ const cards = [
   {
     title: "장례 예상 견적 계산하기",
     subtitle: "장례 견적 미리 확인해 보고 내 상황에 따른 상품 추천도 받아보세요",
-    href: "#estimate",
+    href: "/estimate",
     cta: "자세히 알아보기",
     icon: Calculator,
   },

@@ -17,7 +17,7 @@ export function HeroSection() {
             장례 상담, 임종 접수까지.
           </p>
           <Link
-            href="#estimate"
+            href="/estimate"
             className="mt-8 inline-flex items-center gap-2 rounded-full bg-stone-900 px-6 py-3 text-sm font-medium text-white transition hover:bg-stone-800"
           >
             자세히 보기

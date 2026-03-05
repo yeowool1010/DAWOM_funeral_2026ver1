@@ -5,10 +5,9 @@ import { Menu, Phone } from "lucide-react";
 import { useState } from "react";
 
 const navItems = [
-  { label: "장례견적", href: "#estimate" },
-  { label: "상품안내", href: "#products" },
-  { label: "장례절차", href: "#process" },
-  { label: "고객후기", href: "#reviews" },
+  { label: "상품안내", href: "/products" },
+  { label: "장례절차", href: "/process" },
+  { label: "고객후기", href: "/reviews" },
 ];
 
 export function SiteHeader() {
@@ -19,9 +18,6 @@ export function SiteHeader() {
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
         <Link href="/" className="flex items-center gap-2 font-bold text-stone-800">
           <span className="text-xl">다움</span>
-          {/* <span className="hidden text-sm font-medium text-stone-500 sm:inline">
-            장례연구소
-          </span> */}
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">

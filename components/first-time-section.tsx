@@ -52,7 +52,7 @@ export function FirstTimeSection() {
             미리 준비하는 장례 월 100원으로 충분해요
           </p>
           <Link
-            href="#"
+            href="/prime"
             className="mt-6 inline-flex items-center gap-2 rounded-full border border-white px-6 py-3 text-sm font-medium transition hover:bg-white hover:text-stone-900"
           >
             100원 상조 알아보기
