@@ -18,7 +18,7 @@ export function ProductSubNav130() {
   const pathname = usePathname();
 
   return (
-    <nav className="border-b border-stone-200 bg-white">
+    <nav className="sticky top-16 z-40 border-b border-stone-200 bg-white/95 backdrop-blur">
       <div className="mx-auto flex max-w-6xl justify-center gap-8 px-4 py-4 sm:px-6">
         {items.map((item) => (
           <Link

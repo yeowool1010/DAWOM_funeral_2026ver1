@@ -1,6 +1,7 @@
 import { SiteHeader } from "@/components/site-header";
 import { ProductSubNav130 } from "@/components/product/product-130-sub-nav";
 import { SiteFooter } from "@/components/site-footer";
+import { UserCircle, Package, Bus } from "lucide-react";
 
 export const metadata = {
   title: "무빈소장 상조 패키지 | 다움",
@@ -40,13 +41,13 @@ export default function Mubinsosang130Page() {
                   <div className="text-slate-500">
                     <div>정상가</div>
                     <div className="mt-1 text-base font-medium line-through">
-                      1,700,000원
+                      1,400,000원
                     </div>
                   </div>
                   <div className="text-left text-emerald-700">
                     <div className="text-sm font-semibold">할인가</div>
                     <div className="mt-1 text-2xl font-bold text-emerald-700 md:text-3xl">
-                      1,590,000원
+                      1,300,000원
                     </div>
                   </div>
                 </div>
@@ -95,20 +96,29 @@ export default function Mubinsosang130Page() {
 
             <div className="mt-8 grid gap-6 md:grid-cols-3">
               <div className="flex flex-col items-center rounded-2xl bg-slate-50 px-4 py-6">
-                <div className="text-sm text-slate-500">접객 도우미</div>
-                <div className="mt-2 text-lg font-semibold text-slate-900">
+                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-slate-200/80 text-slate-600">
+                  <UserCircle className="h-9 w-9" strokeWidth={1.5} />
+                </div>
+                <div className="mt-4 text-sm text-slate-500">접객 도우미</div>
+                <div className="mt-1 text-lg font-semibold text-slate-900">
                   없음
                 </div>
               </div>
               <div className="flex flex-col items-center rounded-2xl bg-slate-50 px-4 py-6">
-                <div className="text-sm text-slate-500">장례 용품</div>
-                <div className="mt-2 text-lg font-semibold text-slate-900">
+                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-slate-200/80 text-slate-600">
+                  <Package className="h-9 w-9" strokeWidth={1.5} />
+                </div>
+                <div className="mt-4 text-sm text-slate-500">장례 용품</div>
+                <div className="mt-1 text-lg font-semibold text-slate-900">
                   기본형
                 </div>
               </div>
               <div className="flex flex-col items-center rounded-2xl bg-slate-50 px-4 py-6">
-                <div className="text-sm text-slate-500">장의 차량</div>
-                <div className="mt-2 text-lg font-semibold text-slate-900">
+                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-slate-200/80 text-slate-600">
+                  <Bus className="h-9 w-9" strokeWidth={1.5} />
+                </div>
+                <div className="mt-4 text-sm text-slate-500">장의 차량</div>
+                <div className="mt-1 text-lg font-semibold text-slate-900">
                   1대
                 </div>
               </div>
@@ -175,11 +185,11 @@ export default function Mubinsosang130Page() {
           </div>
         </section>
 
-        {/* 5. 고이의 변하지 않는 약속 */}
+        {/* 5. 다움의 변하지 않는 약속 */}
         <section className="bg-white">
           <div className="mx-auto max-w-5xl px-4 py-10 md:py-12">
             <h2 className="text-xl font-bold text-slate-900 md:text-2xl">
-              고이의 변하지 않는 약속
+              다움의 변하지 않는 약속
             </h2>
             <p className="mt-2 text-sm text-slate-600 md:text-base">
               장례를 장례답게 만들기 위한 최소한의 원칙이에요.
@@ -199,27 +209,28 @@ export default function Mubinsosang130Page() {
           </div>
         </section>
 
-        {/* 6. 고이 전체 서비스 비교 */}
+        {/* 6. 다움 전체 서비스 비교 */}
         <section className="bg-slate-50">
           <div className="mx-auto max-w-5xl px-4 py-10 md:py-12">
             <h2 className="text-xl font-bold text-slate-900 md:text-2xl">
-              고이 전체 서비스 비교
+              다움 전체 서비스 비교
             </h2>
             <p className="mt-2 text-sm text-slate-600 md:text-base">
               다른 서비스와 어떤 차이가 있는지 살펴보세요.
             </p>
 
             <div className="mt-6 overflow-hidden rounded-2xl border bg-white text-sm md:text-base">
-              <div className="grid grid-cols-4 bg-slate-50 text-center font-semibold text-slate-700">
+              <div className="grid grid-cols-5 bg-slate-50 text-center font-semibold text-slate-700">
                 <div className="px-3 py-3 text-left text-xs font-medium text-slate-500 md:text-sm">
                   구분
                 </div>
                 <div className="px-3 py-3 text-emerald-700">무빈소장</div>
                 <div className="px-3 py-3">가족장</div>
-                <div className="px-3 py-3">일반장</div>
+                <div className="px-3 py-3">고급형</div>
+                <div className="px-3 py-3">프리미엄</div>
               </div>
               <div className="divide-y text-center">
-                <div className="grid grid-cols-4">
+                <div className="grid grid-cols-5">
                   <div className="bg-slate-50 px-3 py-3 text-left text-xs font-medium text-slate-600 md:text-sm">
                     접객 도우미
                   </div>
@@ -228,8 +239,9 @@ export default function Mubinsosang130Page() {
                   </div>
                   <div className="px-3 py-3">4명</div>
                   <div className="px-3 py-3">6명</div>
+                  <div className="px-3 py-3">8명</div>
                 </div>
-                <div className="grid grid-cols-4">
+                <div className="grid grid-cols-5">
                   <div className="bg-slate-50 px-3 py-3 text-left text-xs font-medium text-slate-600 md:text-sm">
                     장례 용품
                   </div>
@@ -237,9 +249,10 @@ export default function Mubinsosang130Page() {
                     기본형
                   </div>
                   <div className="px-3 py-3">실속형</div>
-                  <div className="px-3 py-3">실속형</div>
+                  <div className="px-3 py-3">고급형</div>
+                  <div className="px-3 py-3">고급형</div>
                 </div>
-                <div className="grid grid-cols-4">
+                <div className="grid grid-cols-5">
                   <div className="bg-slate-50 px-3 py-3 text-left text-xs font-medium text-slate-600 md:text-sm">
                     장의 차량
                   </div>
@@ -248,16 +261,18 @@ export default function Mubinsosang130Page() {
                   </div>
                   <div className="px-3 py-3">1대</div>
                   <div className="px-3 py-3">2대</div>
+                  <div className="px-3 py-3">3대</div>
                 </div>
-                <div className="grid grid-cols-4">
+                <div className="grid grid-cols-5">
                   <div className="bg-slate-50 px-3 py-3 text-left text-xs font-medium text-slate-600 md:text-sm">
                     상품가
                   </div>
                   <div className="bg-orange-50 px-3 py-3 font-semibold text-orange-600">
-                    159만원
+                    130만원
                   </div>
-                  <div className="px-3 py-3">289만원</div>
-                  <div className="px-3 py-3">389만원</div>
+                  <div className="px-3 py-3">200만원</div>
+                  <div className="px-3 py-3">330만원</div>
+                  <div className="px-3 py-3">430만원</div>
                 </div>
               </div>
             </div>
@@ -303,7 +318,7 @@ export default function Mubinsosang130Page() {
                   장의 차량
                 </h3>
                 <ul className="mt-3 grid gap-3 text-sm text-slate-700 md:grid-cols-2 md:text-base">
-                  <li>고이 이송 차량 관내 이송</li>
+                  <li>다움 이송 차량 관내 이송</li>
                   <li>리무진 / 장의버스 택1 (리무진: 200km 화장장 편도, 장의버스: 200km 왕복)</li>
                 </ul>
               </div>
@@ -343,7 +358,7 @@ export default function Mubinsosang130Page() {
                   당 공제는 불가능합니다.
                 </li>
                 <li>
-                  고이이송차량은 관외 이용 시 추가 비용이 발생하며, 금액은 거리와
+                  다움이송차량은 관외 이용 시 추가 비용이 발생하며, 금액은 거리와
                   상황에 따라 책정됩니다.
                 </li>
                 <li>
@@ -394,7 +409,7 @@ export default function Mubinsosang130Page() {
 
             <div>
               <h2 className="text-xl font-bold text-slate-900 md:text-2xl">
-                고이 상조 이용 후기
+                다움 상조 이용 후기
               </h2>
               <p className="mt-2 text-sm text-slate-600 md:text-base">
                 실제 유가족분들의 솔직한 후기를 확인해 보세요.
