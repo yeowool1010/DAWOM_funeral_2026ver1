@@ -5,6 +5,7 @@ import { FirstTimeSection } from "@/components/first-time-section";
 import { PromiseSection } from "@/components/promise-section";
 import { CtaSection } from "@/components/cta-section";
 import { SiteFooter } from "@/components/site-footer";
+import { PackageCards } from "@/components/product/package-cards";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <HeroSection />
        {/*   <PromoCards />*/}
        {/* <FirstTimeSection />*/}
+        <PackageCards />
         <PromiseSection />
         <CtaSection />
         <SiteFooter />/

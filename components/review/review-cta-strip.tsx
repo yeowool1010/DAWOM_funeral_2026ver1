@@ -16,7 +16,7 @@ export function ReviewCtaStrip() {
             견적 받기
           </Link>
           <a
-            href="tel:0000-0000"
+            href="tel:1600-4417"
             className="flex items-center gap-2 rounded-full bg-white px-5 py-2.5 text-sm font-medium text-stone-900 transition hover:bg-stone-100"
           >
             <Phone className="h-4 w-4" />

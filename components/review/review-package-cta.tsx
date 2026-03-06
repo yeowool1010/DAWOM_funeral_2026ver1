@@ -28,7 +28,7 @@ export function ReviewPackageCta() {
                 패키지 추천받기
               </Link>
               <a
-                href="tel:0000-0000"
+                href="tel:1600-4417"
                 className="inline-flex items-center gap-2 rounded-full border border-stone-300 bg-white px-6 py-3 text-sm font-medium text-stone-700 transition hover:bg-stone-50"
               >
                 <Phone className="h-4 w-4" />

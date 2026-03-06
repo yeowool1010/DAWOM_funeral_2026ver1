@@ -35,7 +35,7 @@ export function SiteHeader() {
 
         <div className="flex items-center gap-4">
           <a
-            href="tel:0000-0000"
+            href="tel:1600-4417"
             className="hidden items-center gap-2 rounded-full bg-stone-900 px-4 py-2 text-sm font-medium text-white transition hover:bg-stone-800 sm:flex"
           >
             <Phone className="h-4 w-4" />
@@ -66,7 +66,7 @@ export function SiteHeader() {
               </Link>
             ))}
             <a
-              href="tel:0000-0000"
+              href="tel:1600-4417"
               className="mt-2 flex items-center justify-center gap-2 rounded-lg bg-stone-900 py-3 text-sm font-medium text-white"
             >
               <Phone className="h-4 w-4" />

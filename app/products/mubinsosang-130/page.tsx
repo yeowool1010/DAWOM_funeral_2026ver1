@@ -193,7 +193,7 @@ export default function Mubinsosang130Page() {
                   </span>
                   <p>
                     그 외, 장례 관련 상담이 필요할 때{" "}
-                    <span className="font-semibold">0000-0000</span>로 연락
+                    <span className="font-semibold">1600-4417</span>로 연락
                     주세요.
                   </p>
                 </li>
@@ -321,38 +321,37 @@ export default function Mubinsosang130Page() {
               <div className="grid gap-4 grid-cols-2 sm:grid-cols-3 lg:grid-cols-5">
                 {[
                   {
-                    name: "0.6 오동관",
+                    name: "오동나무관",
                     desc: "화장용",
-                    price: "200,000원",
+                    price: "",
                     discount: null,
                     img: "/images/products/오동관.png",
                   },
                   {
                     name: "화장용 수의",
                     desc: "(면 50%, 폴리 50%)",
-                    price: "140,000원",
-                    discount: "250,000원",
-                    label: "다움 할인가",
+                    price: "",
+                    discount: "",
                     img: "/images/products/화장용 수의.jpg",
                   },
                   {
                     name: "입관 수시 용품",
                     desc: "15종(염포, 관보 등)",
-                    price: "150,000원",
+                    price: "",
                     discount: null,
                     img: "/images/products/입관 수시 용품.png",
                   },
                   {
                     name: "유골함",
-                    desc: "(오동나무 목함)",
-                    price: "무료 제공",
+                    desc: "오동나무 목함",
+                    price: "",
                     free: true,
                     img: "/images/products/유골함.png",
                   },
                   {
                     name: "관 장식용 생화",
                     desc: "계절 생화, 안개꽃",
-                    price: "100,000원",
+                    price: "",
                     discount: null,
                     img: "/images/products/관 장식용 생화.jpg",
                   },
@@ -414,13 +413,13 @@ export default function Mubinsosang130Page() {
                   {
                     name: "장례지도사",
                     desc: "1인 3일",
-                    price: "300,000원",
+                    price: "",
                     img: "/images/products/장례지도사.png",
                   },
                   {
                     name: "염습상례사",
                     desc: "1인 1일",
-                    price: "150,000원",
+                    price: "",
                     img: "/images/products/염습상례사.png",
                   },
                 ].map((item) => (
@@ -472,9 +471,9 @@ export default function Mubinsosang130Page() {
                   <div className="p-4">
                     <h4 className="font-semibold text-slate-900">고인이송차량</h4>
                     <p className="mt-0.5 text-sm text-slate-600">관내 이송</p>
-                    <p className="mt-2 text-lg font-bold text-slate-900">
+                    {/* <p className="mt-2 text-lg font-bold text-slate-900">
                       100,000원
-                    </p>
+                    </p> */}
                   </div>
                 </div>
                 <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
@@ -497,9 +496,9 @@ export default function Mubinsosang130Page() {
                     <p className="text-sm text-slate-600">
                       장의버스: 200km 왕복
                     </p>
-                    <p className="mt-2 text-lg font-bold text-slate-900">
+                    {/* <p className="mt-2 text-lg font-bold text-slate-900">
                       450,000원
-                    </p>
+                    </p> */}
                   </div>
                 </div>
               </div>
@@ -718,6 +717,7 @@ export default function Mubinsosang130Page() {
                 </p>
               </div>
             </div>
+
           </div>
         </section>
 

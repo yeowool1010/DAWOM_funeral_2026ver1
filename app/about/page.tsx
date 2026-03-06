@@ -292,7 +292,7 @@ export default function AboutPage() {
           <div className="mx-auto max-w-3xl px-4 sm:px-6">
             <div className="flex flex-col items-center justify-center gap-4 rounded-2xl bg-stone-100 py-10 sm:flex-row sm:gap-6">
               <a
-                href="tel:0000-0000"
+                href="tel:1600-4417"
                 className="inline-flex items-center gap-2 rounded-full bg-stone-900 px-6 py-3 text-sm font-medium text-white transition hover:bg-stone-800"
               >
                 <Phone className="h-4 w-4" />

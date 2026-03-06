@@ -20,7 +20,7 @@ export function CtaSection() {
             채팅문의
           </a>
           <a
-            href="tel:0000-0000"
+            href="tel:1600-4417"
             className="flex w-full max-w-xs items-center justify-center gap-2 rounded-full bg-white px-6 py-4 font-medium text-stone-900 transition hover:bg-stone-100 sm:w-auto"
           >
             <Phone className="h-5 w-5" />
