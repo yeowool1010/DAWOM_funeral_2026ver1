@@ -63,7 +63,7 @@ export function SiteHeader() {
         </nav>
 
         <div className="flex items-center gap-3">
-          <a
+          {/* <a
             href="https://pf.kakao.com/_xXXXXXXX/chat"
             target="_blank"
             rel="noopener noreferrer"
@@ -72,7 +72,7 @@ export function SiteHeader() {
           >
             <KakaoIcon className="h-5 w-5" />
             카톡상담
-          </a>
+          </a> */}
           <a
             href="tel:1600-4417"
             className="hidden items-center gap-2 rounded-full bg-stone-900 px-4 py-2 text-sm font-medium text-white transition hover:bg-stone-800 sm:flex"

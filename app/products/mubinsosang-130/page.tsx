@@ -278,7 +278,7 @@ export default function Mubinsosang130Page() {
                   </div>
                   <div className="px-3 py-3">1대</div>
                   <div className="px-3 py-3">2대</div>
-                  <div className="px-3 py-3">3대</div>
+                  <div className="px-3 py-3">2대</div>
                 </div>
                 <div className="grid grid-cols-5">
                   <div className="bg-slate-50 px-3 py-3 text-left text-xs font-medium text-slate-600 md:text-sm">

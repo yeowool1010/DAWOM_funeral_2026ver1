@@ -18,7 +18,7 @@ export default function Home() {
         <PackageCards />
         <PromiseSection />
         <CtaSection />
-        <SiteFooter />/
+        <SiteFooter />
       </main>
     </div>
   );

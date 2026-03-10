@@ -41,6 +41,67 @@ export function PackageCards() {
           })}
         </div>
       </div>
+      <section className="bg-slate-50 mt-12">
+          <div className="mx-auto max-w-5xl px-4 py-10 md:py-12">
+            <h2 className="text-xl font-bold text-slate-900 md:text-2xl">
+              다움 전체 서비스 비교
+            </h2>
+            <p className="mt-2 text-sm text-slate-600 md:text-base">
+              무빈소장, 가족장, 고급형, 프리미엄의 차이를 한눈에 비교해 보세요.
+            </p>
+
+            <div className="mt-6 overflow-hidden rounded-2xl border bg-white text-sm md:text-base">
+              <div className="grid grid-cols-5 bg-slate-50 text-center font-semibold text-slate-700">
+                <div className="px-3 py-3 text-left text-xs font-medium text-slate-500 md:text-sm">
+                  구분
+                </div>
+                <div className="px-3 py-3">무빈소장</div>
+                <div className="px-3 py-3">가족장</div>
+                <div className="px-3 py-3">고급형</div>
+                <div className="px-3 py-3">프리미엄</div>
+              </div>
+              <div className="divide-y text-center">
+                <div className="grid grid-cols-5">
+                  <div className="bg-slate-50 px-3 py-3 text-left text-xs font-medium text-slate-600 md:text-sm">
+                    접객 도우미
+                  </div>
+                  <div className="px-3 py-3">없음</div>
+                  <div className="px-3 py-3">2명</div>
+                  <div className="px-3 py-3">6명</div>
+                  <div className="px-3 py-3">8명</div>
+                </div>
+                <div className="grid grid-cols-5">
+                  <div className="bg-slate-50 px-3 py-3 text-left text-xs font-medium text-slate-600 md:text-sm">
+                    장례 용품
+                  </div>
+                  <div className="px-3 py-3">기본형</div>
+                  <div className="px-3 py-3">실속형</div>
+                  <div className="px-3 py-3">고급형</div>
+                  <div className="px-3 py-3">고급형</div>
+                </div>
+                <div className="grid grid-cols-5">
+                  <div className="bg-slate-50 px-3 py-3 text-left text-xs font-medium text-slate-600 md:text-sm">
+                    장의 차량
+                  </div>
+                  <div className="px-3 py-3">1대</div>
+                  <div className="px-3 py-3">1대</div>
+                  <div className="px-3 py-3">2대</div>
+                  <div className="px-3 py-3">2대</div>
+                </div>
+                <div className="grid grid-cols-5">
+                  <div className="bg-slate-50 px-3 py-3 text-left text-xs font-medium text-slate-600 md:text-sm">
+                    상품가
+                  </div>
+                  <div className="px-3 py-3">130만원</div>
+                  <div className="px-3 py-3">200만원</div>
+                  <div className="px-3 py-3">330만원</div>
+                  <div className="px-3 py-3">430만원</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      
     </section>
   );
 }
