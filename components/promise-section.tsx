@@ -1,65 +1,69 @@
-import { Shield, Receipt, RefreshCw } from "lucide-react";
+import { Tag, Globe, Receipt, ShieldCheck } from "lucide-react";
 
 const promises = [
   {
-    title: "품목별 가격 정찰제",
+    num: 1,
+    title: "합리적인 가격으로 모십니다",
     description:
-      "업계 최초로 모든 품목에 가격 정찰제를 도입하여 실제로 사용한 품목만 비용만 받습니다.",
+      "합리적인 가격과 고품질 생모로 고객감동의 서비스를 추구합니다.",
+    icon: Tag,
+  },
+  {
+    num: 2,
+    title: "전국 모든지역 이용이 가능합니다.",
+    description:
+      "국가공인과 경제지도사들을 전국네트워크망을 구축하여 24시간 운영하고 있습니다.",
+    icon: Globe,
+  },
+  {
+    num: 3,
+    title: "서비스 완료 후 정산합니다",
+    description:
+      "회원 가입비나 월 납입금에 대한 부담이 전혀 없는 완전후불제를 실시하고 있습니다.",
     icon: Receipt,
   },
   {
-    title: "사용하지 않는 품목 100% 공제",
+    num: 4,
+    title: "신뢰성을 자랑합니다",
     description:
-      "패키지 내 사용하지 않은 품목에 대해 명시된 금액만큼 100% 현금으로 공제해 드립니다.",
-    icon: RefreshCw,
-  },
-  {
-    title: "서비스 불만족시 100% 환불",
-    description:
-      "다움은 장례 용품 강매, 노잣돈 및 수고비 강요와 같은 부적절한 행위를 엄격히 금지하고 있으며 불만족스러운 부분은 100% 환불해 드립니다.",
-    icon: Shield,
+      "기업, 단체들과 협약하고 있으며, 믿고 맡길 수 있는 신뢰의 서비스를 제공합니다.",
+    icon: ShieldCheck,
   },
 ];
 
 export function PromiseSection() {
   return (
-    <section className="bg-stone-50 py-16 sm:py-24">
+    <section className="bg-white py-16 sm:py-24">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <div className="text-center">
-          <h2 className="text-2xl font-bold text-stone-900 sm:text-3xl">
-            다움의 변하지 않는 약속
-          </h2>
-          <p className="mt-3 text-stone-600">
-            장례를 장례답게 만들기 위한 최소한의 원칙이에요
-          </p>
-        </div>
-        <div className="mt-12 grid gap-8 sm:grid-cols-3">
+        <h2 className="text-center text-2xl font-bold text-stone-900 sm:text-3xl">
+          완전후불제 다움상조
+        </h2>
+        <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {promises.map((promise) => {
             const Icon = promise.icon;
             return (
               <div
-                key={promise.title}
-                className="rounded-2xl border border-stone-200 bg-white p-6 shadow-sm"
+                key={promise.num}
+                className="flex flex-col rounded-2xl border border-stone-200 bg-white shadow-sm overflow-hidden"
               >
-                <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-stone-100 text-stone-600">
-                  <Icon className="h-7 w-7" />
+                <div className="flex h-40 w-full items-center justify-center rounded-t-2xl bg-stone-100 text-stone-600">
+                  <Icon className="h-14 w-14" strokeWidth={1.5} />
                 </div>
-                <h3 className="mt-4 text-lg font-semibold text-stone-900">
-                  {promise.title}
-                </h3>
-                <p className="mt-2 text-sm text-stone-600">{promise.description}</p>
+                <div className="relative flex flex-col p-5 pt-8">
+                  <span className="absolute -top-4 left-5 flex h-8 w-8 items-center justify-center rounded-full border-2 border-white bg-blue-800 text-sm font-bold text-white shadow">
+                    {promise.num}
+                  </span>
+                  <h3 className="text-lg font-bold text-stone-900">
+                    {promise.title}
+                  </h3>
+                  <p className="mt-2 text-sm leading-relaxed text-stone-600">
+                    {promise.description}
+                  </p>
+                </div>
               </div>
             );
           })}
         </div>
-        {/* <div className="mt-12 text-center">
-          <a
-            href="#"
-            className="inline-flex items-center rounded-full bg-stone-900 px-6 py-3 text-sm font-medium text-white transition hover:bg-stone-800"
-          >
-            다움 표준 서비스 바로가기
-          </a>
-        </div> */}
       </div>
     </section>
   );
