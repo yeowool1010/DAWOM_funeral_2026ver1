@@ -372,9 +372,9 @@ export default function Mubinsosang130Page() {
                     <div className="p-4">
                       <h4 className="font-semibold text-slate-900">{item.name}</h4>
                       <p className="mt-0.5 text-sm text-slate-600">{item.desc}</p>
-                      {item.label && (
+                      {"label" in item && typeof (item as { label?: string }).label === "string" && (
                         <span className="mt-2 inline-block text-xs font-medium text-orange-600">
-                          {item.label}
+                          {(item as { label: string }).label}
                         </span>
                       )}
                       <div className="mt-2 flex items-baseline gap-2">

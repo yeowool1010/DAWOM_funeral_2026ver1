@@ -5,9 +5,11 @@ export function CtaSection() {
     <section className="bg-stone-900 py-16 text-white sm:py-20">
       <div className="mx-auto max-w-6xl px-4 text-center sm:px-6">
         <h2 className="text-2xl font-bold sm:text-3xl">
-          임종접수, 긴급 문의가 있으시면
+          긴급 장례접수
           <br />
-          <span className="text-stone-300">24시간 언제든 부담없이 연락해 주세요</span>
+          <span className="text-stone-300">
+            <span className="text-red-500">24시간</span> 언제든 <span className="text-red-500">1600-7751</span>로 부담없이 연락해 주세요
+          </span>
         </h2>
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <a
@@ -27,12 +29,12 @@ export function CtaSection() {
             전화문의
           </a>
         </div>
-        <a
+        {/* <a
           href="/about"
           className="mt-8 inline-block text-sm text-stone-400 underline hover:text-white"
         >
           다움, 믿을 만한 곳인가요? 더 알아보기
-        </a>
+        </a> */}
       </div>
     </section>
   );
