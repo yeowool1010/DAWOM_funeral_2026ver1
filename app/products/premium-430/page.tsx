@@ -55,11 +55,11 @@ export default function Premium430Page() {
                   <div className="text-slate-500">
                     <div>정상가</div>
                     <div className="mt-1 text-base font-medium line-through">
-                      4,400,000원
+                      4,500,000원
                     </div>
                   </div>
                   <div className="text-left text-emerald-700">
-                    <div className="text-sm font-semibold">할인가</div>
+                    <div className="text-sm font-semibold">회원가</div>
                     <div className="mt-1 text-2xl font-bold text-emerald-700 md:text-3xl">
                       4,300,000원
                     </div>
@@ -331,7 +331,7 @@ export default function Premium430Page() {
                     desc: "(면 50%, 폴리 50%)",
                     price: "140,000원",
                     discount: "250,000원",
-                    label: "다움 할인가",
+                    label: "다움 회원가",
                     img: "/images/products/화장용 수의.jpg",
                   },
                   {
