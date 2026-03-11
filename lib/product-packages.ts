@@ -18,7 +18,7 @@ export const productPackages: ProductPackage[] = [
     slug: "mubinsosang-130",
     name: "회원가 130만원",
     desc: "",
-    price: "다움 150",
+    price: "무빈소",
     unit: "",
     icon: UserCheck,
     tag: "# 조문객없이 간소한 장례 진행",

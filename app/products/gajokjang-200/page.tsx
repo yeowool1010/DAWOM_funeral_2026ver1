@@ -342,6 +342,28 @@ export default function Gajokjang200Page() {
                     discount: null,
                     img: "/images/관장식꽃.jpg",
                   },
+                  {
+                    name: "남자상복/여자상복",
+                    desc: "남자 4벌, 여자 6벌",
+                    price: "",
+                    discount: null,
+                    img: "/images/상복-이미지1.png",
+                    
+                  },
+                  {
+                    name: "헌화용 국화꽃",
+                    desc: "30송이",
+                    price: "",
+                    free: true,
+                    img: "/images/products/헌화.jpg",
+                  },
+                  {
+                    name: "영정사진",
+                    desc: "",
+                    price: "사전 가입 고객 한정 11R 사이즈 무료 제공",
+                    free: true,
+                    img: "/images/products/영정사진.jpg",
+                  },
                 ].map((item) => (
                   <div
                     key={item.name}
@@ -404,10 +426,10 @@ export default function Gajokjang200Page() {
                     img: "/images/장례지도사1.png",
                   },
                   {
-                    name: "염습상례사",
+                    name: "염습지도사",
                     desc: "",
                     price: "",
-                    img: "/images/염습상례사1.png",
+                    img: "/images/염습지도사1.png",
                   },
                   {
                     name: "접객도우미",
@@ -498,6 +520,62 @@ export default function Gajokjang200Page() {
             </div>
 
  
+          </div>
+        </section>
+
+        <section className="bg-slate-50">
+          <div className="mx-auto max-w-5xl px-4 py-10 md:py-12">
+            <h2 className="text-xl font-bold text-slate-900 md:text-2xl">
+              다움 220 안내사항
+            </h2>
+            <div className="mt-4 rounded-2xl bg-white px-5 py-6 text-sm leading-relaxed text-slate-700 shadow-sm md:px-7 md:text-base">
+              <ul className="list-disc space-y-2 pl-5">
+              <li>
+                  장례 일정 연장, 접객 인력 추가 등은 사전 협의를 통해 비용이
+                  안내됩니다.
+                </li>
+                <li>
+                  빈소 사용료, 식사·다과 비용 등은 장례식장 규정에 따라 별도
+                  정산됩니다.
+                </li>
+                <li>
+                  장의 차량은 상품에 포함된 거리 내에서 이용 가능하며, 초과 시
+                  km당 추가 요금이 발생할 수 있습니다.
+                </li>
+                <li>
+                  4일장, 5일장 등 3일장보다 일정이 길어질 경우 장례지도사 서비스
+                  비용이 1일당 20만원씩 추가됩니다.
+                </li>
+                <li>
+                  접객도우미는 시간 초과 시 시간당 2만원이 추가되며, 반대로 시간
+                  당 공제는 불가능합니다.
+                </li>
+                <li>
+                  다움 이송차량은 관외 이용 시 추가 비용이 발생하며, 금액은 거리와
+                  상황에 따라 책정됩니다.
+                </li>
+                <li>
+                  상품 내 정해진 거리를 초과하여 장의차량을 이용할 경우, 차량
+                  서비스 비용이 1km당 2천원씩 추가됩니다.
+                </li>
+                <li>
+                  리무진은 편도 이용 기준이며, 초과 거리당 1km당 2천원이
+                  추가됩니다.
+                </li>
+                <li>
+                  장지 이외의 장소에 경유를 요청하시는 경우, 이동 거리 및 소요
+                  시간에 따라 별도의 추가 경비가 발생합니다.
+                </li>
+                <li>
+                  봉안함에 각인 서비스를 요청하실 경우 각인비가 최대 2만원
+                  발생할 수 있습니다.
+                </li>
+                <li>
+                  출동 후 서비스를 이용 중임에도 심각한 취소 위약금이 있을 경우
+                  기존 상조회사와의 계약 해지 여부를 반드시 확인해 주세요.
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
 

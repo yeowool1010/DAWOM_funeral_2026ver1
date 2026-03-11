@@ -14,7 +14,7 @@ import {
 import Image from "next/image";
 
 export const metadata = {
-  title: "다움 450 일반장 상조 패키지 | 다움",
+  title: "다움 450 상조 패키지 | 다움",
   description:
     "조문객이 많은 일반 장례에 맞춘 다움 450 상조 패키지의 서비스 구성과 안내사항을 한 페이지에서 확인해 보세요.",
 };
@@ -33,7 +33,7 @@ export default function Premium430Page() {
                 많은 조문객을 위한 품격 있는 장례
               </p>
               <h1 className="mt-3 text-3xl font-bold text-slate-900 md:text-4xl">
-                다움 450 일반장
+                다움 450 
               </h1>
               <Image
                     src="/images/products/premium/premium-430_main.png"
@@ -81,7 +81,7 @@ export default function Premium430Page() {
                 조문객이 많은 장례에 맞춰 접객 인력과 차량, 장례 용품을
                 다움 450으로 구성한 상품으로,
                 <br className="hidden md:block" />
-                예우와 편의를 모두 고려한 일반장 패키지입니다.
+                예우와 편의를 모두 고려한 반장 패키지입니다.
               </p>
             </div>
           </div>
@@ -117,7 +117,7 @@ export default function Premium430Page() {
                 </div>
                 <div className="mt-4 text-sm text-slate-500">접객 도우미</div>
                 <div className="mt-1 text-lg font-semibold text-slate-900">
-                  6명
+                  8명
                 </div>
               </div>
               <div className="flex flex-col items-center rounded-2xl bg-slate-50 px-4 py-6">
@@ -126,7 +126,7 @@ export default function Premium430Page() {
                 </div>
                 <div className="mt-4 text-sm text-slate-500">장례 용품</div>
                 <div className="mt-1 text-lg font-semibold text-slate-900">
-                  다움 350
+                  고급형
                 </div>
               </div>
               <div className="flex flex-col items-center rounded-2xl bg-slate-50 px-4 py-6">
@@ -140,14 +140,6 @@ export default function Premium430Page() {
               </div>
             </div>
 
-            <div className="mt-10 rounded-2xl bg-slate-50 px-5 py-6">
-              <h3 className="text-base font-semibold text-slate-900 md:text-lg">
-                24시 전화 상담 지원
-              </h3>
-              <p className="mt-2 text-sm text-slate-700 md:text-base">
-                언제든 임종 접수와 장례 준비에 대한 상담을 받으실 수 있어요.
-              </p>
-            </div>
           </div>
         </section>
 
@@ -164,8 +156,8 @@ export default function Premium430Page() {
                     1
                   </span>
                   <p>
-                    예상 조문객 수와 예산에 맞는 장례식장, 빈소 규모를 추천하고
-                    예약까지 도와드립니다.
+                    앰뷸런스 배차, 빈소 확인 및 예약을 지원하고
+                    전문 장례지도사를 배정합니다.
                   </p>
                 </li>
                 <li className="flex gap-3">
@@ -173,8 +165,7 @@ export default function Premium430Page() {
                     2
                   </span>
                   <p>
-                    다움 450 용품 구성과 접객 인력 운영을 설계해 드려, 장례 기간
-                    동안 유가족의 부담을 줄여 드립니다.
+                  지역 및 개별상황에 가장 적합한 장례식장을 추천합니다.
                   </p>
                 </li>
                 <li className="flex gap-3">
@@ -182,8 +173,7 @@ export default function Premium430Page() {
                     3
                   </span>
                   <p>
-                    식사·다과, 근조 화환, 추가 차량 등 부대비용 항목까지
-                    종합적으로 상담해 드립니다.
+                  장례식장 정보는 위치와 빈소상태를 바탕으로 비용과 조건을 상세히 안내해 드립니다
                   </p>
                 </li>
                 <li className="flex gap-3">
@@ -202,7 +192,7 @@ export default function Premium430Page() {
         </section>
 
         {/* 5. 다움의 변하지 않는 약속 */}
-        <section className="bg-white">
+        {/* <section className="bg-white">
           <div className="mx-auto max-w-5xl px-4 py-10 md:py-12">
             <h2 className="text-xl font-bold text-slate-900 md:text-2xl">
               다움의 변하지 않는 약속
@@ -223,7 +213,7 @@ export default function Premium430Page() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* 6. 다움 전체 서비스 비교 - 다움 450 일반장 포함 */}
         <section className="bg-slate-50">
@@ -299,10 +289,10 @@ export default function Premium430Page() {
         <section className="bg-white">
           <div className="mx-auto max-w-5xl px-4 py-10 md:py-12">
             <h2 className="text-xl font-bold text-slate-900 md:text-2xl">
-              다움 450 장례 구성품 상세
+              다움450 구성품 상세
             </h2>
             <p className="mt-2 text-sm text-slate-600 md:text-base">
-              많은 조문객을 맞이하기 위한 다움 450 구성을 확인하세요.
+              장례 용품, 인력, 차량 구성을 한눈에 확인하세요.
             </p>
 
             {/* 장례 용품 */}
@@ -313,73 +303,67 @@ export default function Premium430Page() {
               </div> */}
               <div className="mb-4 flex items-center gap-2">
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-200/80 text-slate-600">
-                  <Package className="h-4 w-4 text-orange-500" />
+                  <Package className="h-4 w-4 text-slate-500" />
                 </div>
                 <h3 className="text-lg font-bold text-slate-900">장례 용품</h3>
               </div>
               <div className="grid gap-4 grid-cols-2 sm:grid-cols-3 lg:grid-cols-5">
                 {[
                   {
-                    name: "오동나무 2단관",
-                    desc: "화장용",
-                    price: "200,000원",
+                    name: "오동나무 관",
+                    desc: "",
+                    price: "",
                     discount: null,
-                    img: "/images/products/오동관.png",
+                    img: "/images/products/오동관1.png",
                   },
                   {
-                    name: "화장용 수의",
-                    desc: "(면 50%, 폴리 50%)",
-                    price: "140,000원",
-                    discount: "250,000원",
-                    label: "다움 회원가",
-                    img: "/images/products/화장용 수의.jpg",
+                    name: "고급 가진 수의",
+                    desc: "저마 100%",
+                    price: "",
+                    discount: "",
+                    img: "/images/수의.png",
                   },
                   {
                     name: "입관 수시 용품",
                     desc: "",
-                    price: "150,000원",
+                    price: "",
                     discount: null,
-                    img: "/images/products/입관 수시 용품.png",
+                    img: "/images/products/입관 수시 용품1.png",
                   },
                   {
-                    name: "봉안함",
-                    desc: "진공 봉안함",
-                    price: "무료 제공",
+                    name: "진공 봉안함",
+                    desc: "",
+                    
+                    price: "",
                     free: true,
-                    img: "/images/products/일반유골함.jpg",
+                    img: "/images/진공유골함.png",
                   },
                   {
-                    name: "관 장식용 생화",
-                    desc: "계절 생화, 안개꽃",
-                    price: "100,000원",
+                    name: "프리미엄 꽃관 장식",
+                    desc: "계절 생화",
+                    price: "",
                     discount: null,
-                    img: "/images/products/관 장식용 생화.jpg",
+                    img: "/images/관장식꽃.jpg",
                   },
                   {
                     name: "남자상복/여자상복",
                     desc: "남자 8벌, 여자 10벌",
-                    price: "무료 제공",
-                    free: true,
-                    img: "/images/products/상복 이미지.png",
-                  },
-                  {
-                    name: "제단지원",
-                    desc: "장례식화단 20만원",
-                    price: "무료 제공",
-                    free: true,
-                    img: "/images/products/장례식화단.jpg",
+                    price: "",
+                    discount: null,
+                    img: "/images/상복-이미지1.png",
+                    
                   },
                   {
                     name: "헌화용 국화꽃",
                     desc: "50송이",
-                    price: "무료 제공",
+                    price: "",
                     free: true,
                     img: "/images/products/헌화.jpg",
                   },
                   {
                     name: "영정사진",
-                    desc: "11R 사이즈",
-                    price: "사전가입 고객 한정 무료 제공",
+                    desc: "",
+                    price: "사전 가입 고객 한정 11R 사이즈 무료 제공",
                     free: true,
                     img: "/images/products/영정사진.jpg",
                   },
@@ -441,14 +425,20 @@ export default function Premium430Page() {
                   {
                     name: "장례지도사",
                     desc: "",
-                    price: "300,000원",
-                    img: "/images/products/장례지도사.png",
+                    price: "",
+                    img: "/images/장례지도사1.png",
                   },
                   {
-                    name: "염습상례사",
+                    name: "염습지도사",
                     desc: "",
-                    price: "150,000원",
-                    img: "/images/products/염습상례사.png",
+                    price: "",
+                    img: "/images/염습지도사1.png",
+                  },
+                  {
+                    name: "접객도우미",
+                    desc: "8인 (8시간)",
+                    price: "",
+                    img: "/images/접객도우미.png",
                   },
                 ].map((item) => (
                   <div
@@ -489,7 +479,7 @@ export default function Premium430Page() {
                 <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
                   <div className="relative aspect-[4/3] bg-slate-900">
                     <Image
-                      src="/images/products/고인이송차량.png"
+                      src="/images/products/고인이송차량1.png"
                       alt="고인이송차량"
                       fill
                       className="object-cover"
@@ -499,15 +489,15 @@ export default function Premium430Page() {
                   <div className="p-4">
                     <h4 className="font-semibold text-slate-900">고인이송차량</h4>
                     <p className="mt-0.5 text-sm text-slate-600">관내 이송</p>
-                    <p className="mt-2 text-lg font-bold text-slate-900">
+                    {/* <p className="mt-2 text-lg font-bold text-slate-900">
                       100,000원
-                    </p>
+                    </p> */}
                   </div>
                 </div>
                 <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
                   <div className="relative aspect-[4/3] bg-slate-900">
                     <Image
-                      src="/images/products/리무진.png"
+                      src="/images/products/리무진3.png"
                       alt="리무진/장의버스"
                       fill
                       className="object-cover"
@@ -519,19 +509,18 @@ export default function Premium430Page() {
                       리무진, 장의버스
                     </h4>
                     <p className="mt-0.5 text-xs leading-snug text-slate-600">
-                      리무진 200km 화장장 편도
+                      리무진 300km 화장장 편도
                     </p>
                     <p className="text-xs text-slate-600">
-                      장의버스: 200km 왕복
+                      장의버스 300km 왕복
                     </p>
-                    <p className="mt-2 text-lg font-bold text-slate-900">
+                    {/* <p className="mt-2 text-lg font-bold text-slate-900">
                       450,000원
-                    </p>
+                    </p> */}
                   </div>
                 </div>
               </div>
             </div>
-
           </div>
         </section>
 
@@ -539,25 +528,53 @@ export default function Premium430Page() {
         <section className="bg-slate-50">
           <div className="mx-auto max-w-5xl px-4 py-10 md:py-12">
             <h2 className="text-xl font-bold text-slate-900 md:text-2xl">
-              다움 450 일반장 안내사항
+              다움 450 안내사항
             </h2>
             <div className="mt-4 rounded-2xl bg-white px-5 py-6 text-sm leading-relaxed text-slate-700 shadow-sm md:px-7 md:text-base">
               <ul className="list-disc space-y-2 pl-5">
-                <li>
-                  조문객 수와 일정에 따라 접객 인력 및 차량 구성이 조정될 수
-                  있으며, 이에 따른 비용이 사전 안내됩니다.
+              <li>
+                  장례 일정 연장, 접객 인력 추가 등은 사전 협의를 통해 비용이
+                  안내됩니다.
                 </li>
                 <li>
-                  빈소 사용료, 식사·다과, 화환 등은 장례식장 및 협력 업체
-                  규정에 따라 별도 정산됩니다.
+                  빈소 사용료, 식사·다과 비용 등은 장례식장 규정에 따라 별도
+                  정산됩니다.
                 </li>
                 <li>
-                  상품에 포함된 거리 및 시간 기준을 초과하는 운행에는 km당
-                  추가 요금이 발생할 수 있습니다.
+                  장의 차량은 상품에 포함된 거리 내에서 이용 가능하며, 초과 시
+                  km당 추가 요금이 발생할 수 있습니다.
                 </li>
                 <li>
-                  구성품 변경 시, 선택하신 품목의 차액만 청구되며 사용하지 않은
-                  품목은 100% 공제됩니다.
+                  4일장, 5일장 등 3일장보다 일정이 길어질 경우 장례지도사 서비스
+                  비용이 1일당 20만원씩 추가됩니다.
+                </li>
+                <li>
+                  접객도우미는 시간 초과 시 시간당 2만원이 추가되며, 반대로 시간
+                  당 공제는 불가능합니다.
+                </li>
+                <li>
+                  다움 이송차량은 관외 이용 시 추가 비용이 발생하며, 금액은 거리와
+                  상황에 따라 책정됩니다.
+                </li>
+                <li>
+                  상품 내 정해진 거리를 초과하여 장의차량을 이용할 경우, 차량
+                  서비스 비용이 1km당 2천원씩 추가됩니다.
+                </li>
+                <li>
+                  리무진은 편도 이용 기준이며, 초과 거리당 1km당 2천원이
+                  추가됩니다.
+                </li>
+                <li>
+                  장지 이외의 장소에 경유를 요청하시는 경우, 이동 거리 및 소요
+                  시간에 따라 별도의 추가 경비가 발생합니다.
+                </li>
+                <li>
+                  봉안함에 각인 서비스를 요청하실 경우 각인비가 최대 2만원
+                  발생할 수 있습니다.
+                </li>
+                <li>
+                  출동 후 서비스를 이용 중임에도 심각한 취소 위약금이 있을 경우
+                  기존 상조회사와의 계약 해지 여부를 반드시 확인해 주세요.
                 </li>
               </ul>
             </div>
@@ -565,7 +582,7 @@ export default function Premium430Page() {
         </section>
 
         {/* 9. 24시간 상담 / 후기 요약 영역 */}
-        <section className="bg-white">
+        {/* <section className="bg-white">
           <div className="mx-auto max-w-5xl px-4 py-10 md:py-12 space-y-10">
             <div className="rounded-2xl bg-[#E3F0FF] px-5 py-7 text-sm md:text-base">
               <p className="font-semibold text-slate-900">
@@ -601,7 +618,7 @@ export default function Premium430Page() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
       </main>
       <SiteFooter />
     </div>

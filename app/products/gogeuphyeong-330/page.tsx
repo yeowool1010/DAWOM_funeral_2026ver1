@@ -30,10 +30,10 @@ export default function Gogeuphyeong330Page() {
           <div className="mx-auto max-w-5xl px-4 py-12 md:py-16">
             <div className="mx-auto max-w-xl rounded-3xl bg-[#F3F5FF] text-center">
               <p className="text-sm font-medium text-slate-700">
-                예우를 한층 더 높인 다움 220
+                예우를 한층 더 높인 다움 350
               </p>
               <h1 className="mt-3 text-3xl font-bold text-slate-900 md:text-4xl">
-                다움 350 다움 220
+                다움 350
               </h1>
               <Image
                     src="/images/products/gogeuphyeong/gogeuphyeong-330_main.png"
@@ -75,13 +75,12 @@ export default function Gogeuphyeong330Page() {
           <div className="mx-auto max-w-5xl px-4 py-8">
             <div className="rounded-2xl bg-white px-5 py-6 shadow-sm md:px-7 md:py-7">
               <h2 className="text-base font-semibold text-slate-900 md:text-lg">
-                다움 350 다움 220은
+                다움 350은
               </h2>
               <p className="mt-2 text-sm leading-relaxed text-slate-700 md:text-base">
-                다움 220에 필요한 기본 구성에 더해 접객 인력과 장례 용품을
-                업그레이드한 상품으로,
+               대중적인 장례를 진행할 때 필요한 기본 구성으로 큰 격식보단 
                 <br className="hidden md:block" />
-                예우는 높이고 부담은 줄인 합리적인 다움 350 장례입니다.
+                찾아온 조문객분들과 마음을 나눌 수 있도록 시간을 드리는 상품입니다.
               </p>
             </div>
           </div>
@@ -103,7 +102,7 @@ export default function Gogeuphyeong330Page() {
             </div> */}
 
             <h2 className="text-xl font-bold text-slate-900 md:text-2xl">
-              다움 350 다움 220 특징
+              다움 350 특징
             </h2>
             <p className="mt-2 text-sm text-slate-600 md:text-base">
               더 많은 조문객과 정성스러운 예우를 위한 구성을 확인해 보세요.
@@ -139,14 +138,7 @@ export default function Gogeuphyeong330Page() {
               </div>
             </div>
 
-            <div className="mt-10 rounded-2xl bg-slate-50 px-5 py-6">
-              <h3 className="text-base font-semibold text-slate-900 md:text-lg">
-                24시 전화 상담 지원
-              </h3>
-              <p className="mt-2 text-sm text-slate-700 md:text-base">
-                언제든 임종 접수와 장례 준비에 대한 상담을 받으실 수 있어요.
-              </p>
-            </div>
+
           </div>
         </section>
 
@@ -163,8 +155,8 @@ export default function Gogeuphyeong330Page() {
                     1
                   </span>
                   <p>
-                    조문객 규모에 맞는 빈소와 장례식장을 추천하고 예약까지
-                    도와드립니다.
+                    앰뷸런스 배차, 빈소 확인 및 예약을 지원하고
+                    전문 장례지도사를 배정합니다.
                   </p>
                 </li>
                 <li className="flex gap-3">
@@ -172,8 +164,7 @@ export default function Gogeuphyeong330Page() {
                     2
                   </span>
                   <p>
-                    다움 350 수의와 관, 장식 구성에 대한 선택을 돕고 예산에 맞게
-                    조정해 드립니다.
+                  지역 및 개별상황에 가장 적합한 장례식장을 추천합니다.
                   </p>
                 </li>
                 <li className="flex gap-3">
@@ -181,8 +172,7 @@ export default function Gogeuphyeong330Page() {
                     3
                   </span>
                   <p>
-                    접객 인력 운영, 식사·음료 준비 등 장례 기간 동안 필요한
-                    운영을 안내해 드립니다.
+                  장례식장 정보는 위치와 빈소상태를 바탕으로 비용과 조건을 상세히 안내해 드립니다
                   </p>
                 </li>
                 <li className="flex gap-3">
@@ -200,29 +190,6 @@ export default function Gogeuphyeong330Page() {
           </div>
         </section>
 
-        {/* 5. 다움의 변하지 않는 약속 */}
-        <section className="bg-white">
-          <div className="mx-auto max-w-5xl px-4 py-10 md:py-12">
-            <h2 className="text-xl font-bold text-slate-900 md:text-2xl">
-              다움의 변하지 않는 약속
-            </h2>
-            <p className="mt-2 text-sm text-slate-600 md:text-base">
-              장례를 장례답게 만들기 위한 최소한의 원칙이에요.
-            </p>
-
-            <div className="mt-8 space-y-4">
-              <div className="rounded-2xl bg-[#E4F0FF] px-5 py-4 text-sm text-slate-900 md:text-base">
-                업계 최초 품목별 정찰제로 투명한 비용을 보장해요.
-              </div>
-              <div className="rounded-2xl bg-[#FFF0D9] px-5 py-4 text-sm text-slate-900 md:text-base">
-                사용하지 않은 품목의 비용은 100% 공제해드려요.
-              </div>
-              <div className="rounded-2xl bg-[#FFE3E0] px-5 py-4 text-sm text-slate-900 md:text-base">
-                노잣돈 등 부당한 비용을 절대로 유도하지 않아요.
-              </div>
-            </div>
-          </div>
-        </section>
 
         {/* 6. 다움 전체 서비스 비교 - 다움 350 다움 220 강조 */}
         <section className="bg-slate-50">
@@ -263,9 +230,9 @@ export default function Gogeuphyeong330Page() {
                   <div className="px-3 py-3">실속형</div>
                   <div className="px-3 py-3">실속형</div>
                   <div className="bg-orange-50 px-3 py-3 font-semibold text-orange-600">
-                    다움 350
+                    고급형
                   </div>
-                  <div className="px-3 py-3">다움 350</div>
+                  <div className="px-3 py-3">고급형</div>
                 </div>
                 <div className="grid grid-cols-5">
                   <div className="bg-slate-50 px-3 py-3 text-left text-xs font-medium text-slate-600 md:text-sm">
@@ -294,14 +261,14 @@ export default function Gogeuphyeong330Page() {
           </div>
         </section>
 
-        {/* 7. 다움 350 다움 220 구성품 상세 (요약형) */}
+        {/* 7. 다움 350 구성품 상세 (요약형) */}
         <section className="bg-white">
           <div className="mx-auto max-w-5xl px-4 py-10 md:py-12">
             <h2 className="text-xl font-bold text-slate-900 md:text-2xl">
-              다움 350 다움 220 구성품 상세
+              다움350 구성품 상세
             </h2>
             <p className="mt-2 text-sm text-slate-600 md:text-base">
-              업그레이드된 용품과 인력 구성을 확인하세요.
+              장례 용품, 인력, 차량 구성을 한눈에 확인하세요.
             </p>
 
             {/* 장례 용품 */}
@@ -312,66 +279,66 @@ export default function Gogeuphyeong330Page() {
               </div> */}
               <div className="mb-4 flex items-center gap-2">
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-200/80 text-slate-600">
-                  <Package className="h-4 w-4 text-orange-500" />
+                  <Package className="h-4 w-4 text-slate-500" />
                 </div>
                 <h3 className="text-lg font-bold text-slate-900">장례 용품</h3>
               </div>
               <div className="grid gap-4 grid-cols-2 sm:grid-cols-3 lg:grid-cols-5">
                 {[
                   {
-                    name: "오동나무 1단관",
-                    desc: "화장용",
-                    price: "200,000원",
+                    name: "오동나무 관",
+                    desc: "",
+                    price: "",
                     discount: null,
-                    img: "/images/products/오동관.png",
+                    img: "/images/products/오동관1.png",
                   },
                   {
-                    name: "화장용 수의",
-                    desc: "(면 50%, 폴리 50%)",
-                    price: "140,000원",
-                    discount: "250,000원",
-                    label: "다움 회원가",
-                    img: "/images/products/화장용 수의.jpg",
+                    name: "고급 가진 수의",
+                    desc: "저마 100%",
+                    price: "",
+                    discount: "",
+                    img: "/images/수의.png",
                   },
                   {
                     name: "입관 수시 용품",
                     desc: "",
-                    price: "150,000원",
+                    price: "",
                     discount: null,
-                    img: "/images/products/입관 수시 용품.png",
+                    img: "/images/products/입관 수시 용품1.png",
                   },
                   {
                     name: "봉안함",
-                    desc: "일반 봉안함",
-                    price: "무료 제공",
+                    desc: "일반 봉안함/목함",
+                    price: "",
                     free: true,
-                    img: "/images/products/일반유골함.jpg",
+                    img: "/images/유골함2.png",
                   },
                   {
-                    name: "관 장식용 생화",
-                    desc: "계절 생화, 안개꽃",
-                    price: "100,000원",
+                    name: "프리미엄 꽃관 장식",
+                    desc: "계절 생화",
+                    price: "",
                     discount: null,
-                    img: "/images/products/관 장식용 생화.jpg",
+                    img: "/images/관장식꽃.jpg",
                   },
                   {
                     name: "남자상복/여자상복",
                     desc: "남자 5벌, 여자 8벌",
-                    price: "무료 제공",
-                    free: true,
-                    img: "/images/products/상복 이미지.png",
+                    price: "",
+                    discount: null,
+                    img: "/images/상복-이미지1.png",
+                    
                   },
                   {
                     name: "헌화용 국화꽃",
                     desc: "30송이",
-                    price: "무료 제공",
+                    price: "",
                     free: true,
                     img: "/images/products/헌화.jpg",
                   },
                   {
                     name: "영정사진",
-                    desc: "11R 사이즈",
-                    price: "사전가입 고객 한정 무료 제공",
+                    desc: "",
+                    price: "사전 가입 고객 한정 11R 사이즈 무료 제공",
                     free: true,
                     img: "/images/products/영정사진.jpg",
                   },
@@ -433,14 +400,20 @@ export default function Gogeuphyeong330Page() {
                   {
                     name: "장례지도사",
                     desc: "",
-                    price: "300,000원",
-                    img: "/images/products/장례지도사.png",
+                    price: "",
+                    img: "/images/장례지도사1.png",
                   },
                   {
-                    name: "염습상례사",
+                    name: "염습지도사",
                     desc: "",
-                    price: "150,000원",
-                    img: "/images/products/염습상례사.png",
+                    price: "",
+                    img: "/images/염습지도사1.png",
+                  },
+                  {
+                    name: "접객도우미",
+                    desc: "6인 (8시간)",
+                    price: "",
+                    img: "/images/접객도우미.png",
                   },
                 ].map((item) => (
                   <div
@@ -481,7 +454,7 @@ export default function Gogeuphyeong330Page() {
                 <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
                   <div className="relative aspect-[4/3] bg-slate-900">
                     <Image
-                      src="/images/products/고인이송차량.png"
+                      src="/images/products/고인이송차량1.png"
                       alt="고인이송차량"
                       fill
                       className="object-cover"
@@ -491,15 +464,15 @@ export default function Gogeuphyeong330Page() {
                   <div className="p-4">
                     <h4 className="font-semibold text-slate-900">고인이송차량</h4>
                     <p className="mt-0.5 text-sm text-slate-600">관내 이송</p>
-                    <p className="mt-2 text-lg font-bold text-slate-900">
+                    {/* <p className="mt-2 text-lg font-bold text-slate-900">
                       100,000원
-                    </p>
+                    </p> */}
                   </div>
                 </div>
                 <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
                   <div className="relative aspect-[4/3] bg-slate-900">
                     <Image
-                      src="/images/products/리무진.png"
+                      src="/images/products/리무진3.png"
                       alt="리무진/장의버스"
                       fill
                       className="object-cover"
@@ -514,16 +487,17 @@ export default function Gogeuphyeong330Page() {
                       리무진 200km 화장장 편도
                     </p>
                     <p className="text-xs text-slate-600">
-                      장의버스: 200km 왕복
+                      장의버스 200km 왕복
                     </p>
-                    <p className="mt-2 text-lg font-bold text-slate-900">
+                    {/* <p className="mt-2 text-lg font-bold text-slate-900">
                       450,000원
-                    </p>
+                    </p> */}
                   </div>
                 </div>
               </div>
             </div>
 
+ 
           </div>
         </section>
 
@@ -531,11 +505,11 @@ export default function Gogeuphyeong330Page() {
         <section className="bg-slate-50">
           <div className="mx-auto max-w-5xl px-4 py-10 md:py-12">
             <h2 className="text-xl font-bold text-slate-900 md:text-2xl">
-              다움 350 다움 220 안내사항
+              다움 350 안내사항
             </h2>
             <div className="mt-4 rounded-2xl bg-white px-5 py-6 text-sm leading-relaxed text-slate-700 shadow-sm md:px-7 md:text-base">
               <ul className="list-disc space-y-2 pl-5">
-                <li>
+              <li>
                   장례 일정 연장, 접객 인력 추가 등은 사전 협의를 통해 비용이
                   안내됩니다.
                 </li>
@@ -548,8 +522,36 @@ export default function Gogeuphyeong330Page() {
                   km당 추가 요금이 발생할 수 있습니다.
                 </li>
                 <li>
-                  구성품 변경 시, 선택하신 품목의 차액만 청구되며 사용하지 않은
-                  품목은 100% 공제됩니다.
+                  4일장, 5일장 등 3일장보다 일정이 길어질 경우 장례지도사 서비스
+                  비용이 1일당 20만원씩 추가됩니다.
+                </li>
+                <li>
+                  접객도우미는 시간 초과 시 시간당 2만원이 추가되며, 반대로 시간
+                  당 공제는 불가능합니다.
+                </li>
+                <li>
+                  다움 이송차량은 관외 이용 시 추가 비용이 발생하며, 금액은 거리와
+                  상황에 따라 책정됩니다.
+                </li>
+                <li>
+                  상품 내 정해진 거리를 초과하여 장의차량을 이용할 경우, 차량
+                  서비스 비용이 1km당 2천원씩 추가됩니다.
+                </li>
+                <li>
+                  리무진은 편도 이용 기준이며, 초과 거리당 1km당 2천원이
+                  추가됩니다.
+                </li>
+                <li>
+                  장지 이외의 장소에 경유를 요청하시는 경우, 이동 거리 및 소요
+                  시간에 따라 별도의 추가 경비가 발생합니다.
+                </li>
+                <li>
+                  봉안함에 각인 서비스를 요청하실 경우 각인비가 최대 2만원
+                  발생할 수 있습니다.
+                </li>
+                <li>
+                  출동 후 서비스를 이용 중임에도 심각한 취소 위약금이 있을 경우
+                  기존 상조회사와의 계약 해지 여부를 반드시 확인해 주세요.
                 </li>
               </ul>
             </div>
@@ -557,7 +559,7 @@ export default function Gogeuphyeong330Page() {
         </section>
 
         {/* 9. 24시간 상담 / 후기 요약 영역 */}
-        <section className="bg-white">
+        {/* <section className="bg-white">
           <div className="mx-auto max-w-5xl px-4 py-10 md:py-12 space-y-10">
             <div className="rounded-2xl bg-[#E3F0FF] px-5 py-7 text-sm md:text-base">
               <p className="font-semibold text-slate-900">
@@ -593,7 +595,7 @@ export default function Gogeuphyeong330Page() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
       </main>
       <SiteFooter />
     </div>

@@ -415,10 +415,10 @@ export default function Mubinsosang130Page() {
                     img: "/images/장례지도사1.png",
                   },
                   {
-                    name: "염습상례사",
+                    name: "염습지도사",
                     desc: "",
                     price: "",
-                    img: "/images/염습상례사1.png",
+                    img: "/images/염습지도사1.png",
                   },
                 ].map((item) => (
                   <div
@@ -489,10 +489,10 @@ export default function Mubinsosang130Page() {
                       리무진/장의버스 택1
                     </h4>
                     <p className="mt-0.5 text-xs leading-snug text-slate-600">
-                      리무진 200km 화장장 편도
+                      리무진 150km 화장장 편도
                     </p>
                     <p className="text-xs text-slate-600">
-                      장의버스: 200km 왕복
+                      장의버스: 150km 왕복
                     </p>
                     {/* <p className="mt-2 text-lg font-bold text-slate-900">
                       450,000원
@@ -523,11 +523,11 @@ export default function Mubinsosang130Page() {
                   당 공제는 불가능합니다.
                 </li>
                 <li>
-                  다움이송차량은 관외 이용 시 추가 비용이 발생하며, 금액은 거리와
+                  다움 이송차량은 관외 이용 시 추가 비용이 발생하며, 금액은 거리와
                   상황에 따라 책정됩니다.
                 </li>
                 <li>
-                  정해진 거리(200km)를 초과하여 장의차량을 이용할 경우, 차량
+                  상품 내 정해진 거리를 초과하여 장의차량을 이용할 경우, 차량
                   서비스 비용이 1km당 2천원씩 추가됩니다.
                 </li>
                 <li>
@@ -545,10 +545,6 @@ export default function Mubinsosang130Page() {
                 <li>
                   출동 후 서비스를 이용 중임에도 심각한 취소 위약금이 있을 경우
                   기존 상조회사와의 계약 해지 여부를 반드시 확인해 주세요.
-                </li>
-                <li>
-                  장례 진행 중 사망 보험, 저축, 투자 목적의 권유 등 부당 권유를
-                  받으셨다면 즉시 상담원에게 알려주세요.
                 </li>
               </ul>
             </div>
