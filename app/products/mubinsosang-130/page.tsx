@@ -165,8 +165,8 @@ export default function Mubinsosang130Page() {
                     1
                   </span>
                   <p>
-                    앰뷸런스 배차, 빈소 확인 및 예약을 지원하고 전담 상담원과
-                    장례지도사를 배정합니다.
+                    앰뷸런스 배차, 빈소 확인 및 예약을 지원하고
+                    전문 장례지도사를 배정합니다.
                   </p>
                 </li>
                 <li className="flex gap-3">
@@ -174,8 +174,7 @@ export default function Mubinsosang130Page() {
                     2
                   </span>
                   <p>
-                    지역, 상황에 따른 혜택, 예산을 종합하여 장례 시설을
-                    추천합니다.
+                  지역 및 개별상황에 가장 적합한 장례식장을 추천합니다.
                   </p>
                 </li>
                 <li className="flex gap-3">
@@ -183,8 +182,7 @@ export default function Mubinsosang130Page() {
                     3
                   </span>
                   <p>
-                    장례시장 정보를 실제 비용과 후기를 바탕으로 상세히 안내해
-                    드립니다.
+                  장례식장 정보는 위치와 빈소상태를 바탕으로 비용과 조건을 상세히 안내해 드립니다
                   </p>
                 </li>
                 <li className="flex gap-3">
@@ -263,7 +261,7 @@ export default function Mubinsosang130Page() {
                     장례 용품
                   </div>
                   <div className="bg-orange-50 px-3 py-3 font-semibold text-orange-600">
-                    기본형
+                    실속형
                   </div>
                   <div className="px-3 py-3">실속형</div>
                   <div className="px-3 py-3">고급형</div>
@@ -314,7 +312,7 @@ export default function Mubinsosang130Page() {
               </div> */}
               <div className="mb-4 flex items-center gap-2">
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-200/80 text-slate-600">
-                  <Package className="h-4 w-4 text-orange-500" />
+                  <Package className="h-4 w-4 text-slate-500" />
                 </div>
                 <h3 className="text-lg font-bold text-slate-900">장례 용품</h3>
               </div>
@@ -322,7 +320,7 @@ export default function Mubinsosang130Page() {
                 {[
                   {
                     name: "오동나무관",
-                    desc: "화장용",
+                    desc: "",
                     price: "",
                     discount: null,
                     img: "/images/products/오동관.png",
@@ -342,18 +340,18 @@ export default function Mubinsosang130Page() {
                     img: "/images/products/입관 수시 용품.png",
                   },
                   {
-                    name: "유골함",
-                    desc: "오동나무 목함",
+                    name: "봉안함",
+                    desc: "백자단지",
                     price: "",
                     free: true,
-                    img: "/images/products/유골함.png",
+                    img: "/images/유골함2.png",
                   },
                   {
                     name: "관 장식용 생화",
                     desc: "계절 생화, 안개꽃",
                     price: "",
                     discount: null,
-                    img: "/images/products/관 장식용 생화.jpg",
+                    img: "/images/관장식꽃.jpg",
                   },
                 ].map((item) => (
                   <div
@@ -414,13 +412,13 @@ export default function Mubinsosang130Page() {
                     name: "장례지도사",
                     desc: "1인 3일",
                     price: "",
-                    img: "/images/products/장례지도사.png",
+                    img: "/images/장례지도사1.png",
                   },
                   {
                     name: "염습상례사",
                     desc: "1인 1일",
                     price: "",
-                    img: "/images/products/염습상례사.png",
+                    img: "/images/염습상례사1.png",
                   },
                 ].map((item) => (
                   <div
@@ -461,7 +459,7 @@ export default function Mubinsosang130Page() {
                 <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
                   <div className="relative aspect-[4/3] bg-slate-900">
                     <Image
-                      src="/images/products/고인이송차량.png"
+                      src="/images/products/고인이송차량1.png"
                       alt="고인이송차량"
                       fill
                       className="object-cover"
@@ -479,7 +477,7 @@ export default function Mubinsosang130Page() {
                 <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
                   <div className="relative aspect-[4/3] bg-slate-900">
                     <Image
-                      src="/images/products/리무진.png"
+                      src="/images/products/리무진3.png"
                       alt="리무진/장의버스"
                       fill
                       className="object-cover"
@@ -541,7 +539,7 @@ export default function Mubinsosang130Page() {
                   시간에 따라 별도의 추가 경비가 발생합니다.
                 </li>
                 <li>
-                  유골함에 각인 서비스를 요청하실 경우 각인비가 최대 2만원
+                  봉안함에 각인 서비스를 요청하실 경우 각인비가 최대 2만원
                   발생할 수 있습니다.
                 </li>
                 <li>

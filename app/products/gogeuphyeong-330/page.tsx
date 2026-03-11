@@ -260,7 +260,7 @@ export default function Gogeuphyeong330Page() {
                   <div className="bg-slate-50 px-3 py-3 text-left text-xs font-medium text-slate-600 md:text-sm">
                     장례 용품
                   </div>
-                  <div className="px-3 py-3">기본형</div>
+                  <div className="px-3 py-3">실속형</div>
                   <div className="px-3 py-3">실속형</div>
                   <div className="bg-orange-50 px-3 py-3 font-semibold text-orange-600">
                     고급형
@@ -341,8 +341,8 @@ export default function Gogeuphyeong330Page() {
                     img: "/images/products/입관 수시 용품.png",
                   },
                   {
-                    name: "유골함",
-                    desc: "일반 유골함",
+                    name: "봉안함",
+                    desc: "일반 봉안함",
                     price: "무료 제공",
                     free: true,
                     img: "/images/products/일반유골함.jpg",

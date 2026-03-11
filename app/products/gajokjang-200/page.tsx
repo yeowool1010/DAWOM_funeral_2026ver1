@@ -259,7 +259,7 @@ export default function Gajokjang200Page() {
                   <div className="bg-slate-50 px-3 py-3 text-left text-xs font-medium text-slate-600 md:text-sm">
                     장례 용품
                   </div>
-                  <div className="px-3 py-3">기본형</div>
+                  <div className="px-3 py-3">실속형</div>
                   <div className="bg-orange-50 px-3 py-3 font-semibold text-orange-600">
                     실속형
                   </div>
@@ -340,8 +340,8 @@ export default function Gajokjang200Page() {
                       img: "/images/products/입관 수시 용품.png",
                     },
                     {
-                      name: "유골함",
-                      desc: "일반유골함",
+                      name: "봉안함",
+                      desc: "일반봉안함",
                       price: "무료 제공",
                       free: true,
                       img: "/images/products/일반유골함.jpg",
@@ -446,6 +446,12 @@ export default function Gajokjang200Page() {
                   },
                   {
                     name: "염습상례사",
+                    desc: "1인 1일",
+                    price: "150,000원",
+                    img: "/images/products/염습상례사.png",
+                  },
+                  {
+                    name: "접객도우미",
                     desc: "1인 1일",
                     price: "150,000원",
                     img: "/images/products/염습상례사.png",
@@ -560,7 +566,7 @@ export default function Gajokjang200Page() {
                   따라 별도 비용이 발생할 수 있습니다.
                 </li>
                 <li>
-                  관·수의·유골함 등 품목 변경 시, 선택하신 품목의 차액만
+                  관·수의·봉안함 등 품목 변경 시, 선택하신 품목의 차액만
                   청구됩니다.
                 </li>
               </ul>
