@@ -13,10 +13,10 @@ export default function Home() {
       <SiteHeader />
       <main>
         <HeroSection />
+        <PromiseSection />
        {/*   <PromoCards />*/}
        {/* <FirstTimeSection />*/}
         <PackageCards />
-        <PromiseSection />
         <CtaSection />
         <SiteFooter />
       </main>

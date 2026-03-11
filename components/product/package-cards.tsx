@@ -94,7 +94,7 @@ export function PackageCards() {
                   </div>
                   <div className="px-3 py-3">130만원</div>
                   <div className="px-3 py-3">200만원</div>
-                  <div className="px-3 py-3">330만원</div>
+                  <div className="px-3 py-3">350만원</div>
                   <div className="px-3 py-3">430만원</div>
                 </div>
               </div>

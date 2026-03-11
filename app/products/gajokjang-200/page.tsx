@@ -285,7 +285,7 @@ export default function Gajokjang200Page() {
                   <div className="bg-orange-50 px-3 py-3 font-semibold text-orange-600">
                     200만원
                   </div>
-                  <div className="px-3 py-3">330만원</div>
+                  <div className="px-3 py-3">350만원</div>
                   <div className="px-3 py-3">430만원</div>
                 </div>
               </div>

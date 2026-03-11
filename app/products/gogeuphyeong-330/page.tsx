@@ -285,7 +285,7 @@ export default function Gogeuphyeong330Page() {
                   <div className="px-3 py-3">130만원</div>
                   <div className="px-3 py-3">200만원</div>
                   <div className="bg-orange-50 px-3 py-3 font-semibold text-orange-600">
-                    330만원
+                    350만원
                   </div>
                   <div className="px-3 py-3">430만원</div>
                 </div>
