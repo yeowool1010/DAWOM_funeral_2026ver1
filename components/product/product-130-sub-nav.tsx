@@ -6,9 +6,9 @@ import { usePathname } from "next/navigation";
 const items = [
   { label: "전체상품", href: "/products" },
   { label: "무빈소", href: "/products/mubinsosang-130" },
-  { label: "가족장", href: "/products/gajokjang-200" },
-  { label: "고급형", href: "/products/gogeuphyeong-330" },
-  { label: "프리미엄", href: "/products/premium-430" },
+  { label: "다움 220", href: "/products/gajokjang-200" },
+  { label: "다움 350", href: "/products/gogeuphyeong-330" },
+  { label: "다움 450", href: "/products/premium-430" },
   // { label: "다움프라임", href: "/prime" },
   // { label: "자주묻는질문", href: "/products#faq" },
   // { label: "회사소개", href: "/products#about" },

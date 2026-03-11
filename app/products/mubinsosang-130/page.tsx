@@ -240,9 +240,9 @@ export default function Mubinsosang130Page() {
                   구분
                 </div>
                 <div className="px-3 py-3 text-emerald-700">무빈소장</div>
-                <div className="px-3 py-3">가족장</div>
-                <div className="px-3 py-3">고급형</div>
-                <div className="px-3 py-3">프리미엄</div>
+                <div className="px-3 py-3">다움 220</div>
+                <div className="px-3 py-3">다움 350</div>
+                <div className="px-3 py-3">다움 450</div>
               </div>
               <div className="divide-y text-center">
                 <div className="grid grid-cols-5">
@@ -264,8 +264,8 @@ export default function Mubinsosang130Page() {
                     실속형
                   </div>
                   <div className="px-3 py-3">실속형</div>
-                  <div className="px-3 py-3">고급형</div>
-                  <div className="px-3 py-3">고급형</div>
+                  <div className="px-3 py-3">다움 350</div>
+                  <div className="px-3 py-3">다움 350</div>
                 </div>
                 <div className="grid grid-cols-5">
                   <div className="bg-slate-50 px-3 py-3 text-left text-xs font-medium text-slate-600 md:text-sm">
@@ -280,13 +280,13 @@ export default function Mubinsosang130Page() {
                 </div>
                 <div className="grid grid-cols-5">
                   <div className="bg-slate-50 px-3 py-3 text-left text-xs font-medium text-slate-600 md:text-sm">
-                    상품가
+                    회원가
                   </div>
                   <div className="bg-orange-50 px-3 py-3 font-semibold text-orange-600">
                     130만원
                   </div>
                   <div className="px-3 py-3">200만원</div>
-                  <div className="px-3 py-3">350만원</div>
+                  <div className="px-3 py-3">330만원</div>
                   <div className="px-3 py-3">430만원</div>
                 </div>
               </div>
@@ -319,36 +319,36 @@ export default function Mubinsosang130Page() {
               <div className="grid gap-4 grid-cols-2 sm:grid-cols-3 lg:grid-cols-5">
                 {[
                   {
-                    name: "오동나무관",
+                    name: "오동나무 관",
                     desc: "",
                     price: "",
                     discount: null,
-                    img: "/images/products/오동관.png",
+                    img: "/images/products/오동관1.png",
                   },
                   {
-                    name: "화장용 수의",
-                    desc: "(면 50%, 폴리 50%)",
+                    name: "가진 수의",
+                    desc: "",
                     price: "",
                     discount: "",
-                    img: "/images/products/화장용 수의.jpg",
+                    img: "/images/수의.png",
                   },
                   {
                     name: "입관 수시 용품",
-                    desc: "15종(염포, 관보 등)",
+                    desc: "",
                     price: "",
                     discount: null,
-                    img: "/images/products/입관 수시 용품.png",
+                    img: "/images/products/입관 수시 용품1.png",
                   },
                   {
                     name: "봉안함",
-                    desc: "백자단지",
+                    desc: "일반 봉안함/목함",
                     price: "",
                     free: true,
                     img: "/images/유골함2.png",
                   },
                   {
-                    name: "관 장식용 생화",
-                    desc: "계절 생화, 안개꽃",
+                    name: "꽃관 장식",
+                    desc: "계절 생화",
                     price: "",
                     discount: null,
                     img: "/images/관장식꽃.jpg",
@@ -410,13 +410,13 @@ export default function Mubinsosang130Page() {
                 {[
                   {
                     name: "장례지도사",
-                    desc: "1인 3일",
+                    desc: "",
                     price: "",
                     img: "/images/장례지도사1.png",
                   },
                   {
                     name: "염습상례사",
-                    desc: "1인 1일",
+                    desc: "",
                     price: "",
                     img: "/images/염습상례사1.png",
                   },
@@ -488,10 +488,10 @@ export default function Mubinsosang130Page() {
                     <h4 className="font-semibold text-slate-900">
                       리무진/장의버스 택1
                     </h4>
-                    <p className="mt-0.5 text-sm leading-snug text-slate-600">
-                      리무진: 200km 화장장 편도
+                    <p className="mt-0.5 text-xs leading-snug text-slate-600">
+                      리무진 200km 화장장 편도
                     </p>
-                    <p className="text-sm text-slate-600">
+                    <p className="text-xs text-slate-600">
                       장의버스: 200km 왕복
                     </p>
                     {/* <p className="mt-2 text-lg font-bold text-slate-900">
@@ -556,25 +556,12 @@ export default function Mubinsosang130Page() {
         </section>
 
         {/* 9. 24시간 상담 / 후기 요약 영역 (원페이지 하단) */}
-        <section className="bg-white">
+        {/* <section className="bg-white">
           <div className="mx-auto max-w-5xl px-4 py-10 md:py-12 space-y-10">
-            <div className="rounded-2xl bg-[#E3F0FF] px-5 py-7 text-sm md:text-base">
-              <p className="font-semibold text-slate-900">
-                전국 어디서든 24시간 접수와 상담 편하게 연락주세요.
-              </p>
-              <div className="mt-4 flex flex-wrap gap-3">
-                <button className="rounded-full bg-slate-900 px-5 py-2 text-sm font-semibold text-white hover:bg-slate-800">
-                  채팅문의
-                </button>
-                <button className="rounded-full border border-slate-900 px-5 py-2 text-sm font-semibold text-slate-900 hover:bg-slate-900 hover:text-white">
-                  전화문의
-                </button>
-              </div>
-            </div>
 
             <div>
               <h2 className="text-xl font-bold text-slate-900 md:text-2xl">
-                다움 상조 이용 후기
+                다움 150상품 이용 후기
               </h2>
               <p className="mt-2 text-sm text-slate-600 md:text-base">
                 실제 유가족분들의 솔직한 후기를 확인해 보세요.
@@ -591,7 +578,8 @@ export default function Mubinsosang130Page() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
+
       </main>
       <SiteFooter />
     </div>

@@ -16,7 +16,7 @@ export function ReviewPackageCta() {
               <p className="mt-3 text-stone-600">
                 월 납입금 부담이 적은 100원 상조부터
                 <br />
-                한번 납입으로 큰 혜택을 보장받을 수 있는 프리미엄 멤버십까지
+                한번 납입으로 큰 혜택을 보장받을 수 있는 다움 450 멤버십까지
               </p>
             </div>
             <div className="flex flex-wrap gap-3">

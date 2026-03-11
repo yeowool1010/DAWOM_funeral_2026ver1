@@ -14,9 +14,9 @@ import {
 } from "lucide-react";
 
 export const metadata = {
-  title: "가족장 상조 패키지 | 다움",
+  title: "다움 220 상조 패키지 | 다움",
   description:
-    "가족과 가까운 지인 중심으로 치르는 가족장 상조 패키지의 서비스 구성과 안내사항을 한 페이지에서 확인해 보세요.",
+    "가족과 가까운 지인 중심으로 치르는 다움 220 상조 패키지의 서비스 구성과 안내사항을 한 페이지에서 확인해 보세요.",
 };
 
 export default function Gajokjang200Page() {
@@ -33,11 +33,11 @@ export default function Gajokjang200Page() {
                 가족과 함께 준비하는 장례
               </p>
               <h1 className="mt-3 text-3xl font-bold text-slate-900 md:text-4xl">
-                가족장
+                다움 220
               </h1>
               <Image
                     src="/images/products/gajokjang/gajokjang-200_main.png"
-                    alt="가족장"
+                    alt="다움 220"
                     width={600}
                     height={400}
                     className="mt-8 rounded-3xl object-cover w-full max-w-xl mx-auto"
@@ -69,18 +69,18 @@ export default function Gajokjang200Page() {
           </div>
         </section>
 
-        {/* 2. 가족장 한줄 소개 */}
+        {/* 2. 다움 220 한줄 소개 */}
         <section className="bg-slate-50">
           <div className="mx-auto max-w-5xl px-4 py-8">
             <div className="rounded-2xl bg-white px-5 py-6 shadow-sm md:px-7 md:py-7">
               <h2 className="text-base font-semibold text-slate-900 md:text-lg">
-                가족장은
+                다움 220은
               </h2>
               <p className="mt-2 text-sm leading-relaxed text-slate-700 md:text-base">
-                가까운 가족과 친지 중심으로 조용하고 차분하게 치르는 장례
+                가족과 친지 중심으로 조용하고 차분하게 치르는 장례
                 방식으로,
                 <br className="hidden md:block" />
-                복잡한 절차는 줄이고 필요한 서비스만 담은 합리적인 장례입니다.
+                가장 작은 빈소를 빌리는 등 간소하게 치르는 장례입니다.
               </p>
             </div>
           </div>
@@ -102,7 +102,7 @@ export default function Gajokjang200Page() {
             </div> */}
 
             <h2 className="text-xl font-bold text-slate-900 md:text-2xl">
-              가족장 특징
+              다움220 특징
             </h2>
             <p className="mt-2 text-sm text-slate-600 md:text-base">
               소규모 조문에 맞춘 서비스 구성과 인력을 확인해 보세요.
@@ -138,14 +138,6 @@ export default function Gajokjang200Page() {
               </div>
             </div>
 
-            <div className="mt-10 rounded-2xl bg-slate-50 px-5 py-6">
-              <h3 className="text-base font-semibold text-slate-900 md:text-lg">
-                24시 전화 상담 지원
-              </h3>
-              <p className="mt-2 text-sm text-slate-700 md:text-base">
-                언제든 임종 접수와 장례 준비에 대한 상담을 받으실 수 있어요.
-              </p>
-            </div>
           </div>
         </section>
 
@@ -162,8 +154,8 @@ export default function Gajokjang200Page() {
                     1
                   </span>
                   <p>
-                    빈소 선택과 예약, 장례 일정 조율을 도와드리고 전담 상담원과
-                    장례지도사를 배정합니다.
+                    앰뷸런스 배차, 빈소 확인 및 예약을 지원하고
+                    전문 장례지도사를 배정합니다.
                   </p>
                 </li>
                 <li className="flex gap-3">
@@ -171,8 +163,7 @@ export default function Gajokjang200Page() {
                     2
                   </span>
                   <p>
-                    가족 구성과 예산, 종교에 맞춰 장례 형식을 제안하고 필요한
-                    절차를 안내합니다.
+                  지역 및 개별상황에 가장 적합한 장례식장을 추천합니다.
                   </p>
                 </li>
                 <li className="flex gap-3">
@@ -180,8 +171,7 @@ export default function Gajokjang200Page() {
                     3
                   </span>
                   <p>
-                    식장과 장지 비용, 식사 및 부대비용까지 예산 내에서 설계할
-                    수 있도록 상담해 드립니다.
+                  장례식장 정보는 위치와 빈소상태를 바탕으로 비용과 조건을 상세히 안내해 드립니다
                   </p>
                 </li>
                 <li className="flex gap-3">
@@ -200,7 +190,7 @@ export default function Gajokjang200Page() {
         </section>
 
         {/* 5. 다움의 변하지 않는 약속 */}
-        <section className="bg-white">
+        {/* <section className="bg-white">
           <div className="mx-auto max-w-5xl px-4 py-10 md:py-12">
             <h2 className="text-xl font-bold text-slate-900 md:text-2xl">
               다움의 변하지 않는 약속
@@ -221,16 +211,16 @@ export default function Gajokjang200Page() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
-        {/* 6. 다움 전체 서비스 비교 - 가족장 강조 */}
+        {/* 6. 다움 전체 서비스 비교 - 다움 220 강조 */}
         <section className="bg-slate-50">
           <div className="mx-auto max-w-5xl px-4 py-10 md:py-12">
             <h2 className="text-xl font-bold text-slate-900 md:text-2xl">
               다움 전체 서비스 비교
             </h2>
             <p className="mt-2 text-sm text-slate-600 md:text-base">
-              무빈소장, 가족장, 고급형, 프리미엄의 차이를 한눈에 비교해 보세요.
+              무빈소장, 다움 220, 다움 350, 다움 450의 차이를 한눈에 비교해 보세요.
             </p>
 
             <div className="mt-6 overflow-hidden rounded-2xl border bg-white text-sm md:text-base">
@@ -239,9 +229,9 @@ export default function Gajokjang200Page() {
                   구분
                 </div>
                 <div className="px-3 py-3">무빈소장</div>
-                <div className="px-3 py-3 text-emerald-700">가족장</div>
-                <div className="px-3 py-3">고급형</div>
-                <div className="px-3 py-3">프리미엄</div>
+                <div className="px-3 py-3 text-emerald-700">다움 220</div>
+                <div className="px-3 py-3">다움 350</div>
+                <div className="px-3 py-3">다움 450</div>
               </div>
               <div className="divide-y text-center">
                 <div className="grid grid-cols-5">
@@ -279,13 +269,13 @@ export default function Gajokjang200Page() {
                 </div>
                 <div className="grid grid-cols-5">
                   <div className="bg-slate-50 px-3 py-3 text-left text-xs font-medium text-slate-600 md:text-sm">
-                    상품가
+                    회원가
                   </div>
                   <div className="px-3 py-3">130만원</div>
                   <div className="bg-orange-50 px-3 py-3 font-semibold text-orange-600">
                     200만원
                   </div>
-                  <div className="px-3 py-3">350만원</div>
+                  <div className="px-3 py-3">330만원</div>
                   <div className="px-3 py-3">430만원</div>
                 </div>
               </div>
@@ -293,11 +283,11 @@ export default function Gajokjang200Page() {
           </div>
         </section>
 
-        {/* 7. 가족장 구성품 상세 (요약형) */}
+        {/* 7. 다움 220 구성품 상세 (요약형) */}
         <section className="bg-white">
           <div className="mx-auto max-w-5xl px-4 py-10 md:py-12">
             <h2 className="text-xl font-bold text-slate-900 md:text-2xl">
-              가족장 구성품 상세
+              다움220 구성품 상세
             </h2>
             <p className="mt-2 text-sm text-slate-600 md:text-base">
               장례 용품, 인력, 차량 구성을 한눈에 확인하세요.
@@ -311,79 +301,48 @@ export default function Gajokjang200Page() {
               </div> */}
               <div className="mb-4 flex items-center gap-2">
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-200/80 text-slate-600">
-                  <Package className="h-4 w-4 text-orange-500" />
+                  <Package className="h-4 w-4 text-slate-500" />
                 </div>
                 <h3 className="text-lg font-bold text-slate-900">장례 용품</h3>
               </div>
               <div className="grid gap-4 grid-cols-2 sm:grid-cols-3 lg:grid-cols-5">
-                {(
-                  [
-                    {
-                      name: "0.6 오동관",
-                      desc: "화장용",
-                      price: "200,000원",
-                      discount: null,
-                      img: "/images/products/오동관.png",
-                    },
-                    {
-                      name: "화장용 수의",
-                      desc: "(면 50%, 폴리 50%)",
-                      price: "무료 제공",
-                      free: true,
-                      img: "/images/products/화장용 수의.jpg",
-                    },
-                    {
-                      name: "입관 수시 용품",
-                      desc: "15종(염포, 관보 등)",
-                      price: "무료 제공",
-                      free: true,
-                      img: "/images/products/입관 수시 용품.png",
-                    },
-                    {
-                      name: "봉안함",
-                      desc: "일반봉안함",
-                      price: "무료 제공",
-                      free: true,
-                      img: "/images/products/일반유골함.jpg",
-                    },
-                    {
-                      name: "관 장식용 생화",
-                      desc: "계절 생화, 안개꽃",
-                      price: "100,000원",
-                      discount: null,
-                      img: "/images/products/관 장식용 생화.jpg",
-                    },
-                    {
-                      name: "남자상복/여자상복",
-                      desc: "남자 4벌, 여자 6벌",
-                      price: "무료 제공",
-                      free: true,
-                      img: "/images/products/상복 이미지.png",
-                    },
-                    {
-                      name: "헌화용 국화꽃",
-                      desc: "30송이",
-                      price: "무료 제공",
-                      free: true,
-                      img: "/images/products/헌화.jpg",
-                    },
-                    {
-                      name: "영정사진",
-                      desc: "11R 사이즈",
-                      price: "사전가입 고객 한정 무료 제공",
-                      free: true,
-                      img: "/images/products/영정사진.jpg",
-                    },
-                  ] as Array<{
-                    name: string;
-                    desc: string;
-                    price: string;
-                    img: string;
-                    discount?: string | null;
-                    label?: string;
-                    free?: boolean;
-                  }>
-                ).map((item) => (
+                {[
+                  {
+                    name: "오동나무 관",
+                    desc: "",
+                    price: "",
+                    discount: null,
+                    img: "/images/products/오동관1.png",
+                  },
+                  {
+                    name: "가진 수의",
+                    desc: "",
+                    price: "",
+                    discount: "",
+                    img: "/images/수의.png",
+                  },
+                  {
+                    name: "입관 수시 용품",
+                    desc: "",
+                    price: "",
+                    discount: null,
+                    img: "/images/products/입관 수시 용품1.png",
+                  },
+                  {
+                    name: "봉안함",
+                    desc: "일반 봉안함/목함",
+                    price: "",
+                    free: true,
+                    img: "/images/유골함2.png",
+                  },
+                  {
+                    name: "꽃관 장식",
+                    desc: "계절 생화",
+                    price: "",
+                    discount: null,
+                    img: "/images/관장식꽃.jpg",
+                  },
+                ].map((item) => (
                   <div
                     key={item.name}
                     className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"
@@ -440,21 +399,21 @@ export default function Gajokjang200Page() {
                 {[
                   {
                     name: "장례지도사",
-                    desc: "1인 3일",
-                    price: "300,000원",
-                    img: "/images/products/장례지도사.png",
+                    desc: "",
+                    price: "",
+                    img: "/images/장례지도사1.png",
                   },
                   {
                     name: "염습상례사",
-                    desc: "1인 1일",
-                    price: "150,000원",
-                    img: "/images/products/염습상례사.png",
+                    desc: "",
+                    price: "",
+                    img: "/images/염습상례사1.png",
                   },
                   {
                     name: "접객도우미",
-                    desc: "1인 1일",
-                    price: "150,000원",
-                    img: "/images/products/염습상례사.png",
+                    desc: "2인 (8시간)",
+                    price: "",
+                    img: "/images/접객도우미.png",
                   },
                 ].map((item) => (
                   <div
@@ -495,7 +454,7 @@ export default function Gajokjang200Page() {
                 <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
                   <div className="relative aspect-[4/3] bg-slate-900">
                     <Image
-                      src="/images/products/고인이송차량.png"
+                      src="/images/products/고인이송차량1.png"
                       alt="고인이송차량"
                       fill
                       className="object-cover"
@@ -505,15 +464,15 @@ export default function Gajokjang200Page() {
                   <div className="p-4">
                     <h4 className="font-semibold text-slate-900">고인이송차량</h4>
                     <p className="mt-0.5 text-sm text-slate-600">관내 이송</p>
-                    <p className="mt-2 text-lg font-bold text-slate-900">
+                    {/* <p className="mt-2 text-lg font-bold text-slate-900">
                       100,000원
-                    </p>
+                    </p> */}
                   </div>
                 </div>
                 <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
                   <div className="relative aspect-[4/3] bg-slate-900">
                     <Image
-                      src="/images/products/리무진.png"
+                      src="/images/products/리무진3.png"
                       alt="리무진/장의버스"
                       fill
                       className="object-cover"
@@ -522,60 +481,28 @@ export default function Gajokjang200Page() {
                   </div>
                   <div className="p-4">
                     <h4 className="font-semibold text-slate-900">
-                      리무진or장의버스 택1
+                      리무진/장의버스 택1
                     </h4>
-                    <p className="mt-0.5 text-sm leading-snug text-slate-600">
-                      리무진: 150km 화장장 편도
+                    <p className="mt-0.5 text-xs leading-snug text-slate-600">
+                      리무진 200km 화장장 편도
                     </p>
-                    <p className="text-sm text-slate-600">
-                      장의버스: 150km 왕복
+                    <p className="text-xs text-slate-600">
+                      장의버스 200km 왕복
                     </p>
-                    <p className="mt-2 text-lg font-bold text-slate-900">
+                    {/* <p className="mt-2 text-lg font-bold text-slate-900">
                       450,000원
-                    </p>
+                    </p> */}
                   </div>
                 </div>
               </div>
             </div>
 
-          </div>
-        </section>
-
-        {/* 8. 가족장 안내사항 */}
-        <section className="bg-slate-50">
-          <div className="mx-auto max-w-5xl px-4 py-10 md:py-12">
-            <h2 className="text-xl font-bold text-slate-900 md:text-2xl">
-              가족장 안내사항
-            </h2>
-            <div className="mt-4 rounded-2xl bg-white px-5 py-6 text-sm leading-relaxed text-slate-700 shadow-sm md:px-7 md:text-base">
-              <ul className="list-disc space-y-2 pl-5">
-                <li>
-                  장례 일정이 3일을 초과하는 경우, 장례지도사 및 접객 도우미
-                  비용이 일자별로 추가될 수 있습니다.
-                </li>
-                <li>
-                  빈소 사용료, 식사·다과 비용 등은 장례식장 규정에 따라 별도
-                  정산됩니다.
-                </li>
-                <li>
-                  장의 차량 이용 거리가 상품에 포함된 기준 거리를 초과할 경우,
-                  km당 추가 요금이 발생합니다.
-                </li>
-                <li>
-                  장지 경유 또는 추가 방문지가 있을 경우, 이동 거리와 시간에
-                  따라 별도 비용이 발생할 수 있습니다.
-                </li>
-                <li>
-                  관·수의·봉안함 등 품목 변경 시, 선택하신 품목의 차액만
-                  청구됩니다.
-                </li>
-              </ul>
-            </div>
+ 
           </div>
         </section>
 
         {/* 9. 24시간 상담 / 후기 요약 영역 */}
-        <section className="bg-white">
+        {/* <section className="bg-white">
           <div className="mx-auto max-w-5xl px-4 py-10 md:py-12 space-y-10">
             <div className="rounded-2xl bg-[#E3F0FF] px-5 py-7 text-sm md:text-base">
               <p className="font-semibold text-slate-900">
@@ -593,10 +520,10 @@ export default function Gajokjang200Page() {
 
             <div>
               <h2 className="text-xl font-bold text-slate-900 md:text-2xl">
-                가족장 이용 후기
+                다움 220 이용 후기
               </h2>
               <p className="mt-2 text-sm text-slate-600 md:text-base">
-                조용하고 단정한 가족장으로 보내드렸다는 유가족분들의 후기를
+                조용하고 단정한 다움 220으로 보내드렸다는 유가족분들의 후기를
                 확인해 보세요.
               </p>
               <div className="mt-4 space-y-3 text-sm text-slate-700 md:text-base">
@@ -611,7 +538,8 @@ export default function Gajokjang200Page() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
+
       </main>
       <SiteFooter />
     </div>

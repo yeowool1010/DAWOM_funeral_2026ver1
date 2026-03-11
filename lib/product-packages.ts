@@ -33,8 +33,8 @@ export const productPackages: ProductPackage[] = [
     unit: "",
     icon: Users,
     tag: "#  예상 조문객 50-100명",
-    highlights: ["가족장 표준 구성", "응대/운영 밸런스", "예상 인원 50~100명 기준"],
-    recommendedFor: ["가족장 형태로 무리 없이 운영하고 싶은 경우", "예상 조문객이 50~100명 수준인 경우"],
+    highlights: ["다움 220 표준 구성", "응대/운영 밸런스", "예상 인원 50~100명 기준"],
+    recommendedFor: ["다움 220 형태로 무리 없이 운영하고 싶은 경우", "예상 조문객이 50~100명 수준인 경우"],
   },
   {
     slug: "gogeuphyeong-330",
@@ -55,7 +55,7 @@ export const productPackages: ProductPackage[] = [
     unit: "",
     icon: UsersRound,
     tag: "# 예상 조문객 250-300명",
-    highlights: ["프리미엄 운영/동선 중심", "현장 품질 강화", "큰 규모에서도 안정적으로"],
+    highlights: ["다움 450 운영/동선 중심", "현장 품질 강화", "큰 규모에서도 안정적으로"],
     recommendedFor: ["상급 구성과 안정적인 현장 운영을 원하는 경우", "품질/경험을 최우선으로 두는 경우"],
   },
 ];

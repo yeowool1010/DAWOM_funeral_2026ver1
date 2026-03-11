@@ -13,7 +13,7 @@ import { SiteFooter } from "@/components/site-footer";
 export const metadata = {
   title: "상품안내 | 다움 장례연구소",
   description:
-    "100원부터 시작하는 장례 준비, 200만원대 가족장 상조 패키지부터 알아보세요. 다움 상조 상품 한눈에 보기.",
+    "100원부터 시작하는 장례 준비, 200만원대 다움 220 상조 패키지부터 알아보세요. 다움 상조 상품 한눈에 보기.",
 };
 
 export default function ProductsPage() {
@@ -25,10 +25,10 @@ export default function ProductsPage() {
         {/* <ProductBanner /> */}
         {/* <PackageTabs /> */}
         <PackageCards />
-        <PrimeSection />
+        {/* <PrimeSection /> */}
        {/*  <FirstSection />/ */}
        {/*  <ProductCta /> */}
-        <ProductFaqSection />
+        {/* <ProductFaqSection /> */}
         {/*  <ProductAboutSection />*/}
       </main>
       <SiteFooter />

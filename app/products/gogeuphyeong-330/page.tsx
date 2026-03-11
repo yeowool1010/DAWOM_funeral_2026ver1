@@ -14,9 +14,9 @@ import {
 import Image from "next/image";
 
 export const metadata = {
-  title: "고급형 가족장 상조 패키지 | 다움",
+  title: "다움 350 다움 220 상조 패키지 | 다움",
   description:
-    "조문객 응대와 예우를 강화한 고급형 가족장 상조 패키지의 서비스 구성과 안내사항을 한 페이지에서 확인해 보세요.",
+    "조문객 응대와 예우를 강화한 다움 350 다움 220 상조 패키지의 서비스 구성과 안내사항을 한 페이지에서 확인해 보세요.",
 };
 
 export default function Gogeuphyeong330Page() {
@@ -30,14 +30,14 @@ export default function Gogeuphyeong330Page() {
           <div className="mx-auto max-w-5xl px-4 py-12 md:py-16">
             <div className="mx-auto max-w-xl rounded-3xl bg-[#F3F5FF] text-center">
               <p className="text-sm font-medium text-slate-700">
-                예우를 한층 더 높인 가족장
+                예우를 한층 더 높인 다움 220
               </p>
               <h1 className="mt-3 text-3xl font-bold text-slate-900 md:text-4xl">
-                고급형 가족장
+                다움 350 다움 220
               </h1>
               <Image
                     src="/images/products/gogeuphyeong/gogeuphyeong-330_main.png"
-                    alt="고급형"
+                    alt="다움 350"
                     width={600}
                     height={400}
                     className="mt-8 rounded-3xl object-cover w-full max-w-xl mx-auto"
@@ -70,18 +70,18 @@ export default function Gogeuphyeong330Page() {
           </div>
         </section>
 
-        {/* 2. 고급형 가족장 한줄 소개 */}
+        {/* 2. 다움 350 다움 220 한줄 소개 */}
         <section className="bg-slate-50">
           <div className="mx-auto max-w-5xl px-4 py-8">
             <div className="rounded-2xl bg-white px-5 py-6 shadow-sm md:px-7 md:py-7">
               <h2 className="text-base font-semibold text-slate-900 md:text-lg">
-                고급형 가족장은
+                다움 350 다움 220은
               </h2>
               <p className="mt-2 text-sm leading-relaxed text-slate-700 md:text-base">
-                가족장에 필요한 기본 구성에 더해 접객 인력과 장례 용품을
+                다움 220에 필요한 기본 구성에 더해 접객 인력과 장례 용품을
                 업그레이드한 상품으로,
                 <br className="hidden md:block" />
-                예우는 높이고 부담은 줄인 합리적인 고급형 장례입니다.
+                예우는 높이고 부담은 줄인 합리적인 다움 350 장례입니다.
               </p>
             </div>
           </div>
@@ -103,7 +103,7 @@ export default function Gogeuphyeong330Page() {
             </div> */}
 
             <h2 className="text-xl font-bold text-slate-900 md:text-2xl">
-              고급형 가족장 특징
+              다움 350 다움 220 특징
             </h2>
             <p className="mt-2 text-sm text-slate-600 md:text-base">
               더 많은 조문객과 정성스러운 예우를 위한 구성을 확인해 보세요.
@@ -172,7 +172,7 @@ export default function Gogeuphyeong330Page() {
                     2
                   </span>
                   <p>
-                    고급형 수의와 관, 장식 구성에 대한 선택을 돕고 예산에 맞게
+                    다움 350 수의와 관, 장식 구성에 대한 선택을 돕고 예산에 맞게
                     조정해 드립니다.
                   </p>
                 </li>
@@ -224,14 +224,14 @@ export default function Gogeuphyeong330Page() {
           </div>
         </section>
 
-        {/* 6. 다움 전체 서비스 비교 - 고급형 가족장 강조 */}
+        {/* 6. 다움 전체 서비스 비교 - 다움 350 다움 220 강조 */}
         <section className="bg-slate-50">
           <div className="mx-auto max-w-5xl px-4 py-10 md:py-12">
             <h2 className="text-xl font-bold text-slate-900 md:text-2xl">
               다움 전체 서비스 비교
             </h2>
             <p className="mt-2 text-sm text-slate-600 md:text-base">
-              무빈소장, 가족장, 고급형, 프리미엄의 차이를 한눈에 비교해 보세요.
+              무빈소장, 다움 220, 다움 350, 다움 450의 차이를 한눈에 비교해 보세요.
             </p>
 
             <div className="mt-6 overflow-hidden rounded-2xl border bg-white text-sm md:text-base">
@@ -240,9 +240,9 @@ export default function Gogeuphyeong330Page() {
                   구분
                 </div>
                 <div className="px-3 py-3">무빈소장</div>
-                <div className="px-3 py-3">가족장</div>
-                <div className="px-3 py-3 text-emerald-700">고급형</div>
-                <div className="px-3 py-3">프리미엄</div>
+                <div className="px-3 py-3">다움 220</div>
+                <div className="px-3 py-3 text-emerald-700">다움 350</div>
+                <div className="px-3 py-3">다움 450</div>
               </div>
               <div className="divide-y text-center">
                 <div className="grid grid-cols-5">
@@ -263,9 +263,9 @@ export default function Gogeuphyeong330Page() {
                   <div className="px-3 py-3">실속형</div>
                   <div className="px-3 py-3">실속형</div>
                   <div className="bg-orange-50 px-3 py-3 font-semibold text-orange-600">
-                    고급형
+                    다움 350
                   </div>
-                  <div className="px-3 py-3">고급형</div>
+                  <div className="px-3 py-3">다움 350</div>
                 </div>
                 <div className="grid grid-cols-5">
                   <div className="bg-slate-50 px-3 py-3 text-left text-xs font-medium text-slate-600 md:text-sm">
@@ -280,12 +280,12 @@ export default function Gogeuphyeong330Page() {
                 </div>
                 <div className="grid grid-cols-5">
                   <div className="bg-slate-50 px-3 py-3 text-left text-xs font-medium text-slate-600 md:text-sm">
-                    상품가
+                    회원가
                   </div>
                   <div className="px-3 py-3">130만원</div>
                   <div className="px-3 py-3">200만원</div>
                   <div className="bg-orange-50 px-3 py-3 font-semibold text-orange-600">
-                    350만원
+                    330만원
                   </div>
                   <div className="px-3 py-3">430만원</div>
                 </div>
@@ -294,11 +294,11 @@ export default function Gogeuphyeong330Page() {
           </div>
         </section>
 
-        {/* 7. 고급형 가족장 구성품 상세 (요약형) */}
+        {/* 7. 다움 350 다움 220 구성품 상세 (요약형) */}
         <section className="bg-white">
           <div className="mx-auto max-w-5xl px-4 py-10 md:py-12">
             <h2 className="text-xl font-bold text-slate-900 md:text-2xl">
-              고급형 가족장 구성품 상세
+              다움 350 다움 220 구성품 상세
             </h2>
             <p className="mt-2 text-sm text-slate-600 md:text-base">
               업그레이드된 용품과 인력 구성을 확인하세요.
@@ -335,7 +335,7 @@ export default function Gogeuphyeong330Page() {
                   },
                   {
                     name: "입관 수시 용품",
-                    desc: "15종(염포, 관보 등)",
+                    desc: "",
                     price: "150,000원",
                     discount: null,
                     img: "/images/products/입관 수시 용품.png",
@@ -432,13 +432,13 @@ export default function Gogeuphyeong330Page() {
                 {[
                   {
                     name: "장례지도사",
-                    desc: "1인 3일",
+                    desc: "",
                     price: "300,000원",
                     img: "/images/products/장례지도사.png",
                   },
                   {
                     name: "염습상례사",
-                    desc: "1인 1일",
+                    desc: "",
                     price: "150,000원",
                     img: "/images/products/염습상례사.png",
                   },
@@ -510,10 +510,10 @@ export default function Gogeuphyeong330Page() {
                     <h4 className="font-semibold text-slate-900">
                       리무진, 장의버스
                     </h4>
-                    <p className="mt-0.5 text-sm leading-snug text-slate-600">
-                      리무진: 200km 화장장 편도
+                    <p className="mt-0.5 text-xs leading-snug text-slate-600">
+                      리무진 200km 화장장 편도
                     </p>
-                    <p className="text-sm text-slate-600">
+                    <p className="text-xs text-slate-600">
                       장의버스: 200km 왕복
                     </p>
                     <p className="mt-2 text-lg font-bold text-slate-900">
@@ -527,11 +527,11 @@ export default function Gogeuphyeong330Page() {
           </div>
         </section>
 
-        {/* 8. 고급형 가족장 안내사항 */}
+        {/* 8. 다움 350 다움 220 안내사항 */}
         <section className="bg-slate-50">
           <div className="mx-auto max-w-5xl px-4 py-10 md:py-12">
             <h2 className="text-xl font-bold text-slate-900 md:text-2xl">
-              고급형 가족장 안내사항
+              다움 350 다움 220 안내사항
             </h2>
             <div className="mt-4 rounded-2xl bg-white px-5 py-6 text-sm leading-relaxed text-slate-700 shadow-sm md:px-7 md:text-base">
               <ul className="list-disc space-y-2 pl-5">
@@ -575,7 +575,7 @@ export default function Gogeuphyeong330Page() {
 
             <div>
               <h2 className="text-xl font-bold text-slate-900 md:text-2xl">
-                고급형 가족장 이용 후기
+                다움 350 다움 220 이용 후기
               </h2>
               <p className="mt-2 text-sm text-slate-600 md:text-base">
                 예우와 구성에 만족했다는 실제 이용 후기의 핵심 내용을

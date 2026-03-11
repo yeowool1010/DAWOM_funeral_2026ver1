@@ -4,14 +4,14 @@ import { Shield } from "lucide-react";
 const products = [
   {
     name: "다움 퍼스트3",
-    tag: "#가족장289",
+    tag: "#다움 220289",
     desc: "딱 한 번 3만원 결제하고 차액은 장례 후 납부하기",
     cta: "가입하기",
     href: "/estimate",
   },
   {
     name: "다움 퍼스트10",
-    tag: "#가족장289",
+    tag: "#다움 220289",
     badge: "혜택상품",
     desc: "딱 한 번 10만원 결제하고 차액은 장례 후 납부하기",
     sub: "10만원 추가 할인 최종 혜택가 2,790,000원",

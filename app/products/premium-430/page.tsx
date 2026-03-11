@@ -14,9 +14,9 @@ import {
 import Image from "next/image";
 
 export const metadata = {
-  title: "프리미엄 일반장 상조 패키지 | 다움",
+  title: "다움 450 일반장 상조 패키지 | 다움",
   description:
-    "조문객이 많은 일반 장례에 맞춘 프리미엄 상조 패키지의 서비스 구성과 안내사항을 한 페이지에서 확인해 보세요.",
+    "조문객이 많은 일반 장례에 맞춘 다움 450 상조 패키지의 서비스 구성과 안내사항을 한 페이지에서 확인해 보세요.",
 };
 
 export default function Premium430Page() {
@@ -33,11 +33,11 @@ export default function Premium430Page() {
                 많은 조문객을 위한 품격 있는 장례
               </p>
               <h1 className="mt-3 text-3xl font-bold text-slate-900 md:text-4xl">
-                프리미엄 일반장
+                다움 450 일반장
               </h1>
               <Image
                     src="/images/products/premium/premium-430_main.png"
-                    alt="프리미엄"
+                    alt="다움 450"
                     width={600}
                     height={400}
                     className="mt-8 rounded-3xl object-cover w-full max-w-xl mx-auto"
@@ -45,7 +45,7 @@ export default function Premium430Page() {
 
               <div className="mt-10 border-t border-slate-200 pt-8">
                 <p className="text-sm text-slate-700">
-                  프리미엄 구성을{" "}
+                  다움 450 구성을{" "}
                   <span className="font-semibold text-slate-900">
                     한 번에
                   </span>{" "}
@@ -70,16 +70,16 @@ export default function Premium430Page() {
           </div>
         </section>
 
-        {/* 2. 프리미엄 일반장 한줄 소개 */}
+        {/* 2. 다움 450 일반장 한줄 소개 */}
         <section className="bg-slate-50">
           <div className="mx-auto max-w-5xl px-4 py-8">
             <div className="rounded-2xl bg-white px-5 py-6 shadow-sm md:px-7 md:py-7">
               <h2 className="text-base font-semibold text-slate-900 md:text-lg">
-                프리미엄 장례는
+                다움 450 장례는
               </h2>
               <p className="mt-2 text-sm leading-relaxed text-slate-700 md:text-base">
                 조문객이 많은 장례에 맞춰 접객 인력과 차량, 장례 용품을
-                프리미엄으로 구성한 상품으로,
+                다움 450으로 구성한 상품으로,
                 <br className="hidden md:block" />
                 예우와 편의를 모두 고려한 일반장 패키지입니다.
               </p>
@@ -103,7 +103,7 @@ export default function Premium430Page() {
             </div> */}
 
             <h2 className="text-xl font-bold text-slate-900 md:text-2xl">
-              프리미엄 장례 특징
+              다움 450 장례 특징
             </h2>
             <p className="mt-2 text-sm text-slate-600 md:text-base">
               많은 조문객과 긴 장례 일정에도 여유 있게 대응할 수 있는 구성을
@@ -126,7 +126,7 @@ export default function Premium430Page() {
                 </div>
                 <div className="mt-4 text-sm text-slate-500">장례 용품</div>
                 <div className="mt-1 text-lg font-semibold text-slate-900">
-                  고급형
+                  다움 350
                 </div>
               </div>
               <div className="flex flex-col items-center rounded-2xl bg-slate-50 px-4 py-6">
@@ -173,7 +173,7 @@ export default function Premium430Page() {
                     2
                   </span>
                   <p>
-                    프리미엄 용품 구성과 접객 인력 운영을 설계해 드려, 장례 기간
+                    다움 450 용품 구성과 접객 인력 운영을 설계해 드려, 장례 기간
                     동안 유가족의 부담을 줄여 드립니다.
                   </p>
                 </li>
@@ -225,14 +225,14 @@ export default function Premium430Page() {
           </div>
         </section>
 
-        {/* 6. 다움 전체 서비스 비교 - 프리미엄 일반장 포함 */}
+        {/* 6. 다움 전체 서비스 비교 - 다움 450 일반장 포함 */}
         <section className="bg-slate-50">
           <div className="mx-auto max-w-5xl px-4 py-10 md:py-12">
             <h2 className="text-xl font-bold text-slate-900 md:text-2xl">
               다움 전체 서비스 비교
             </h2>
             <p className="mt-2 text-sm text-slate-600 md:text-base">
-              무빈소장, 가족장, 고급형, 프리미엄의 차이를 한눈에 비교해 보세요.
+              무빈소장, 다움 220, 다움 350, 다움 450의 차이를 한눈에 비교해 보세요.
             </p>
 
             <div className="mt-6 overflow-hidden rounded-2xl border bg-white text-sm md:text-base">
@@ -241,9 +241,9 @@ export default function Premium430Page() {
                   구분
                 </div>
                 <div className="px-3 py-3">무빈소장</div>
-                <div className="px-3 py-3">가족장</div>
-                <div className="px-3 py-3">고급형</div>
-                <div className="px-3 py-3 text-emerald-700">프리미엄</div>
+                <div className="px-3 py-3">다움 220</div>
+                <div className="px-3 py-3">다움 350</div>
+                <div className="px-3 py-3 text-emerald-700">다움 450</div>
               </div>
               <div className="divide-y text-center">
                 <div className="grid grid-cols-5">
@@ -281,11 +281,11 @@ export default function Premium430Page() {
                 </div>
                 <div className="grid grid-cols-5">
                   <div className="bg-slate-50 px-3 py-3 text-left text-xs font-medium text-slate-600 md:text-sm">
-                    상품가
+                    회원가
                   </div>
                   <div className="px-3 py-3">130만원</div>
                   <div className="px-3 py-3">200만원</div>
-                  <div className="px-3 py-3">350만원</div>
+                  <div className="px-3 py-3">330만원</div>
                   <div className="bg-orange-50 px-3 py-3 font-semibold text-orange-600">
                     430만원
                   </div>
@@ -295,14 +295,14 @@ export default function Premium430Page() {
           </div>
         </section>
 
-        {/* 7. 프리미엄 일반장 구성품 상세 (요약형) */}
+        {/* 7. 다움 450 일반장 구성품 상세 (요약형) */}
         <section className="bg-white">
           <div className="mx-auto max-w-5xl px-4 py-10 md:py-12">
             <h2 className="text-xl font-bold text-slate-900 md:text-2xl">
-              프리미엄 장례 구성품 상세
+              다움 450 장례 구성품 상세
             </h2>
             <p className="mt-2 text-sm text-slate-600 md:text-base">
-              많은 조문객을 맞이하기 위한 프리미엄 구성을 확인하세요.
+              많은 조문객을 맞이하기 위한 다움 450 구성을 확인하세요.
             </p>
 
             {/* 장례 용품 */}
@@ -336,7 +336,7 @@ export default function Premium430Page() {
                   },
                   {
                     name: "입관 수시 용품",
-                    desc: "15종(염포, 관보 등)",
+                    desc: "",
                     price: "150,000원",
                     discount: null,
                     img: "/images/products/입관 수시 용품.png",
@@ -440,13 +440,13 @@ export default function Premium430Page() {
                 {[
                   {
                     name: "장례지도사",
-                    desc: "1인 3일",
+                    desc: "",
                     price: "300,000원",
                     img: "/images/products/장례지도사.png",
                   },
                   {
                     name: "염습상례사",
-                    desc: "1인 1일",
+                    desc: "",
                     price: "150,000원",
                     img: "/images/products/염습상례사.png",
                   },
@@ -518,10 +518,10 @@ export default function Premium430Page() {
                     <h4 className="font-semibold text-slate-900">
                       리무진, 장의버스
                     </h4>
-                    <p className="mt-0.5 text-sm leading-snug text-slate-600">
-                      리무진: 200km 화장장 편도
+                    <p className="mt-0.5 text-xs leading-snug text-slate-600">
+                      리무진 200km 화장장 편도
                     </p>
-                    <p className="text-sm text-slate-600">
+                    <p className="text-xs text-slate-600">
                       장의버스: 200km 왕복
                     </p>
                     <p className="mt-2 text-lg font-bold text-slate-900">
@@ -535,11 +535,11 @@ export default function Premium430Page() {
           </div>
         </section>
 
-        {/* 8. 프리미엄 일반장 안내사항 */}
+        {/* 8. 다움 450 일반장 안내사항 */}
         <section className="bg-slate-50">
           <div className="mx-auto max-w-5xl px-4 py-10 md:py-12">
             <h2 className="text-xl font-bold text-slate-900 md:text-2xl">
-              프리미엄 일반장 안내사항
+              다움 450 일반장 안내사항
             </h2>
             <div className="mt-4 rounded-2xl bg-white px-5 py-6 text-sm leading-relaxed text-slate-700 shadow-sm md:px-7 md:text-base">
               <ul className="list-disc space-y-2 pl-5">
@@ -583,7 +583,7 @@ export default function Premium430Page() {
 
             <div>
               <h2 className="text-xl font-bold text-slate-900 md:text-2xl">
-                프리미엄 일반장 이용 후기
+                다움 450 일반장 이용 후기
               </h2>
               <p className="mt-2 text-sm text-slate-600 md:text-base">
                 많은 조문객을 모신 장례에서도 만족스러웠던 실제 이용 후기를
@@ -595,7 +595,7 @@ export default function Premium430Page() {
                   장례에 집중할 수 있었다는 후기가 많아요.
                 </div>
                 <div className="rounded-2xl bg-slate-50 px-5 py-4">
-                  프리미엄 구성이었지만 사전에 안내된 비용 안에서 진행되어
+                  다움 450 구성이었지만 사전에 안내된 비용 안에서 진행되어
                   예산 관리가 수월했다는 의견이 많습니다.
                 </div>
               </div>
