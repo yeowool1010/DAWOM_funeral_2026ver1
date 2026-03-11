@@ -81,7 +81,7 @@ export default function Mubinsosang130Page() {
                 무빈소장은
               </h2>
               <p className="mt-2 text-sm leading-relaxed text-slate-700 md:text-base">
-                빈소와 조문이 없는 간소한 소규모 장례 서비스로
+                빈소를 차리지 않고, 조문객 없이 간소한 장례를 진행하실 수 있어요.
                 <br className="hidden md:block" />
                 합리적인 비용의 장례를 진행하실 수 있어요.
               </p>
@@ -127,7 +127,7 @@ export default function Mubinsosang130Page() {
                 </div>
                 <div className="mt-4 text-sm text-slate-500">장례 용품</div>
                 <div className="mt-1 text-lg font-semibold text-slate-900">
-                  기본형
+                  실속형
                 </div>
               </div>
               <div className="flex flex-col items-center rounded-2xl bg-slate-50 px-4 py-6">
@@ -141,14 +141,14 @@ export default function Mubinsosang130Page() {
               </div>
             </div>
 
-            <div className="mt-10 rounded-2xl bg-slate-50 px-5 py-6">
+            {/* <div className="mt-10 rounded-2xl bg-slate-50 px-5 py-6">
               <h3 className="text-base font-semibold text-slate-900 md:text-lg">
                 24시 전화 상담 지원
               </h3>
               <p className="mt-2 text-sm text-slate-700 md:text-base">
                 언제든 임종 접수와 상담을 받으실 수 있어요.
               </p>
-            </div>
+            </div> */}
           </div>
         </section>
 
@@ -203,7 +203,7 @@ export default function Mubinsosang130Page() {
         </section>
 
         {/* 5. 다움의 변하지 않는 약속 */}
-        <section className="bg-white">
+        {/* <section className="bg-white">
           <div className="mx-auto max-w-5xl px-4 py-10 md:py-12">
             <h2 className="text-xl font-bold text-slate-900 md:text-2xl">
               다움의 변하지 않는 약속
@@ -224,7 +224,7 @@ export default function Mubinsosang130Page() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* 6. 다움 전체 서비스 비교 */}
         <section className="bg-slate-50">
