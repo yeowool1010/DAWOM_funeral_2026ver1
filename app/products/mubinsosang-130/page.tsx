@@ -346,6 +346,7 @@ export default function Mubinsosang130Page() {
                 {[
                   {
                     name: "오동나무 관",
+                    name2: "고인을 모시는 관 입니다. 오동나무는 가볍고 변형이 적으며, 습기와 벌레에 강해 전통적으로 망자를 모시는 관재로 많이 사용되어 왔습니다.",
                     desc: "",
                     price: "",
                     discount: null,
@@ -353,6 +354,7 @@ export default function Mubinsosang130Page() {
                   },
                   {
                     name: "가진 수의",
+                    name2: "가진 수의는 입관 시 고인을 모실 때 쓰는 갖춰진 수의로, 저고리와 바지, 베개, 복건, 버선, 오낭, 이불과 요 등 여러 장례용 의복과 물품으로 구성된 전통 수의",
                     desc: "",
                     price: "",
                     discount: "",
@@ -360,6 +362,7 @@ export default function Mubinsosang130Page() {
                   },
                   {
                     name: "입관 수시 용품",
+                    name2: "입관시 장례지도사가 고인을 모실 때 사용하는 용품을 뜻하며 관보, 결관바, 명정, 염지, 종교용품, 습신 등 일반 용품부터 알콜올, 탈지면, 소독 스프레이, 지혈분말 등 위생용품까지 포함하고 있습니다.",
                     desc: "",
                     price: "",
                     discount: null,
@@ -367,6 +370,7 @@ export default function Mubinsosang130Page() {
                   },
                   {
                     name: "봉안함",
+                    name2: "봉안함은 화장한 유골을 보관하는 유골함을 뜻하며 장법에 따라 자연장 시엔 목함을 사용하기도 합니다.다움 실속형은 일반 봉안함 또는 목함을 기본으로 제공합니다.",
                     desc: "일반 봉안함/목함",
                     price: "",
                     free: true,
@@ -374,6 +378,7 @@ export default function Mubinsosang130Page() {
                   },
                   {
                     name: "꽃관 장식",
+                    name2: "꽃관장식이란 고인의 관 내부를 꽃으로 장식하는 것으로 긴 여행을 떠나시는 길을 생화로 아름답게 보내드리는 것을 뜻합니다. 생화 종류는 계절에 따라 바뀔 수 있습니다.",
                     desc: "계절 생화",
                     price: "",
                     discount: null,
@@ -381,6 +386,7 @@ export default function Mubinsosang130Page() {
                   },
                 ].map((item) => {
                   const cardId = `goods-${item.name}`;
+                  const hasDetail = Boolean((item as { name2?: string }).name2);
                   const isOverlayVisible = tappedCardId === cardId;
                   return (
                   <div
@@ -391,31 +397,30 @@ export default function Mubinsosang130Page() {
                       className="relative aspect-square cursor-pointer bg-slate-900 md:cursor-default"
                       role="button"
                       tabIndex={0}
-                      onClick={() => handleCardTap(cardId)}
-                      onKeyDown={(e) => e.key === "Enter" && handleCardTap(cardId)}
+                      onClick={() => hasDetail && handleCardTap(cardId)}
+                      onKeyDown={(e) => hasDetail && e.key === "Enter" && handleCardTap(cardId)}
                       aria-label={`${item.name} 설명 보기`}
                     >
                       <Image
                         src={item.img}
                         alt={item.name}
                         fill
-                        className="object-cover transition duration-300 group-hover:brightness-75"
+                        className={`object-cover transition duration-300 ${
+                          hasDetail ? "group-hover:brightness-75" : ""
+                        }`}
                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       />
-                      <div
-                        className={`absolute inset-0 flex flex-col items-center justify-center gap-1 bg-black/50 p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100 ${
-                          isOverlayVisible ? "!opacity-100" : ""
-                        }`}
-                      >
-                        <span className="text-center text-sm font-semibold text-white sm:text-base">
-                          {item.name}
-                        </span>
-                        {item.desc && (
+                      {hasDetail && (
+                        <div
+                          className={`absolute inset-0 flex items-center justify-center bg-black/55 p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100 ${
+                            isOverlayVisible ? "!opacity-100" : ""
+                          }`}
+                        >
                           <span className="text-center text-xs text-white/95 sm:text-sm">
-                            {item.desc}
+                            {(item as { name2?: string }).name2}
                           </span>
-                        )}
-                      </div>
+                        </div>
+                      )}
                     </div>
                     <div className="p-4">
                       <h4 className="font-semibold text-slate-900">{item.name}</h4>
@@ -473,50 +478,50 @@ export default function Mubinsosang130Page() {
                   },
                 ].map((item) => {
                   const cardId = `staff-${item.name}`;
+                  const hasDetail = Boolean((item as { name2?: string }).name2);
                   const isOverlayVisible = tappedCardId === cardId;
                   return (
-                  <div
-                    key={item.name}
-                    className="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"
-                  >
                     <div
-                      className="relative aspect-[4/3] cursor-pointer bg-slate-900 md:cursor-default"
-                      role="button"
-                      tabIndex={0}
-                      onClick={() => handleCardTap(cardId)}
-                      onKeyDown={(e) => e.key === "Enter" && handleCardTap(cardId)}
-                      aria-label={`${item.name} 설명 보기`}
+                      key={item.name}
+                      className="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"
                     >
-                      <Image
-                        src={item.img}
-                        alt={item.name}
-                        fill
-                        className="object-cover transition duration-300 group-hover:brightness-75"
-                        sizes="(max-width: 640px) 100vw, 50vw"
-                      />
                       <div
-                        className={`absolute inset-0 flex flex-col items-center justify-center gap-1 bg-black/50 p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100 ${
-                          isOverlayVisible ? "!opacity-100" : ""
-                        }`}
+                        className="relative aspect-[4/3] cursor-pointer bg-slate-900 md:cursor-default"
+                        role="button"
+                        tabIndex={0}
+                        onClick={() => hasDetail && handleCardTap(cardId)}
+                        onKeyDown={(e) => hasDetail && e.key === "Enter" && handleCardTap(cardId)}
+                        aria-label={`${item.name} 설명 보기`}
                       >
-                        <span className="text-center text-sm font-semibold text-white sm:text-base">
-                          {item.name}
-                        </span>
-                        {item.desc && (
-                          <span className="text-center text-xs text-white/95 sm:text-sm">
-                            {item.desc}
-                          </span>
+                        <Image
+                          src={item.img}
+                          alt={item.name}
+                          fill
+                          className={`object-cover transition duration-300 ${
+                            hasDetail ? "group-hover:brightness-75" : ""
+                          }`}
+                          sizes="(max-width: 640px) 100vw, 50vw"
+                        />
+                        {hasDetail && (
+                          <div
+                            className={`absolute inset-0 flex items-center justify-center bg-black/55 p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100 ${
+                              isOverlayVisible ? "!opacity-100" : ""
+                            }`}
+                          >
+                            <span className="text-center text-xs text-white/95 sm:text-sm">
+                              {(item as { name2?: string }).name2}
+                            </span>
+                          </div>
                         )}
                       </div>
+                      <div className="p-4">
+                        <h4 className="font-semibold text-slate-900">{item.name}</h4>
+                        <p className="mt-0.5 text-sm text-slate-600">{item.desc}</p>
+                        <p className="mt-2 text-lg font-bold text-slate-900">
+                          {item.price}
+                        </p>
+                      </div>
                     </div>
-                    <div className="p-4">
-                      <h4 className="font-semibold text-slate-900">{item.name}</h4>
-                      <p className="mt-0.5 text-sm text-slate-600">{item.desc}</p>
-                      <p className="mt-2 text-lg font-bold text-slate-900">
-                        {item.price}
-                      </p>
-                    </div>
-                  </div>
                   );
                 })}
               </div>
