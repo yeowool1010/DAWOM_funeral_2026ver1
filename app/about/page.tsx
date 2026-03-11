@@ -39,6 +39,7 @@ export default function AboutPage() {
 
   const [visionProgress, setVisionProgress] = useState(0);
   const visionSectionRef = useRef<HTMLElement | null>(null);
+  const rafRef = useRef<number | null>(null);
 
   const scrollToNext = () => {
     document.getElementById("stats-section")?.scrollIntoView({ behavior: "smooth" });
@@ -48,17 +49,34 @@ export default function AboutPage() {
     const el = visionSectionRef.current;
     if (!el) return;
 
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        setVisionProgress(entry.intersectionRatio);
-      },
-      {
-        threshold: [0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95, 1],
+    const updateProgress = () => {
+      const rect = el.getBoundingClientRect();
+      const sectionHeight = el.offsetHeight;
+      const vh = typeof window !== "undefined" ? window.innerHeight : 800;
+      let progress: number;
+      if (rect.top >= vh) {
+        progress = 0; // 아직 화면 아래: 비표시
+      } else if (rect.top >= 0) {
+        progress = 1 - rect.top / vh; // 아래에서 올라오며 등장
+      } else if (rect.top > -sectionHeight) {
+        progress = 1 + rect.top / sectionHeight; // 위로 스크롤되며 디졸브
+      } else {
+        progress = 0; // 완전히 지나감
       }
-    );
+      setVisionProgress(Math.max(0, Math.min(1, progress)));
+    };
 
-    observer.observe(el);
-    return () => observer.disconnect();
+    const onScroll = () => {
+      if (rafRef.current != null) cancelAnimationFrame(rafRef.current);
+      rafRef.current = requestAnimationFrame(updateProgress);
+    };
+
+    updateProgress();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      if (rafRef.current != null) cancelAnimationFrame(rafRef.current);
+    };
   }, []);
 
   return (
@@ -76,7 +94,7 @@ export default function AboutPage() {
         />
         <div className="absolute inset-0 bg-black/50" aria-hidden />
         <div className="relative z-10 flex min-h-[85vh] flex-col items-center justify-center px-4 text-center">
-          <h1 className="text-3xl font-bold leading-[13] text-white sm:text-4xl md:text-5xl sm:leading-loose">
+          <h1 className="text-3xl font-bold leading-[2] text-white sm:text-4xl md:text-5xl sm:leading-loose">
             사람다움을 지키는 장례, 
             <br />
             그것이 다움입니다.
@@ -328,11 +346,12 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="relative min-h-[85vh] overflow-hidden">
+      <section className="relative min-h-[100vh] overflow-hidden">
         {/* <div className="absolute inset-0 bg-black" aria-hidden /> */}
         <div className="absolute inset-0 bg-[#0f172a]" aria-hidden />
         <div className="relative z-10 flex min-h-[85vh] flex-col items-center justify-center px-4 text-center">
-          <h1 className="text-3xl font-bold leading-loose text-white sm:text-4xl md:text-5xl sm:leading-loose">
+          {/* <h1 className="text-3xl font-bold leading-loose text-white sm:text-4xl md:text-5xl sm:leading-loose"> */}
+          <h1 className="text-lg font-bold leading-loose text-white sm:text-lg md:text-3xl sm:leading-loose">
             다움 상조는
             <br />
             사람다움, 아름다움, 장례다움이라는 기준으로
