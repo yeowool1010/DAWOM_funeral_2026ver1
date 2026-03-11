@@ -1,314 +1,158 @@
-import Link from "next/link";
+"use client";
+
 import Image from "next/image";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
-import { ChevronRight, CheckCircle2, Phone, MessageSquare, Star } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 
-export const metadata = {
-  title: "회사소개 | 장례, 어디서부터 시작해야 할까요? | 다움",
-  description:
-    "처음하는 장례 준비, 어떻게 해야 후회 없을까요? 믿을 수 있는 장례지도사를 만나는 방법을 다움이 안내합니다.",
-};
+const STATS = [
+  { label: "선임 장례지도사 최소 경력", value: "15년", date: "2026.03.12 기준" },
+  { label: "선임 장례지도사 누적 행사 건수", value: "6,000건 +", date: "2026.03.12 기준" },
+  // { label: "서비스 수", value: "100개 +", date: "2025.06.30 기준" },
+];
 
 export default function AboutPage() {
+
+  const scrollToNext = () => {
+    document.getElementById("stats-section")?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div className="min-h-screen bg-white">
       <SiteHeader />
-      <main className="pb-20">
-        {/* Hero */}
-        <section className="relative min-h-[420px] overflow-hidden py-16 md:min-h-[480px] md:py-24">
-          <Image
-            src="/images/about/hero1.png"
-            alt=""
-            fill
-            className="object-cover"
-            sizes="100vw"
-            priority
-          />
-          <div
-            className="absolute inset-0 bg-stone-900/60"
-            aria-hidden
-          />
-          <div className="relative z-10 flex min-h-[320px] flex-col justify-center md:min-h-[380px]">
-            <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
-              <h1 className="text-2xl font-bold leading-tight text-white sm:text-3xl md:text-4xl">
-                처음하는 장례 준비,
-                <br />
-                어떻게 해야
-                <br />
-                후회 없을까요?
-              </h1>
-              <p className="mt-6 text-stone-200">－ 다움장례</p>
-              <p className="mt-8 text-lg text-stone-100">
-                장례를 잘 준비한다는 것은
-                <br />
-                도대체 무엇일까요?
-              </p>
-            </div>
-          </div>
-        </section>
 
-        {/* 장례, 어디서부터 시작해야 할까요? */}
-        <section className="border-t border-stone-200 bg-white py-14 md:py-20">
-          <div className="mx-auto max-w-3xl px-4 sm:px-6">
-            <h2 className="text-center text-xl font-bold text-stone-900 sm:text-2xl md:text-3xl">
-              장례,
+      <section className="relative min-h-[85vh] overflow-hidden">
+        <Image
+          src="/images/about/hero1.png"
+          alt=""
+          fill
+          className="object-cover"
+          sizes="100vw"
+          priority
+        />
+        <div className="absolute inset-0 bg-black/50" aria-hidden />
+        <div className="relative z-10 flex min-h-[85vh] flex-col items-center justify-center px-4 text-center">
+          <h1 className="text-3xl font-bold leading-[13] text-white sm:text-4xl md:text-5xl sm:leading-loose">
+            사람다움을 지키는 장례, 
+            <br />
+            그것이 다움입니다.
+          </h1>
+          <button
+            type="button"
+            onClick={scrollToNext}
+            className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/90 transition hover:text-white"
+            aria-label="아래로 스크롤"
+          >
+            <ChevronDown className="h-8 w-8" strokeWidth={2} />
+          </button>
+        </div>
+      </section>
+
+      <section
+        id="stats-section"
+        className="relative overflow-hidden bg-[#0f172a] py-20 md:py-28"
+      >
+        <div className="absolute right-0 top-0 h-full w-1/2 md:w-2/5">
+          <svg
+            viewBox="0 0 400 400"
+            className="h-full w-full object-cover object-right"
+            preserveAspectRatio="xMaxYMax meet"
+          >
+            <defs>
+              <linearGradient id="wave-fill" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stopColor="rgb(30 58 138)" stopOpacity="0.6" />
+                <stop offset="100%" stopColor="rgb(15 23 42)" stopOpacity="0" />
+              </linearGradient>
+            </defs>
+            <path
+              d="M400 400 L400 200 Q350 80 200 120 Q80 160 0 80 L0 400 Z"
+              fill="url(#wave-fill)"
+            />
+            <path
+              d="M400 400 L400 180 Q320 40 180 90 Q60 140 0 60 L0 400 Z"
+              fill="none"
+              stroke="rgb(59 130 246)"
+              strokeWidth="2"
+              strokeOpacity="0.8"
+            />
+          </svg>
+        </div>
+
+        <div className="relative z-10 mx-auto max-w-5xl px-4 sm:px-6">
+          <h2 className="max-w-xl text-2xl font-bold leading-loose text-white md:text-3xl">
+             장례에 진심인 사람들이 모여,
+            <br />
+            진정성 있는 장례 문화를 선도합니다.
+          </h2>
+          <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            {STATS.map(({ label, value, date }) => (
+              <div key={label}>
+                <p className="text-sm font-medium text-white/90">{label}</p>
+                <p className="mt-1 text-3xl font-bold text-white md:text-4xl">
+                  {value}
+                </p>
+                <p className="mt-1 text-xs text-slate-400">{date}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="relative min-h-[60vh] overflow-hidden py-20 md:py-28">
+        <Image
+          src="/images/about/hero1.png"
+          alt=""
+          fill
+          className="object-cover blur-md"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-black/30" aria-hidden />
+        <div className="relative z-10 flex min-h-[50vh] items-center justify-center px-4">
+          <div className="max-w-2xl rounded-2xl bg-slate-900/80 px-8 py-10 backdrop-blur-sm md:px-12 md:py-14">
+            <p className="text-sm font-semibold uppercase tracking-wider text-white/80">
+            Vision
+            </p>
+            <p className="mt-6 text-lg leading-loose text-white md:text-xl">
+            장례는 형식이 아니라 사람에 대한 예의라고 생각합니다.
               <br />
-              어디서부터
+            그래서 우리는 장례의 본질부터 다시 고민했습니다.
               <br />
-              시작해야 할까요?
-            </h2>
-            <div className="mt-10 space-y-4 text-stone-600 md:text-lg">
-              <p>
-                가격 얘기부터 시작하여 부담만 주는 상담원. 장례식장에 전화만 하면
-                한번에 해결된다고 알려주는 지인. 지나치게 많은 상조 회사에,
-                넘치는 광고글.
-              </p>
-              <p>많이 알아볼수록 혼란스럽기만 해요.</p>
-              <p>
-                어떤 기준으로 알아봐야 할까요? 어떤 곳이 믿을만하고, 장례를
-                맡길 수 있을까요?
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* 이것만 기억하세요 */}
-        <section className="bg-stone-900 py-14 text-white md:py-20">
-          <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
-            <p className="text-sm font-medium text-stone-300">
-              이것만 기억하세요.
-            </p>
-            <h2 className="mt-4 text-2xl font-bold leading-snug sm:text-3xl md:text-4xl">
-              장례를 잘 치르는 것
+              과한 비용보다 합리적인 선택을,
+              복잡한 절차보다 전문적인 준비를,
               <br />
-              = 좋은 장례지도사를
-              <br />
-              만나는 것
-            </h2>
+              보여주기보다 진심 어린 장례를 만들고 싶었습니다.
+            </p>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* 설명 */}
-        <section className="border-t border-stone-200 bg-white py-14 md:py-20">
-          <div className="mx-auto max-w-3xl px-4 sm:px-6">
-            <p className="text-lg leading-relaxed text-stone-700 md:text-xl">
-              장례를 잘 준비한다는 것은 믿을 수 있는 업체와 장례지도사를 만나는
-              것이에요. 이것이 전부라고 해도 과장이 아니에요.
-            </p>
-            <p className="mt-6 text-stone-600 md:text-lg">
-              왜냐하면, 장례에 필요한 모든 것은 업체가 아니라 업체에 속한
-              &apos;장례지도사&apos;가 준비하고 진행하기 때문이에요.
-            </p>
-            <p className="mt-6 text-stone-600 md:text-lg">
-              당연히 해야 하는 절차 이외에도 3일동안 가족들의 불편함을 발벗고
-              나서 해소하고 요구사항을 들어주는 등 많은 일을 해내요.
-            </p>
-            <p className="mt-6 font-medium text-stone-800 md:text-lg">
-              곧, 장례식 진행 = 장례지도사라는 공식이 성립해요.
-            </p>
-          </div>
-        </section>
-
-        {/* 그런데 어디서? */}
-        <section className="bg-stone-50 py-14 md:py-20">
-          <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
-            <h2 className="text-xl font-bold text-stone-900 sm:text-2xl md:text-3xl">
-              그런데,
-              <br />
-              어디서 믿을 수 있는
-              <br />
-              장례지도사를 만날 수 있을까요?
-            </h2>
-            <p className="mt-6 text-stone-600 md:text-lg">
-              어떻게 좋은 곳을 알아볼 수 있을까요?
-            </p>
-            <p className="mt-4 font-medium text-stone-800">
-              하나하나씩 알아보아요.
-            </p>
-          </div>
-        </section>
-
-        {/* Step 1 */}
-        <section className="border-t border-stone-200 bg-white py-14 md:py-20">
-          <div className="mx-auto max-w-3xl px-4 sm:px-6">
-            <div className="inline-flex rounded-full bg-stone-900 px-4 py-1.5 text-sm font-semibold text-white">
-              Step 1
-            </div>
-            <h2 className="mt-6 text-xl font-bold text-stone-900 sm:text-2xl">
-              최대한 많은 업체를 탐색하세요.
-            </h2>
-            <p className="mt-6 text-stone-600 md:text-lg">
-              예산 문제, 장례식장은 어디에서 할지, 장지는 어디로 해야 할지,
-              임종을 앞두어 경황도 없고 생업에도 바쁜 와중에 신경 쓸 것이 많은데
-              정말 업체만 찾고 있어도 되는 걸까요?
-            </p>
-            <p className="mt-4 text-stone-600 md:text-lg">
-              네, 문제 없습니다. 갖고 있는 장례에 관한 고민들을 전부 해결해주는
-              것이 &apos;상조서비스&apos;에요. 단순히 수백만원 패키지를 팔고
-              출동해주는 곳이 아니라 사전 상담부터 비용 설계, 장례식장, 장지
-              문제 해결, 행정적 문제까지 모두 해결해주는 곳이에요.
-            </p>
-            <p className="mt-6 font-medium text-stone-800 md:text-lg">
-              그렇기 때문에 고민이 있다면 문제를 해결해줄 수 있는 것처럼 보이는
-              업체들을 골라두세요. 갖고 있는 고민을 스스로 하나씩 해결하려 하지
-              말고, 그 고민마저도 상조 서비스에 맡겨버리겠다는 생각으로
-              탐색하세요.
-            </p>
-          </div>
-        </section>
-
-        {/* Step 2 */}
-        <section className="bg-stone-50 py-14 md:py-20">
-          <div className="mx-auto max-w-3xl px-4 sm:px-6">
-            <div className="inline-flex rounded-full bg-stone-900 px-4 py-1.5 text-sm font-semibold text-white">
-              Step 2
-            </div>
-            <h2 className="mt-6 text-xl font-bold text-stone-900 sm:text-2xl">
-              꼭 전화 상담을 진행하세요.
-            </h2>
-            <p className="mt-6 text-stone-600 md:text-lg">
-              전화 상담은 정말 중요하고 필수적인 절차에요. 이 부분을 소홀히
-              하거나 꼼꼼이 하지 않으면 후회되는 일이 발생할 수도 있어요. 전화
-              상담에서 확인해야 할 체크리스트를 알려드릴게요.
-            </p>
-            <ul className="mt-8 space-y-3 text-stone-700 md:text-lg">
-              {[
-                "말을 끝까지 경청하나요?",
-                "상담을 사무적으로 대하지는 않나요?",
-                "홈페이지 보면 나와 있다고 답변하지는 않나요?",
-                "질문에 정확한 답변을 하기보다, 비용 이야기 혹은 비용과 관련된 상품 이야기만 하지는 않나요?",
-                "주변 장례식장 혹은 장지 추천을 부탁했을 때 고객의 편에서 솔직하고 자세하게 답변해주나요?",
-              ].map((item) => (
-                <li key={item} className="flex gap-3">
-                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-stone-500" />
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-            <p className="mt-8 text-stone-600 md:text-lg">
-              질문이 생각이 나지 않는다면 &quot;제가 막막하고 답답한 상황인데
-              무엇부터 해야 할까요?&quot;라고 물어보세요. 귀찮은 듯이 &quot;일
-              생기면 전화만 주세요&quot;라고 하는 업체가 있는 반면, 정말
-              따뜻하게 안심시켜주고 차근차근 답변해주는 업체가 있을 거에요.
-            </p>
-            <div className="mt-8 rounded-xl border border-amber-200 bg-amber-50 p-4 md:p-5">
-              <p className="font-semibold text-amber-900">추가적인 Tip</p>
-              <p className="mt-2 text-amber-800/90">
-                반드시 문의를 한 번만 할 필요는 없어요. 궁금한게 생겼을 때,
-                혹은 확신이 생기지 않을 때 여러 번 전화를 걸어보세요. 일관된
-                태도로 대하는지, 끝까지 성의있게 대해 주는지 확인할 수 있는 좋은
-                기회에요.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Step 3 */}
-        <section className="border-t border-stone-200 bg-white py-14 md:py-20">
-          <div className="mx-auto max-w-3xl px-4 sm:px-6">
-            <div className="inline-flex rounded-full bg-stone-900 px-4 py-1.5 text-sm font-semibold text-white">
-              Step 3
-            </div>
-            <h2 className="mt-6 text-xl font-bold text-stone-900 sm:text-2xl">
-              반드시 후기를 확인하세요.
-            </h2>
-            <p className="mt-6 text-stone-600 md:text-lg">
-              상담만으로는 믿을 수 있는 곳인지 100% 알 수 없어요. 이미 경험한
-              고객들의 목소리를 확인해야 해요. 전화 상담과 마찬가지로 후기
-              확인하는 법에 대한 체크리스트도 알려드릴게요.
-            </p>
-            <ul className="mt-8 space-y-3 text-stone-700 md:text-lg">
-              {[
-                "후기를 고객이 썼는지 업체가 썼는지 확인해보세요.",
-                "허위 후기가 아닌지 의심해보세요. 지나치게 업체에게 좋은 말만 있다던가 구체적인 이야기 없이 '감사했다'만 있다던가 하지는 않나요?",
-                "후기가 꾸준히 올라오는지 확인해보세요. 옛날 후기만 있지는 않나요? 아니면 최근 후기만 있지는 않나요?",
-                "후기를 하나만 확인하지 말고 여러개 확인해보세요. 어투가 다 똑같지는 않나요?",
-              ].map((item) => (
-                <li key={item} className="flex gap-3">
-                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-stone-500" />
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </section>
-
-        {/* 기억해 주세요 */}
-        <section className="bg-stone-900 py-14 text-white md:py-20">
-          <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
-            <p className="text-sm font-medium text-stone-300">
-              기억해 주세요.
-            </p>
-            <h2 className="mt-4 text-2xl font-bold leading-snug sm:text-3xl md:text-4xl">
-              장례는 상품 패키지가 아니라
-              <br />
-              바로 사람입니다.
-            </h2>
-          </div>
-        </section>
-
-        {/* CTA 문구 + 버튼들 */}
-        <section className="border-t border-stone-200 bg-stone-50 py-14 md:py-20">
-          <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
-            <p className="text-lg text-stone-700 md:text-xl">
-              소중하고 후회 없는 마지막 시간을 위해
-            </p>
-            <h2 className="mt-2 text-xl font-bold text-stone-900 sm:text-2xl">
-              따뜻하고 친절한 사람을 만나세요.
-            </h2>
-            <p className="mt-4 text-stone-600 md:text-lg">
-              장례는 사람이 하는 일이니까요.
-            </p>
-            <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-              <Link
-                href="/reviews"
-                className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-stone-900 px-6 py-3.5 text-sm font-medium text-white transition hover:bg-stone-800 sm:w-auto"
-              >
-                <Star className="h-4 w-4" />
-                다움 후기 확인하기
-                <ChevronRight className="h-4 w-4" />
-              </Link>
-              <Link
-                href="/products"
-                className="inline-flex w-full items-center justify-center gap-2 rounded-full border-2 border-stone-900 px-6 py-3.5 text-sm font-medium text-stone-900 transition hover:bg-stone-100 sm:w-auto"
-              >
-                상조 가입 고민된다면?
-                <ChevronRight className="h-4 w-4" />
-              </Link>
-              <Link
-                href="/prime"
-                className="inline-flex w-full items-center justify-center gap-2 rounded-full border-2 border-stone-300 px-6 py-3.5 text-sm font-medium text-stone-700 transition hover:bg-stone-100 sm:w-auto"
-              >
-                100원 상조 알아보기
-                <ChevronRight className="h-4 w-4" />
-              </Link>
-            </div>
-          </div>
-        </section>
-
-        {/* 하단 연락 CTA */}
-        <section className="border-t border-stone-200 bg-white py-12">
-          <div className="mx-auto max-w-3xl px-4 sm:px-6">
-            <div className="flex flex-col items-center justify-center gap-4 rounded-2xl bg-stone-100 py-10 sm:flex-row sm:gap-6">
-              <a
-                href="tel:1600-4417"
-                className="inline-flex items-center gap-2 rounded-full bg-stone-900 px-6 py-3 text-sm font-medium text-white transition hover:bg-stone-800"
-              >
-                <Phone className="h-4 w-4" />
-                전화 문의
-              </a>
-              <Link
-                href="/estimate"
-                className="inline-flex items-center gap-2 rounded-full border-2 border-stone-900 px-6 py-3 text-sm font-medium text-stone-900 transition hover:bg-stone-100"
-              >
-                <MessageSquare className="h-4 w-4" />
-                채팅/견적 문의
-              </Link>
-            </div>
-          </div>
-        </section>
-      </main>
+      <section className="relative min-h-[85vh] overflow-hidden">
+        {/* <div className="absolute inset-0 bg-black" aria-hidden /> */}
+        <div className="absolute inset-0 bg-[#0f172a]" aria-hidden />
+        <div className="relative z-10 flex min-h-[85vh] flex-col items-center justify-center px-4 text-center">
+          <h1 className="text-3xl font-bold leading-loose text-white sm:text-4xl md:text-5xl sm:leading-loose">
+            다움 상조는
+            <br />
+            사람다움, 아름다움, 장례다움이라는 기준으로
+            <br />
+            장례의 새로운 기준을 만들어가고 있습니다.
+            <br />
+            <br />
+            마지막 순간까지
+            <br />
+            사람다운 장례가 이루어질 수 있도록.
+            <br />
+            그 길을 다움이 함께하겠습니다.
+          </h1>
+          <button
+            type="button"
+            onClick={scrollToNext}
+            className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/90 transition hover:text-white"
+            aria-label="아래로 스크롤"
+          >
+          </button>
+        </div>
+      </section>
       <SiteFooter />
     </div>
   );
