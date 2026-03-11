@@ -347,8 +347,14 @@ export default function AboutPage() {
       </section>
 
       <section className="relative min-h-[100vh] overflow-hidden">
-        {/* <div className="absolute inset-0 bg-black" aria-hidden /> */}
         <div className="absolute inset-0 bg-[#0f172a]" aria-hidden />
+        <div
+          className="absolute inset-0 opacity-90"
+          style={{
+            background: `radial-gradient(ellipse 70% 60% at 50% 50%, #000000 0%, rgba(15, 23, 42, 0.4) 45%, transparent 75%)`,
+          }}
+          aria-hidden
+        />
         <div className="relative z-10 flex min-h-[85vh] flex-col items-center justify-center px-4 text-center">
           {/* <h1 className="text-3xl font-bold leading-loose text-white sm:text-4xl md:text-5xl sm:leading-loose"> */}
           <h1 className="text-lg font-bold leading-loose text-white sm:text-lg md:text-3xl sm:leading-loose">
