@@ -12,10 +12,10 @@ export function generateStaticParams() {
 
 export function generateMetadata({ params }: { params: { slug: string } }) {
   const pkg = getProductPackageBySlug(params.slug);
-  if (!pkg) return { title: "상품안내 | 다움 장례연구소" };
+  if (!pkg) return { title: "상품안내 | 다움상조" };
 
   return {
-    title: `${pkg.name} | 상품안내 | 다움 장례연구소`,
+    title: `${pkg.name} | 상품안내 | 다움상조`,
     description: `${pkg.desc} (${pkg.price}${pkg.unit})`,
   };
 }

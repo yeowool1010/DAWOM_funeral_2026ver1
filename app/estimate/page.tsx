@@ -3,7 +3,7 @@ import { EstimateForm } from "@/components/estimate-form";
 import { SiteFooter } from "@/components/site-footer";
 
 export const metadata = {
-  title: "장례견적 | 다움 장례연구소",
+  title: "장례견적 | 다움상조",
   description: "지역, 조문객 수, 상황에 맞는 장례 비용 견적을 받아보세요.",
 };
 

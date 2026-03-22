@@ -22,7 +22,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: ReviewDetailPageProps) {
   const { id } = await params;
   const review = getReviewById(id);
-  if (!review) return { title: "후기 | 다움 장례연구소" };
+  if (!review) return { title: "후기 | 다움상조" };
   const location = review.location ?? "";
   const shortText = review.text.slice(0, 50).replace(/\n/g, " ");
   return {

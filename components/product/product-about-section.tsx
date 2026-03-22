@@ -4,7 +4,7 @@ export function ProductAboutSection() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <h2 className="text-2xl font-bold text-stone-900">회사소개</h2>
         <p className="mt-3 text-stone-600">
-          다움 장례연구소는 숨김없는 장례, 막막한 상황에 함께하는 서비스를 제공합니다.
+          다움상조는 숨김없는 장례, 막막한 상황에 함께하는 서비스를 제공합니다.
         </p>
         <div className="mt-8 rounded-xl border border-stone-200 bg-white p-6">
           <p className="text-sm text-stone-600">
