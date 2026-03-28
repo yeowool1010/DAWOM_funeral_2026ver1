@@ -1,6 +1,10 @@
 "use client";
 
 import { cn } from "@/lib/utils";
+import {
+  getAuthErrorStatus,
+  mapSupabaseAuthErrorToKo,
+} from "@/lib/supabase-auth-error-ko";
 import { createClient } from "@/lib/supabase/client";
 import { Button } from "@/components/ui/button";
 import {
@@ -31,14 +35,15 @@ export function ForgotPasswordForm({
     setError(null);
 
     try {
-      // The url which will be included in the email. This URL needs to be configured in your redirect URLs in the Supabase dashboard at https://supabase.com/dashboard/project/_/auth/url-configuration
       const { error } = await supabase.auth.resetPasswordForEmail(email, {
         redirectTo: `${window.location.origin}/auth/update-password`,
       });
       if (error) throw error;
       setSuccess(true);
     } catch (error: unknown) {
-      setError(error instanceof Error ? error.message : "An error occurred");
+      const raw =
+        error instanceof Error ? error.message : "오류가 발생했습니다.";
+      setError(mapSupabaseAuthErrorToKo(raw, getAuthErrorStatus(error)));
     } finally {
       setIsLoading(false);
     }
@@ -49,34 +54,34 @@ export function ForgotPasswordForm({
       {success ? (
         <Card>
           <CardHeader>
-            <CardTitle className="text-2xl">Check Your Email</CardTitle>
-            <CardDescription>Password reset instructions sent</CardDescription>
+            <CardTitle className="text-2xl">이메일을 확인해 주세요</CardTitle>
+            <CardDescription>비밀번호 재설정 안내를 보냈습니다</CardDescription>
           </CardHeader>
           <CardContent>
             <p className="text-sm text-muted-foreground">
-              If you registered using your email and password, you will receive
-              a password reset email.
+              입력하신 주소로 가입된 계정이 있으면, 비밀번호를 다시 설정할 수
+              있는 링크가 포함된 메일이 곧 도착합니다. 받은편지함에 없으면 스팸함을
+              확인해 주세요.
             </p>
           </CardContent>
         </Card>
       ) : (
         <Card>
           <CardHeader>
-            <CardTitle className="text-2xl">Reset Your Password</CardTitle>
+            <CardTitle className="text-2xl">비밀번호 찾기</CardTitle>
             <CardDescription>
-              Type in your email and we&apos;ll send you a link to reset your
-              password
+              가입 시 사용한 이메일을 입력하시면 재설정 링크를 보내 드립니다.
             </CardDescription>
           </CardHeader>
           <CardContent>
             <form onSubmit={handleForgotPassword}>
               <div className="flex flex-col gap-6">
                 <div className="grid gap-2">
-                  <Label htmlFor="email">Email</Label>
+                  <Label htmlFor="email">이메일</Label>
                   <Input
                     id="email"
                     type="email"
-                    placeholder="m@example.com"
+                    placeholder="이메일@example.com"
                     required
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
@@ -84,16 +89,16 @@ export function ForgotPasswordForm({
                 </div>
                 {error && <p className="text-sm text-red-500">{error}</p>}
                 <Button type="submit" className="w-full" disabled={isLoading}>
-                  {isLoading ? "Sending..." : "Send reset email"}
+                  {isLoading ? "발송 중…" : "재설정 메일 보내기"}
                 </Button>
               </div>
               <div className="mt-4 text-center text-sm">
-                Already have an account?{" "}
+                계정이 있으신가요?{" "}
                 <Link
                   href="/auth/login"
                   className="underline underline-offset-4"
                 >
-                  Login
+                  로그인
                 </Link>
               </div>
             </form>

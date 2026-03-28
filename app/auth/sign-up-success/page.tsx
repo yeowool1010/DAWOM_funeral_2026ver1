@@ -5,28 +5,42 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Page() {
   return (
-    <div className="flex min-h-svh w-full items-center justify-center p-6 md:p-10">
-      <div className="w-full max-w-sm">
-        <div className="flex flex-col gap-6">
-          <Card>
-            <CardHeader>
-              <CardTitle className="text-2xl">
-                Thank you for signing up!
-              </CardTitle>
-              <CardDescription>Check your email to confirm</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <p className="text-sm text-muted-foreground">
-                You&apos;ve successfully signed up. Please check your email to
-                confirm your account before signing in.
-              </p>
-            </CardContent>
-          </Card>
-        </div>
-      </div>
+    <div className="flex flex-col gap-6">
+      <Card>
+        <CardHeader>
+          <CardTitle className="text-2xl">회원가입이 접수되었습니다</CardTitle>
+          <CardDescription>이메일을 확인해 주세요</CardDescription>
+        </CardHeader>
+        <CardContent className="flex flex-col gap-4">
+          <div className="overflow-hidden rounded-lg border border-stone-200 bg-stone-50">
+            <Image
+              src="/images/인증이미지.png"
+              alt="이메일 인증 방법 안내"
+              width={800}
+              height={500}
+              className="h-auto w-full object-contain"
+              sizes="(max-width: 448px) 100vw, 448px"
+              priority
+            />
+          </div>
+          <p className="text-sm text-muted-foreground">
+            가입해 주셔서 감사합니다. 로그인 전에 이메일로 발송된 링크를 눌러
+            계정을 확인해 주세요. 메일이 보이지 않으면 스팸함도 함께
+            확인해 주세요.
+          </p>
+          <Link
+            href="/auth/login"
+            className="text-center text-sm font-medium text-stone-900 underline underline-offset-4"
+          >
+            로그인 페이지로 이동
+          </Link>
+        </CardContent>
+      </Card>
     </div>
   );
 }

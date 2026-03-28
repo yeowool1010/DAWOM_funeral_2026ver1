@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Menu, Phone } from "lucide-react";
 import { useState } from "react";
+import { HeaderAuth } from "@/components/header-auth";
 
 function KakaoIcon({ className }: { className?: string }) {
   return (
@@ -63,6 +64,9 @@ export function SiteHeader() {
         </nav>
 
         <div className="flex items-center gap-3">
+          <div className="hidden md:flex">
+            <HeaderAuth />
+          </div>
           {/* <a
             href="https://pf.kakao.com/_xXXXXXXX/chat"
             target="_blank"
@@ -121,6 +125,9 @@ export function SiteHeader() {
               <Phone className="h-4 w-4" />
               24시간 고객센터
             </a>
+            <div className="mt-4 flex flex-col gap-2 border-t border-stone-100 pt-4">
+              <HeaderAuth />
+            </div>
           </nav>
         </div>
       )}
