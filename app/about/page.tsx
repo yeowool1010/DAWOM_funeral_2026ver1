@@ -26,7 +26,8 @@ const CAROUSEL_ROW_3: string[] = [
   "/images/about/carousel/홍보11.jpg",
   "/images/about/carousel/홍보12.jpg",
   "/images/about/carousel/홍보13.jpg",
-  "/images/about/carousel/홍보14.jpg",
+  // 한글·대문자 확장자 조합은 Vercel/이미지 최적화에서 실패하는 경우가 있어 ASCII 복사본 사용
+  "/images/about/carousel/홍보14.png",
   "/images/about/carousel/홍보15.jpg",
 ];
 
@@ -233,6 +234,7 @@ export default function AboutPage() {
                       fill
                       className="object-contain"
                       sizes="(max-width: 640px) 176px, (max-width: 768px) 208px, 240px"
+                      unoptimized={src.includes("carousel-14")}
                     />
                   </div>
                 ))}
