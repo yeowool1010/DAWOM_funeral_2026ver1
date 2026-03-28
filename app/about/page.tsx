@@ -8,25 +8,25 @@ import { ChevronDown } from "lucide-react";
 
 // TODO: 여기에 이미지 경로를 채워 넣으면 됩니다. (예: "/images/about/carousel/1.jpg")
 const CAROUSEL_ROW_1: string[] = [
-  "/images/about/carousel/placeholder-1.jpg",
-  "/images/about/carousel/placeholder-2.jpg",
-  "/images/about/carousel/placeholder-3.jpg",
-  "/images/about/carousel/placeholder-4.jpg",
-  "/images/about/carousel/placeholder-5.jpg",
+  "/images/about/carousel/홍보1.png",
+  "/images/about/carousel/홍보2.png",
+  "/images/about/carousel/홍보3.png",
+  "/images/about/carousel/홍보4.png",
+  "/images/about/carousel/홍보5.png",
 ];
 const CAROUSEL_ROW_2: string[] = [
-  "/images/about/carousel/placeholder-6.jpg",
-  "/images/about/carousel/placeholder-7.jpg",
-  "/images/about/carousel/placeholder-8.jpg",
-  "/images/about/carousel/placeholder-9.jpg",
-  "/images/about/carousel/placeholder-10.jpg",
+  "/images/about/carousel/홍보6.png",
+  "/images/about/carousel/홍보7.jpg",
+  "/images/about/carousel/홍보8.jpg",
+  "/images/about/carousel/홍보9.jpg",
+  "/images/about/carousel/홍보10.jpg",
 ];
 const CAROUSEL_ROW_3: string[] = [
-  "/images/about/carousel/placeholder-11.jpg",
-  "/images/about/carousel/placeholder-12.jpg",
-  "/images/about/carousel/placeholder-13.jpg",
-  "/images/about/carousel/placeholder-14.jpg",
-  "/images/about/carousel/placeholder-15.jpg",
+  "/images/about/carousel/홍보11.jpg",
+  "/images/about/carousel/홍보12.jpg",
+  "/images/about/carousel/홍보13.jpg",
+  "/images/about/carousel/홍보14.jpg",
+  "/images/about/carousel/홍보15.jpg",
 ];
 
 const STATS = [
@@ -85,7 +85,7 @@ export default function AboutPage() {
 
       <section className="relative min-h-[85vh] overflow-hidden">
         <Image
-          src="/images/about/hero1.png"
+          src="/images/about/hero11.jpg"
           alt=""
           fill
           className="object-cover"
@@ -309,7 +309,7 @@ export default function AboutPage() {
         className="relative min-h-screen overflow-hidden bg-[#0f172a]"
       >
         <Image
-          src="/images/about/hero1.png"
+          src="/images/about/hero2.jpg"
           alt=""
           fill
           className="object-cover"
@@ -358,18 +358,19 @@ export default function AboutPage() {
         <div className="relative z-10 flex min-h-[85vh] flex-col items-center justify-center px-4 text-center">
           {/* <h1 className="text-3xl font-bold leading-loose text-white sm:text-4xl md:text-5xl sm:leading-loose"> */}
           <h1 className="text-lg font-bold leading-loose text-white sm:text-lg md:text-3xl sm:leading-loose">
-            다움 상조는
+            다움 상조는 오늘도
             <br />
-            사람다움, 아름다움, 장례다움이라는 기준으로
-            <br />
-            장례의 새로운 기준을 만들어가고 있습니다.
-            <br />
-            <br />
+            사람답고 아름다운 이별을 준비합니다.
+      
+            
+            
+          
+            {/* <br />
             마지막 순간까지
             <br />
             사람다운 장례가 이루어질 수 있도록.
             <br />
-            그 길을 다움이 함께하겠습니다.
+            그 길을 다움이 함께하겠습니다. */}
           </h1>
           <button
             type="button"
