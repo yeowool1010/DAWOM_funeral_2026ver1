@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
+import { cn } from "@/lib/utils";
 import { ChevronDown } from "lucide-react";
 
 // TODO: 여기에 이미지 경로를 채워 넣으면 됩니다. (예: "/images/about/carousel/1.jpg")
@@ -34,6 +35,11 @@ const STATS = [
   { label: "선임 장례지도사 누적 행사 건수", value: "6,000건 +", date: "2026.03.12 기준" },
   // { label: "서비스 수", value: "100개 +", date: "2025.06.30 기준" },
 ];
+
+const COMPANY_HISTORY = [
+  { year: 2026, dateLabel: "2026.3", title: "다움상조 출범" },
+  { year: 2009, dateLabel: "2009.4", title: "예람장례서비스 발족" },
+] as const;
 
 export default function AboutPage() {
 
@@ -175,13 +181,16 @@ export default function AboutPage() {
               <div className="daum-marquee__fade daum-marquee__fade--right" />
               <div className="daum-marquee__track">
                 {[...CAROUSEL_ROW_1, ...CAROUSEL_ROW_1].map((src, idx) => (
-                  <div key={`${src}-${idx}`} className="daum-marquee__item">
+                  <div
+                    key={`${src}-${idx}`}
+                    className="daum-marquee__item relative h-24 w-44 shrink-0 overflow-hidden rounded-xl bg-[#0f172a] sm:h-28 sm:w-52 md:h-32 md:w-60"
+                  >
                     <Image
                       src={src}
                       alt=""
-                      width={360}
-                      height={240}
-                      className="h-24 w-44 rounded-xl object-cover sm:h-28 sm:w-52 md:h-32 md:w-60"
+                      fill
+                      className="object-contain"
+                      sizes="(max-width: 640px) 176px, (max-width: 768px) 208px, 240px"
                     />
                   </div>
                 ))}
@@ -193,13 +202,16 @@ export default function AboutPage() {
               <div className="daum-marquee__fade daum-marquee__fade--right" />
               <div className="daum-marquee__track">
                 {[...CAROUSEL_ROW_2, ...CAROUSEL_ROW_2].map((src, idx) => (
-                  <div key={`${src}-${idx}`} className="daum-marquee__item">
+                  <div
+                    key={`${src}-${idx}`}
+                    className="daum-marquee__item relative h-24 w-44 shrink-0 overflow-hidden rounded-xl bg-[#0f172a] sm:h-28 sm:w-52 md:h-32 md:w-60"
+                  >
                     <Image
                       src={src}
                       alt=""
-                      width={360}
-                      height={240}
-                      className="h-24 w-44 rounded-xl object-cover sm:h-28 sm:w-52 md:h-32 md:w-60"
+                      fill
+                      className="object-contain"
+                      sizes="(max-width: 640px) 176px, (max-width: 768px) 208px, 240px"
                     />
                   </div>
                 ))}
@@ -211,13 +223,16 @@ export default function AboutPage() {
               <div className="daum-marquee__fade daum-marquee__fade--right" />
               <div className="daum-marquee__track">
                 {[...CAROUSEL_ROW_3, ...CAROUSEL_ROW_3].map((src, idx) => (
-                  <div key={`${src}-${idx}`} className="daum-marquee__item">
+                  <div
+                    key={`${src}-${idx}`}
+                    className="daum-marquee__item relative h-24 w-44 shrink-0 overflow-hidden rounded-xl bg-[#0f172a] sm:h-28 sm:w-52 md:h-32 md:w-60"
+                  >
                     <Image
                       src={src}
                       alt=""
-                      width={360}
-                      height={240}
-                      className="h-24 w-44 rounded-xl object-cover sm:h-28 sm:w-52 md:h-32 md:w-60"
+                      fill
+                      className="object-contain"
+                      sizes="(max-width: 640px) 176px, (max-width: 768px) 208px, 240px"
                     />
                   </div>
                 ))}
@@ -333,14 +348,22 @@ export default function AboutPage() {
               Vision
             </p>
             <p className="mt-6 text-lg leading-loose text-white md:text-xl">
-              장례는 형식이 아니라 사람에 대한 예의라고 생각합니다.
+            장례를 평생의 보람으로 살아온 우리는 
               <br />
-              그래서 우리는 장례의 본질부터 다시 고민했습니다.
+            장례를 한 가지 기준으로 생각합니다.
               <br />
-              과한 비용보다 합리적인 선택을,
-              복잡한 절차보다 전문적인 준비를,
               <br />
-              보여주기보다 진심 어린 장례를 만들고 싶었습니다.
+              사람다운 장례여야 한다는 것.
+              <br />
+              <br />
+              부담되는 비용 대신 합리적인 선택을,
+              <br />
+              복잡한 치레 대신 전문성과 진심을 담아,
+              <br />
+              사랑하는 가족이 이별의 순간에 온전히 집중할 수 있도록 돕습니다.
+              <br />
+              <br />
+              그것이 다움 장례지도사들의 평생 소명입니다.
             </p>
           </div>
         </div>
@@ -355,30 +378,83 @@ export default function AboutPage() {
           }}
           aria-hidden
         />
-        <div className="relative z-10 flex min-h-[85vh] flex-col items-center justify-center px-4 text-center">
-          {/* <h1 className="text-3xl font-bold leading-loose text-white sm:text-4xl md:text-5xl sm:leading-loose"> */}
+        <div className="relative z-10 flex min-h-[85vh] flex-col items-center justify-center gap-12 px-4 pb-24 pt-16 text-center sm:gap-16 sm:pt-20">
           <h1 className="text-lg font-bold leading-loose text-white sm:text-lg md:text-3xl sm:leading-loose">
-            다움 상조는 오늘도
+            다움상조는 오늘도
             <br />
             사람답고 아름다운 이별을 준비합니다.
-      
-            
-            
-          
-            {/* <br />
-            마지막 순간까지
-            <br />
-            사람다운 장례가 이루어질 수 있도록.
-            <br />
-            그 길을 다움이 함께하겠습니다. */}
           </h1>
-          <button
+
+          <div
+            className="w-full max-w-md text-left md:max-w-xl"
+            aria-label="연혁"
+          >
+            <div className="flex">
+              <div className="flex flex-col">
+                {COMPANY_HISTORY.map((entry, index) => (
+                  <div
+                    key={entry.year}
+                    className={cn(
+                      "flex min-h-20 items-center justify-end py-2 pr-5 text-right text-xl tabular-nums md:pr-6 md:text-2xl",
+                      index === 0
+                        ? "font-semibold text-white"
+                        : "font-normal text-white/35",
+                    )}
+                  >
+                    {entry.year}
+                  </div>
+                ))}
+              </div>
+
+              <div className="relative w-5 shrink-0 md:w-6">
+                <div
+                  className="absolute left-1/2 top-10 bottom-10 w-px -translate-x-1/2 bg-white/25"
+                  aria-hidden
+                />
+                {COMPANY_HISTORY.map((entry, index) => (
+                  <div
+                    key={entry.year}
+                    className="flex min-h-20 items-center justify-center"
+                  >
+                    <span
+                      className={cn(
+                        "shrink-0 rounded-full border-2",
+                        index === 0
+                          ? "h-3.5 w-3.5 border-white bg-transparent"
+                          : "h-2 w-2 border-transparent bg-white/40",
+                      )}
+                      aria-hidden
+                    />
+                  </div>
+                ))}
+              </div>
+
+              <div className="flex min-w-0 flex-1 flex-col">
+                {COMPANY_HISTORY.map((entry) => (
+                  <div
+                    key={entry.year}
+                    className="flex min-h-20 flex-col justify-center py-2 pl-1 md:pl-2"
+                  >
+                    <p className="text-sm text-white/45 md:text-base">
+                      {entry.dateLabel}
+                    </p>
+                    <p className="mt-1 text-base font-medium text-white md:text-lg">
+                      {entry.title}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* <button
             type="button"
             onClick={scrollToNext}
             className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/90 transition hover:text-white"
             aria-label="아래로 스크롤"
           >
-          </button>
+            <ChevronDown className="h-8 w-8" strokeWidth={2} />
+          </button> */}
         </div>
       </section>
       <SiteFooter />
