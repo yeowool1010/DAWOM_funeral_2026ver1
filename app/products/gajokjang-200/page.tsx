@@ -1,6 +1,15 @@
+"use client";
+
+import { useState } from "react";
 import { SiteHeader } from "@/components/site-header";
 import { ProductSubNav200 } from "@/components/product/product-200-sub-nav";
 import { SiteFooter } from "@/components/site-footer";
+import {
+  ProductDetailModal,
+  type ProductDetailModalContent,
+  compositionCardHasDetail,
+  getCompositionCardDescription,
+} from "@/components/product/product-detail-modal";
 import Image from "next/image";
 import {
   UserCircle,
@@ -10,16 +19,11 @@ import {
   ArrowRight,
   Plus,
   RefreshCw,
-  AlertCircle,
 } from "lucide-react";
 
-export const metadata = {
-  title: "다움 220 상조 패키지 | 다움",
-  description:
-    "가족과 가까운 지인 중심으로 치르는 다움 220 상조 패키지의 서비스 구성과 안내사항을 한 페이지에서 확인해 보세요.",
-};
-
 export default function Gajokjang200Page() {
+  const [detailModal, setDetailModal] = useState<ProductDetailModalContent>(null);
+
   return (
     <div className="min-h-screen bg-white">
       <SiteHeader />
@@ -309,6 +313,8 @@ export default function Gajokjang200Page() {
                 {[
                   {
                     name: "오동나무 관",
+                    name2:
+                      "고인을 모시는 관 입니다. 오동나무는 가볍고 변형이 적으며, 습기와 벌레에 강해 전통적으로 망자를 모시는 관재로 많이 사용되어 왔습니다.",
                     desc: "",
                     price: "",
                     discount: null,
@@ -316,6 +322,8 @@ export default function Gajokjang200Page() {
                   },
                   {
                     name: "가진 수의",
+                    name2:
+                      "가진 수의란 '갖춰진 수의'를 뜻합니다. 일반적으로 저고리(속저고리)·바지(속바지)·베개·악수·복건·면모·턱받이·버선·오낭·천금(이불)·지금(요)·장매·멧베 등으로 구성되어 있으며 입관시 고인 모실 때 사용됩니다.",
                     desc: "",
                     price: "",
                     discount: "",
@@ -323,6 +331,8 @@ export default function Gajokjang200Page() {
                   },
                   {
                     name: "입관 수시 용품",
+                    name2:
+                      "입관시 장례지도사가 고인을 모실 때 사용하는 용품을 뜻하며 관보, 결관바, 명정, 염지, 종교용품, 습신 등 일반 용품부터 알콜올, 탈지면, 소독 스프레이, 지혈분말 등 위생용품까지 포함하고 있습니다.",
                     desc: "",
                     price: "",
                     discount: null,
@@ -330,6 +340,8 @@ export default function Gajokjang200Page() {
                   },
                   {
                     name: "봉안함",
+                    name2:
+                      "봉안함은 화장한 유골을 보관하기 위해 만들어진 함을 뜻하며 장법에 따라 자연장 시엔 나무로 만들어진 목함을 사용하기도 합니다. 다움 220은 일반 봉안함 또는 목함을 기본으로 제공합니다.",
                     desc: "일반 봉안함/목함",
                     price: "",
                     free: true,
@@ -337,6 +349,8 @@ export default function Gajokjang200Page() {
                   },
                   {
                     name: "꽃관 장식",
+                    name2:
+                      "꽃관장식이란 고인의 관 내부를 꽃으로 장식하는 것입니다. 고인께서 긴 여행을 떠나시는 길을 생화로 아름답게 보내드리는 것을 의미합니다. 생화 종류는 계절에 따라 바뀔 수 있습니다.",
                     desc: "계절 생화",
                     price: "",
                     discount: null,
@@ -344,14 +358,17 @@ export default function Gajokjang200Page() {
                   },
                   {
                     name: "남자상복/여자상복",
+                    name2:
+                      "유가족이 착용하는 전통 상복입니다. 남·여 구분에 맞춰 제공되며, 본 상품은 남자 4벌·여자 6벌이 포함됩니다.",
                     desc: "남자 4벌, 여자 6벌",
                     price: "",
                     discount: null,
                     img: "/images/상복-이미지1.png",
-                    
                   },
                   {
                     name: "헌화용 국화꽃",
+                    name2:
+                      "조문 시 헌화할 수 있는 국화 꽃다발입니다. 본 상품에는 30송이가 포함됩니다.",
                     desc: "30송이",
                     price: "",
                     free: true,
@@ -364,12 +381,37 @@ export default function Gajokjang200Page() {
                     free: true,
                     img: "/images/products/영정사진.jpg",
                   },
-                ].map((item) => (
+                ].map((item) => {
+                  const hasDetail = compositionCardHasDetail(item);
+                  const detailText = getCompositionCardDescription(item);
+                  return (
                   <div
                     key={item.name}
                     className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"
                   >
-                    <div className="relative aspect-square bg-slate-900">
+                    <div
+                      className={`relative aspect-square bg-slate-900 ${
+                        hasDetail ? "cursor-pointer" : ""
+                      }`}
+                      role={hasDetail ? "button" : undefined}
+                      tabIndex={hasDetail ? 0 : undefined}
+                      onClick={() =>
+                        hasDetail &&
+                        setDetailModal({
+                          title: item.name,
+                          description: detailText,
+                        })
+                      }
+                      onKeyDown={(e) =>
+                        hasDetail &&
+                        e.key === "Enter" &&
+                        setDetailModal({
+                          title: item.name,
+                          description: detailText,
+                        })
+                      }
+                      aria-label={hasDetail ? `${item.name} 설명 보기` : undefined}
+                    >
                       <Image
                         src={item.img}
                         alt={item.name}
@@ -404,7 +446,8 @@ export default function Gajokjang200Page() {
                       </div>
                     </div>
                   </div>
-                ))}
+                  );
+                })}
               </div>
             </div>
 
@@ -421,28 +464,59 @@ export default function Gajokjang200Page() {
                 {[
                   {
                     name: "장례지도사",
+                    name2:
+                      "장례 진행에 관한 전문가입니다. 고인께서 임종하신 순간부터 입관, 발인, 안장까지 시작부터 끝까지 상주님과 동행하며 장례 절차, 예법, 종교의례 등 장례의 모든 부분을 상황과 환경에 따라 컨설팅하고 지도합니다.",
                     desc: "",
                     price: "",
                     img: "/images/장례지도사1.png",
                   },
                   {
                     name: "염습지도사",
+                    name2:
+                      "염습 시 장례지도사를 도와 고인을 정돈하는 전문 인력입니다. 장례 절차에 맞춰 고인을 정중히 모실 수 있도록 지원합니다.",
                     desc: "",
                     price: "",
                     img: "/images/염습지도사1.png",
                   },
                   {
                     name: "접객도우미",
+                    name2:
+                      "조문객 응대와 빈소 안내 등을 돕는 서비스입니다.\n\n2인 (8시간) 제공",
                     desc: "2인 (8시간)",
                     price: "",
                     img: "/images/접객도우미.png",
                   },
-                ].map((item) => (
+                ].map((item) => {
+                  const hasDetail = compositionCardHasDetail(item);
+                  const detailText = getCompositionCardDescription(item);
+                  return (
                   <div
                     key={item.name}
                     className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"
                   >
-                    <div className="relative aspect-[4/3] bg-slate-900">
+                    <div
+                      className={`relative aspect-[4/3] bg-slate-900 ${
+                        hasDetail ? "cursor-pointer" : ""
+                      }`}
+                      role={hasDetail ? "button" : undefined}
+                      tabIndex={hasDetail ? 0 : undefined}
+                      onClick={() =>
+                        hasDetail &&
+                        setDetailModal({
+                          title: item.name,
+                          description: detailText,
+                        })
+                      }
+                      onKeyDown={(e) =>
+                        hasDetail &&
+                        e.key === "Enter" &&
+                        setDetailModal({
+                          title: item.name,
+                          description: detailText,
+                        })
+                      }
+                      aria-label={hasDetail ? `${item.name} 설명 보기` : undefined}
+                    >
                       <Image
                         src={item.img}
                         alt={item.name}
@@ -459,7 +533,8 @@ export default function Gajokjang200Page() {
                       </p>
                     </div>
                   </div>
-                ))}
+                  );
+                })}
               </div>
             </div>
 
@@ -474,7 +549,25 @@ export default function Gajokjang200Page() {
               {/* <div className="grid gap-4 sm:grid-cols-2"> */}
               <div className="grid gap-4 grid-cols-2 sm:grid-cols-3 lg:grid-cols-5">
                 <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
-                  <div className="relative aspect-[4/3] bg-slate-900">
+                  <div
+                    className="relative aspect-[4/3] cursor-pointer bg-slate-900"
+                    role="button"
+                    tabIndex={0}
+                    onClick={() =>
+                      setDetailModal({
+                        title: "고인이송차량",
+                        description: "관내 이송",
+                      })
+                    }
+                    onKeyDown={(e) =>
+                      e.key === "Enter" &&
+                      setDetailModal({
+                        title: "고인이송차량",
+                        description: "관내 이송",
+                      })
+                    }
+                    aria-label="고인이송차량 설명 보기"
+                  >
                     <Image
                       src="/images/products/고인이송차량1.png"
                       alt="고인이송차량"
@@ -492,7 +585,27 @@ export default function Gajokjang200Page() {
                   </div>
                 </div>
                 <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
-                  <div className="relative aspect-[4/3] bg-slate-900">
+                  <div
+                    className="relative aspect-[4/3] cursor-pointer bg-slate-900"
+                    role="button"
+                    tabIndex={0}
+                    onClick={() =>
+                      setDetailModal({
+                        title: "리무진/장의버스 택1",
+                        description:
+                          "리무진 200km 화장장 편도\n장의버스 200km 왕복",
+                      })
+                    }
+                    onKeyDown={(e) =>
+                      e.key === "Enter" &&
+                      setDetailModal({
+                        title: "리무진/장의버스 택1",
+                        description:
+                          "리무진 200km 화장장 편도\n장의버스 200km 왕복",
+                      })
+                    }
+                    aria-label="리무진/장의버스 설명 보기"
+                  >
                     <Image
                       src="/images/products/리무진3.png"
                       alt="리무진/장의버스"
@@ -620,6 +733,10 @@ export default function Gajokjang200Page() {
 
       </main>
       <SiteFooter />
+      <ProductDetailModal
+        content={detailModal}
+        onClose={() => setDetailModal(null)}
+      />
     </div>
   );
 }

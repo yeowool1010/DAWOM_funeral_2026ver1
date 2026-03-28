@@ -1,10 +1,14 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import { SiteHeader } from "@/components/site-header";
 import { ProductSubNav130 } from "@/components/product/product-130-sub-nav";
 import { SiteFooter } from "@/components/site-footer";
+import {
+  ProductDetailModal,
+  type ProductDetailModalContent,
+} from "@/components/product/product-detail-modal";
 import {
   UserCircle,
   Package,
@@ -13,38 +17,10 @@ import {
   ArrowRight,
   Plus,
   RefreshCw,
-  AlertCircle,
 } from "lucide-react";
 
-const OVERLAY_VISIBLE_MS = 3000;
-
 export default function Mubinsosang130Page() {
-  const [tappedCardId, setTappedCardId] = useState<string | null>(null);
-  const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-
-  const handleCardTap = (cardId: string) => {
-    if (typeof window !== "undefined" && window.matchMedia("(hover: hover)").matches) {
-      return;
-    }
-    if (tappedCardId === cardId) {
-      if (timeoutRef.current) clearTimeout(timeoutRef.current);
-      timeoutRef.current = null;
-      setTappedCardId(null);
-      return;
-    }
-    if (timeoutRef.current) clearTimeout(timeoutRef.current);
-    setTappedCardId(cardId);
-    timeoutRef.current = setTimeout(() => {
-      setTappedCardId(null);
-      timeoutRef.current = null;
-    }, OVERLAY_VISIBLE_MS);
-  };
-
-  useEffect(() => {
-    return () => {
-      if (timeoutRef.current) clearTimeout(timeoutRef.current);
-    };
-  }, []);
+  const [detailModal, setDetailModal] = useState<ProductDetailModalContent>(null);
 
   return (
     <div className="min-h-screen bg-white">
@@ -354,7 +330,7 @@ export default function Mubinsosang130Page() {
                   },
                   {
                     name: "가진 수의",
-                    name2: "가진 수의는 입관 시 고인을 모실 때 쓰는 갖춰진 수의로, 저고리와 바지, 베개, 복건, 버선, 오낭, 이불과 요 등 여러 장례용 의복과 물품으로 구성된 전통 수의",
+                    name2: "가진 수의란 '갖춰진 수의'를 뜻합니다. 일반적으로 저고리(속저고리)·바지(속바지)·베개·악수·복건·면모·턱받이·버선·오낭·천금(이불)·지금(요)·장매·멧베 등으로 구성되어 있으며 입관시 고인 모실 때 사용됩니다.",
                     desc: "",
                     price: "",
                     discount: "",
@@ -370,7 +346,7 @@ export default function Mubinsosang130Page() {
                   },
                   {
                     name: "봉안함",
-                    name2: "봉안함은 화장한 유골을 보관하는 유골함을 뜻하며 장법에 따라 자연장 시엔 목함을 사용하기도 합니다.다움 실속형은 일반 봉안함 또는 목함을 기본으로 제공합니다.",
+                    name2: "봉안함은 화장한 유골을 보관하기 위해 만들어진 함을 뜻하며 장법에 따라 자연장 시엔 나무로 만들어진 목함을 사용하기도 합니다. 다움 실속형은 일반 봉안함 또는 목함을 기본으로 제공합니다.",
                     desc: "일반 봉안함/목함",
                     price: "",
                     free: true,
@@ -378,49 +354,50 @@ export default function Mubinsosang130Page() {
                   },
                   {
                     name: "꽃관 장식",
-                    name2: "꽃관장식이란 고인의 관 내부를 꽃으로 장식하는 것으로 긴 여행을 떠나시는 길을 생화로 아름답게 보내드리는 것을 뜻합니다. 생화 종류는 계절에 따라 바뀔 수 있습니다.",
+                    name2: "꽃관장식이란 고인의 관 내부를 꽃으로 장식하는 것입니다. 고인께서 긴 여행을 떠나시는 길을 생화로 아름답게 보내드리는 것을 의미합니다. 생화 종류는 계절에 따라 바뀔 수 있습니다.",
                     desc: "계절 생화",
                     price: "",
                     discount: null,
                     img: "/images/관장식꽃.jpg",
                   },
                 ].map((item) => {
-                  const cardId = `goods-${item.name}`;
                   const hasDetail = Boolean((item as { name2?: string }).name2);
-                  const isOverlayVisible = tappedCardId === cardId;
+                  const detailText = (item as { name2?: string }).name2 ?? "";
                   return (
                   <div
                     key={item.name}
-                    className="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"
+                    className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"
                   >
                     <div
-                      className="relative aspect-square cursor-pointer bg-slate-900 md:cursor-default"
-                      role="button"
-                      tabIndex={0}
-                      onClick={() => hasDetail && handleCardTap(cardId)}
-                      onKeyDown={(e) => hasDetail && e.key === "Enter" && handleCardTap(cardId)}
-                      aria-label={`${item.name} 설명 보기`}
+                      className={`relative aspect-square bg-slate-900 ${
+                        hasDetail ? "cursor-pointer" : ""
+                      }`}
+                      role={hasDetail ? "button" : undefined}
+                      tabIndex={hasDetail ? 0 : undefined}
+                      onClick={() =>
+                        hasDetail &&
+                        setDetailModal({
+                          title: item.name,
+                          description: detailText,
+                        })
+                      }
+                      onKeyDown={(e) =>
+                        hasDetail &&
+                        e.key === "Enter" &&
+                        setDetailModal({
+                          title: item.name,
+                          description: detailText,
+                        })
+                      }
+                      aria-label={hasDetail ? `${item.name} 설명 보기` : undefined}
                     >
                       <Image
                         src={item.img}
                         alt={item.name}
                         fill
-                        className={`object-cover transition duration-300 ${
-                          hasDetail ? "group-hover:brightness-75" : ""
-                        }`}
+                        className="object-cover"
                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       />
-                      {hasDetail && (
-                        <div
-                          className={`absolute inset-0 flex items-center justify-center bg-black/55 p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100 ${
-                            isOverlayVisible ? "!opacity-100" : ""
-                          }`}
-                        >
-                          <span className="text-center text-xs text-white/95 sm:text-sm">
-                            {(item as { name2?: string }).name2}
-                          </span>
-                        </div>
-                      )}
                     </div>
                     <div className="p-4">
                       <h4 className="font-semibold text-slate-900">{item.name}</h4>
@@ -466,53 +443,55 @@ export default function Mubinsosang130Page() {
                 {[
                   {
                     name: "장례지도사",
+                    name2:"장례 진행에 관한 전문가입니다. 고인께서 임종하신 순간부터 입관, 발인, 안장까지 시작부터 끝까지 상주님과 동행하며 장례 절차, 예법, 종교의례 등 장례의 모든 부분을 상황과 환경에 따라 컨설팅하고 지도합니다.",
                     desc: "",
                     price: "",
                     img: "/images/장례지도사1.png",
                   },
                   {
-                    name: "염습지도사",
-                    desc: "",
+                    name: "입관지도사",
+                    name2:"입관시 담당 장례지도사를 도와 고인을 모시는 장례지도사입니다. 장례지도사와 마찬가지로 장례에 관한 전문가입니다.",
                     price: "",
                     img: "/images/염습지도사1.png",
                   },
                 ].map((item) => {
-                  const cardId = `staff-${item.name}`;
                   const hasDetail = Boolean((item as { name2?: string }).name2);
-                  const isOverlayVisible = tappedCardId === cardId;
+                  const detailText = (item as { name2?: string }).name2 ?? "";
                   return (
                     <div
                       key={item.name}
-                      className="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"
+                      className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"
                     >
                       <div
-                        className="relative aspect-[4/3] cursor-pointer bg-slate-900 md:cursor-default"
-                        role="button"
-                        tabIndex={0}
-                        onClick={() => hasDetail && handleCardTap(cardId)}
-                        onKeyDown={(e) => hasDetail && e.key === "Enter" && handleCardTap(cardId)}
-                        aria-label={`${item.name} 설명 보기`}
+                        className={`relative aspect-[4/3] bg-slate-900 ${
+                          hasDetail ? "cursor-pointer" : ""
+                        }`}
+                        role={hasDetail ? "button" : undefined}
+                        tabIndex={hasDetail ? 0 : undefined}
+                        onClick={() =>
+                          hasDetail &&
+                          setDetailModal({
+                            title: item.name,
+                            description: detailText,
+                          })
+                        }
+                        onKeyDown={(e) =>
+                          hasDetail &&
+                          e.key === "Enter" &&
+                          setDetailModal({
+                            title: item.name,
+                            description: detailText,
+                          })
+                        }
+                        aria-label={hasDetail ? `${item.name} 설명 보기` : undefined}
                       >
                         <Image
                           src={item.img}
                           alt={item.name}
                           fill
-                          className={`object-cover transition duration-300 ${
-                            hasDetail ? "group-hover:brightness-75" : ""
-                          }`}
+                          className="object-cover"
                           sizes="(max-width: 640px) 100vw, 50vw"
                         />
-                        {hasDetail && (
-                          <div
-                            className={`absolute inset-0 flex items-center justify-center bg-black/55 p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100 ${
-                              isOverlayVisible ? "!opacity-100" : ""
-                            }`}
-                          >
-                            <span className="text-center text-xs text-white/95 sm:text-sm">
-                              {(item as { name2?: string }).name2}
-                            </span>
-                          </div>
-                        )}
                       </div>
                       <div className="p-4">
                         <h4 className="font-semibold text-slate-900">{item.name}</h4>
@@ -537,34 +516,33 @@ export default function Mubinsosang130Page() {
               </div>
               {/* <div className="grid gap-4 sm:grid-cols-2"> */}
               <div className="grid gap-4 grid-cols-2 sm:grid-cols-3 lg:grid-cols-5">
-                <div className="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+                <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
                   <div
-                    className="relative aspect-[4/3] cursor-pointer bg-slate-900 md:cursor-default"
+                    className="relative aspect-[4/3] cursor-pointer bg-slate-900"
                     role="button"
                     tabIndex={0}
-                    onClick={() => handleCardTap("vehicle-고인이송차량")}
-                    onKeyDown={(e) => e.key === "Enter" && handleCardTap("vehicle-고인이송차량")}
+                    onClick={() =>
+                      setDetailModal({
+                        title: "고인이송차량",
+                        description: "관내 이송",
+                      })
+                    }
+                    onKeyDown={(e) =>
+                      e.key === "Enter" &&
+                      setDetailModal({
+                        title: "고인이송차량",
+                        description: "관내 이송",
+                      })
+                    }
                     aria-label="고인이송차량 설명 보기"
                   >
                     <Image
                       src="/images/products/고인이송차량1.png"
                       alt="고인이송차량"
                       fill
-                      className="object-cover transition duration-300 group-hover:brightness-75"
+                      className="object-cover"
                       sizes="(max-width: 640px) 100vw, 50vw"
                     />
-                    <div
-                      className={`absolute inset-0 flex flex-col items-center justify-center gap-1 bg-black/50 p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100 ${
-                        tappedCardId === "vehicle-고인이송차량" ? "!opacity-100" : ""
-                      }`}
-                    >
-                      <span className="text-center text-sm font-semibold text-white sm:text-base">
-                        고인이송차량
-                      </span>
-                      <span className="text-center text-xs text-white/95 sm:text-sm">
-                        관내 이송
-                      </span>
-                    </div>
                   </div>
                   <div className="p-4">
                     <h4 className="font-semibold text-slate-900">고인이송차량</h4>
@@ -574,34 +552,35 @@ export default function Mubinsosang130Page() {
                     </p> */}
                   </div>
                 </div>
-                <div className="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+                <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
                   <div
-                    className="relative aspect-[4/3] cursor-pointer bg-slate-900 md:cursor-default"
+                    className="relative aspect-[4/3] cursor-pointer bg-slate-900"
                     role="button"
                     tabIndex={0}
-                    onClick={() => handleCardTap("vehicle-리무진")}
-                    onKeyDown={(e) => e.key === "Enter" && handleCardTap("vehicle-리무진")}
+                    onClick={() =>
+                      setDetailModal({
+                        title: "리무진/장의버스 택1",
+                        description:
+                          "리무진 150km 화장장 편도 · 장의버스 150km 왕복",
+                      })
+                    }
+                    onKeyDown={(e) =>
+                      e.key === "Enter" &&
+                      setDetailModal({
+                        title: "리무진/장의버스 택1",
+                        description:
+                          "리무진 150km 화장장 편도 · 장의버스 150km 왕복",
+                      })
+                    }
                     aria-label="리무진/장의버스 설명 보기"
                   >
                     <Image
                       src="/images/products/리무진3.png"
                       alt="리무진/장의버스"
                       fill
-                      className="object-cover transition duration-300 group-hover:brightness-75"
+                      className="object-cover"
                       sizes="(max-width: 640px) 100vw, 50vw"
                     />
-                    <div
-                      className={`absolute inset-0 flex flex-col items-center justify-center gap-1 bg-black/50 p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100 ${
-                        tappedCardId === "vehicle-리무진" ? "!opacity-100" : ""
-                      }`}
-                    >
-                      <span className="text-center text-sm font-semibold text-white sm:text-base">
-                        리무진/장의버스 택1
-                      </span>
-                      <span className="text-center text-xs text-white/95 sm:text-sm">
-                        리무진 150km 화장장 편도 · 장의버스 150km 왕복
-                      </span>
-                    </div>
                   </div>
                   <div className="p-4">
                     <h4 className="font-semibold text-slate-900">
@@ -697,6 +676,11 @@ export default function Mubinsosang130Page() {
 
       </main>
       <SiteFooter />
+
+      <ProductDetailModal
+        content={detailModal}
+        onClose={() => setDetailModal(null)}
+      />
     </div>
   );
 }
