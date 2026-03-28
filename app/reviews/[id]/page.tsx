@@ -45,15 +45,15 @@ export default async function ReviewDetailPage({ params }: ReviewDetailPageProps
       <main>
         <ReviewCtaStrip />
         <ReviewDetailContent review={review} />
-        <ReviewDetailChecklistBanner />
+        {/* <ReviewDetailChecklistBanner /> */}
         {review.consultant && (
           <ReviewDetailConsultant consultant={review.consultant} />
         )}
         <ReviewPackageCta />
-        <Review100wonCta />
-        <ReviewDetailBack />
-        <ReviewDetailBack />
-        <ReviewChecklistCta />
+        {/* <Review100wonCta /> */}
+        {/* <ReviewDetailBack /> */}
+        {/* <ReviewDetailBack /> */}
+        {/* <ReviewChecklistCta /> */}
       </main>
       <SiteFooter />
     </div>

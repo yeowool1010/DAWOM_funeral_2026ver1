@@ -81,7 +81,7 @@ export default function ReviewsPage({ searchParams }: ReviewsPageProps) {
         <ReviewBestCarousel />
         <ReviewListHeader />
         <Suspense fallback={<div className="h-32 border-b border-stone-200" />}>
-          <ReviewListFilters />
+          {/* <ReviewListFilters /> */}
         </Suspense>
         <Suspense fallback={<ReviewsListFallback />}>
           <ReviewsListContent searchParams={searchParams} />

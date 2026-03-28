@@ -23,7 +23,7 @@ export function ReviewListFilters() {
     <div className="border-b border-stone-200 bg-white py-6">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="flex flex-col gap-6">
-          <div className="flex flex-wrap items-center gap-3">
+          {/* <div className="flex flex-wrap items-center gap-3">
             <MapPin className="h-5 w-5 text-stone-500" />
             <span className="text-sm font-medium text-stone-700">
               지역별 후기 보기
@@ -39,8 +39,8 @@ export function ReviewListFilters() {
                 </option>
               ))}
             </select>
-          </div>
-          <div className="flex flex-wrap gap-2">
+          </div> */}
+          {/* <div className="flex flex-wrap gap-2">
             <button
               type="button"
               onClick={() => updateParams({ tag: "전체보기" })}
@@ -66,7 +66,7 @@ export function ReviewListFilters() {
                 #{t}
               </button>
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
