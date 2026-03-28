@@ -20,7 +20,7 @@ function KakaoIcon({ className }: { className?: string }) {
 
 const navItems = [
   { label: "상품안내", href: "/products" },
-  { label: "장례절차", href: "/process" },
+  { label: "장례정보", href: "/process" },
   { label: "고객후기", href: "/reviews" },
   { label: "회사소개", href: "/about" },
 ];
