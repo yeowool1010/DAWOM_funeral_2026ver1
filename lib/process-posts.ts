@@ -7,6 +7,10 @@ export const PROCESS_MAIN_FILTERS = [
 
 export type ProcessMainCategory = (typeof PROCESS_MAIN_FILTERS)[number];
 
+/** 목록 상단 탭: 전체 + 대분류 */
+export const PROCESS_TAB_FILTERS = ["전체", ...PROCESS_MAIN_FILTERS] as const;
+export type ProcessTabFilter = (typeof PROCESS_TAB_FILTERS)[number];
+
 export type ProcessThumbTone = "slate" | "sky" | "amber" | "mint" | "rose";
 
 export type ProcessPost = {
@@ -142,8 +146,7 @@ export function getProcessPostBySlug(slug: string): ProcessPost | undefined {
   return PROCESS_POSTS.find((p) => p.slug === slug);
 }
 
-export function filterProcessPosts(
-  mainCategory: ProcessMainCategory,
-): ProcessPost[] {
-  return PROCESS_POSTS.filter((p) => p.mainCategory === mainCategory);
+export function filterProcessPosts(tab: ProcessTabFilter): ProcessPost[] {
+  if (tab === "전체") return PROCESS_POSTS;
+  return PROCESS_POSTS.filter((p) => p.mainCategory === tab);
 }

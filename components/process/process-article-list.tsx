@@ -2,15 +2,15 @@
 
 import { useMemo, useState } from "react";
 import {
-  PROCESS_MAIN_FILTERS,
+  PROCESS_TAB_FILTERS,
   filterProcessPosts,
-  type ProcessMainCategory,
+  type ProcessTabFilter,
 } from "@/lib/process-posts";
 import { ProcessPostCard } from "@/components/process/process-post-card";
 import { cn } from "@/lib/utils";
 
 export function ProcessArticleList() {
-  const [active, setActive] = useState<ProcessMainCategory>("임종 전");
+  const [active, setActive] = useState<ProcessTabFilter>("전체");
 
   const posts = useMemo(() => filterProcessPosts(active), [active]);
 
@@ -21,7 +21,7 @@ export function ProcessArticleList() {
         role="tablist"
         aria-label="장례 정보 분류"
       >
-        {PROCESS_MAIN_FILTERS.map((label) => {
+        {PROCESS_TAB_FILTERS.map((label) => {
           const isActive = active === label;
           return (
             <button
