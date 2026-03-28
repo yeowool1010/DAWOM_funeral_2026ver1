@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { createClient } from "@/lib/supabase/client";
+import { tryCreateBrowserClient } from "@/lib/supabase/client";
 import { AuthSuccessDialog } from "@/components/auth-success-dialog";
 import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
@@ -16,7 +16,8 @@ export function LogoutButton({
   const [successOpen, setSuccessOpen] = useState(false);
 
   const logout = async () => {
-    const supabase = createClient();
+    const supabase = tryCreateBrowserClient();
+    if (!supabase) return;
     await supabase.auth.signOut();
     setSuccessOpen(true);
   };

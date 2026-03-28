@@ -5,8 +5,10 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import Image from "next/image";
 import Link from "next/link";
+
+const VERIFY_IMAGE_FILE = "인증이미지.png";
+const verifyImageSrc = `/images/${encodeURIComponent(VERIFY_IMAGE_FILE)}`;
 
 export default function Page() {
   return (
@@ -18,14 +20,15 @@ export default function Page() {
         </CardHeader>
         <CardContent className="flex flex-col gap-4">
           <div className="overflow-hidden rounded-lg border border-stone-200 bg-stone-50">
-            <Image
-              src="/images/인증이미지.png"
+            {/* next/image 는 한글 파일명 프리렌더 시 ByteString 오류가 나므로 img + 인코딩 경로 사용 */}
+            <img
+              src={verifyImageSrc}
               alt="이메일 인증 방법 안내"
               width={800}
               height={500}
-              className="h-auto w-full object-contain"
-              sizes="(max-width: 448px) 100vw, 448px"
-              priority
+              className="h-auto w-full max-w-full object-contain"
+              decoding="async"
+              fetchPriority="high"
             />
           </div>
           <p className="text-sm text-muted-foreground">

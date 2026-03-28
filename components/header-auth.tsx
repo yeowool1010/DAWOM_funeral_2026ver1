@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 import type { User } from "@supabase/supabase-js";
 import { AuthSuccessDialog } from "@/components/auth-success-dialog";
 import { getAuthDisplayName } from "@/lib/auth-display-name";
-import { createClient } from "@/lib/supabase/client";
+import { tryCreateBrowserClient } from "@/lib/supabase/client";
 import { Button } from "@/components/ui/button";
 
 export function HeaderAuth() {
@@ -16,7 +16,11 @@ export function HeaderAuth() {
   const [logoutSuccessOpen, setLogoutSuccessOpen] = useState(false);
 
   useEffect(() => {
-    const supabase = createClient();
+    const supabase = tryCreateBrowserClient();
+    if (!supabase) {
+      setLoading(false);
+      return;
+    }
     supabase.auth.getUser().then(({ data: { user: u } }) => {
       setUser(u);
       setLoading(false);
@@ -30,7 +34,8 @@ export function HeaderAuth() {
   }, []);
 
   const logout = async () => {
-    const supabase = createClient();
+    const supabase = tryCreateBrowserClient();
+    if (!supabase) return;
     await supabase.auth.signOut();
     setLogoutSuccessOpen(true);
   };
