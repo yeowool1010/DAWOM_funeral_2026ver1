@@ -254,7 +254,7 @@ export const REVIEWS: ReviewItem[] = [
   },
   {
     id: "20260405e",
-    author: "이경남님",
+    author: "○○남님",
     date: "2026년 4월 5일",
     text: "이번 장례를 치르며 상조 서비스의 도움을 받게 되었는데, 진심으로 감사했습니다.\n갑작스럽게 찾아온 이별로 가족 모두가 경황이 없는 상황이었지만, 처음부터 끝까지 세심하게 안내해주시고 하나하나 챙겨주신 덕분에 큰 어려움 없이 장례를 마칠 수 있었습니다.\n절차 하나하나를 이해하기 쉽게 설명해주시고, 유가족의 입장에서 배려해주시는 모습에서 깊은 신뢰를 느꼈습니다.\n힘든 순간에 곁에서 든든하게 함께해주신 모든 관계자 여러분들께 다시 한번 깊이 감사드립니다.\n앞으로도 많은 분들께 큰 힘이 되어주시는 상조회사가 되길 진심으로 바랍니다. 정말 감사했습니다.",
     rating: 5,
@@ -306,6 +306,19 @@ export const REVIEWS_PER_PAGE = 6;
 
 export function getReviewById(id: string): ReviewItem | undefined {
   return REVIEWS.find((r) => r.id === id);
+}
+
+/** `REVIEWS` 배열 순서 기준 이전·다음 글 (첫 글은 이전 없음, 마지막 글은 다음 없음) */
+export function getAdjacentReviews(id: string): {
+  prev: ReviewItem | null;
+  next: ReviewItem | null;
+} {
+  const idx = REVIEWS.findIndex((r) => r.id === id);
+  if (idx === -1) return { prev: null, next: null };
+  return {
+    prev: idx > 0 ? REVIEWS[idx - 1]! : null,
+    next: idx < REVIEWS.length - 1 ? REVIEWS[idx + 1]! : null,
+  };
 }
 
 export function getFilteredReviews(region: string, tag: string): ReviewItem[] {
