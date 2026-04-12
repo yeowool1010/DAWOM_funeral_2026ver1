@@ -4,7 +4,17 @@ import type { Metadata } from "next";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { ChevronLeft } from "lucide-react";
-import { getProcessPostBySlug, PROCESS_POSTS } from "@/lib/process-posts";
+import {
+  parseProcessPipeTableBlock,
+  ProcessArticlePipeTable,
+} from "@/components/process/process-article-pipe-table";
+import { ProcessBodyParagraph } from "@/components/process/process-body-paragraph";
+import {
+  getProcessPostBySlug,
+  isProcessArticleSectionHeading,
+  PROCESS_POSTS,
+  stripProcessBodyEmphasis,
+} from "@/lib/process-posts";
 
 type ProcessPostPageProps = {
   params: Promise<{ slug: string }>;
@@ -22,7 +32,9 @@ export async function generateMetadata({
   if (!post) return { title: "글을 찾을 수 없습니다 | 다움상조" };
   return {
     title: `${post.title} | 장례 정보 | 다움상조`,
-    description: post.body[0]?.slice(0, 155) ?? post.title,
+    description:
+      stripProcessBodyEmphasis(post.body[0] ?? "").slice(0, 155) ||
+      post.title,
   };
 }
 
@@ -50,9 +62,52 @@ export default async function ProcessPostPage({ params }: ProcessPostPageProps) 
             {post.title}
           </h1>
           <div className="mt-10 space-y-5 text-base leading-relaxed text-stone-700">
-            {post.body.map((paragraph, i) => (
-              <p key={i}>{paragraph}</p>
-            ))}
+            {post.body.map((paragraph, i) => {
+              const table = parseProcessPipeTableBlock(paragraph);
+              if (table) {
+                return (
+                  <ProcessArticlePipeTable
+                    key={i}
+                    caption={table.caption}
+                    rows={table.rows}
+                  />
+                );
+              }
+              const t = paragraph.trim();
+              if (t === "---") {
+                return (
+                  <hr
+                    key={i}
+                    className="border-0 border-t border-stone-200"
+                  />
+                );
+              }
+              if (t === "-아래-") {
+                return (
+                  <p
+                    key={i}
+                    className="text-center text-sm font-medium text-stone-500"
+                  >
+                    -아래-
+                  </p>
+                );
+              }
+              if (isProcessArticleSectionHeading(paragraph)) {
+                return (
+                  <h2
+                    key={i}
+                    className="text-lg font-bold leading-snug text-stone-900 sm:text-xl"
+                  >
+                    {paragraph}
+                  </h2>
+                );
+              }
+              return (
+                <p key={i}>
+                  <ProcessBodyParagraph text={paragraph} />
+                </p>
+              );
+            })}
           </div>
         </article>
       </main>

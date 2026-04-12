@@ -16,7 +16,7 @@ export function ProcessArticleList() {
 
   return (
     <div className="mx-auto max-w-6xl px-4 sm:px-6">
-      <div
+      {/* <div
         className="flex flex-wrap justify-center gap-2 sm:justify-start sm:gap-3"
         role="tablist"
         aria-label="장례 정보 분류"
@@ -41,7 +41,7 @@ export function ProcessArticleList() {
             </button>
           );
         })}
-      </div>
+      </div> */}
 
       {posts.length === 0 ? (
         <p className="mt-12 py-16 text-center text-stone-500">
