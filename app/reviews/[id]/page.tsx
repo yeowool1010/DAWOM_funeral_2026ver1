@@ -49,7 +49,7 @@ export default async function ReviewDetailPage({ params }: ReviewDetailPageProps
         {review.consultant && (
           <ReviewDetailConsultant consultant={review.consultant} />
         )}
-        <ReviewPackageCta />
+        {/* <ReviewPackageCta /> */}
         {/* <Review100wonCta /> */}
         {/* <ReviewDetailBack /> */}
         {/* <ReviewDetailBack /> */}

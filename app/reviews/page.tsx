@@ -78,7 +78,7 @@ export default function ReviewsPage({ searchParams }: ReviewsPageProps) {
       <SiteHeader />
       <main>
         <ReviewCtaStrip />
-        <ReviewBestCarousel />
+        {/* <ReviewBestCarousel /> */}
         <ReviewListHeader />
         <Suspense fallback={<div className="h-32 border-b border-stone-200" />}>
           {/* <ReviewListFilters /> */}
