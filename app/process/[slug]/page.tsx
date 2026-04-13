@@ -8,6 +8,12 @@ import {
   parseProcessPipeTableBlock,
   ProcessArticlePipeTable,
 } from "@/components/process/process-article-pipe-table";
+import {
+  parseProcessFlowBlock,
+  parseProcessFuneralSheetBlock,
+  ProcessFlowDiagram,
+  ProcessFuneralProcedureSheet,
+} from "@/components/process/process-flow-diagram";
 import { ProcessBodyParagraph } from "@/components/process/process-body-paragraph";
 import {
   getProcessPostBySlug,
@@ -73,7 +79,33 @@ export default async function ProcessPostPage({ params }: ProcessPostPageProps) 
                   />
                 );
               }
+              const sheet = parseProcessFuneralSheetBlock(paragraph);
+              if (sheet) {
+                return (
+                  <ProcessFuneralProcedureSheet key={i} sections={sheet} />
+                );
+              }
+              const flow = parseProcessFlowBlock(paragraph);
+              if (flow) {
+                return (
+                  <ProcessFlowDiagram
+                    key={i}
+                    dayLabel={flow.dayLabel}
+                    rows={flow.rows}
+                  />
+                );
+              }
               const t = paragraph.trim();
+              if (/^[123]일차$/.test(t)) {
+                return (
+                  <h2
+                    key={i}
+                    className="pt-2 text-2xl font-extrabold tracking-tight text-stone-900 sm:text-3xl"
+                  >
+                    {t}
+                  </h2>
+                );
+              }
               if (t === "---") {
                 return (
                   <hr
