@@ -266,8 +266,8 @@ export default function Mubinsosang130Page() {
                     실속형
                   </div>
                   <div className="px-3 py-3">실속형</div>
-                  <div className="px-3 py-3">다움 350</div>
-                  <div className="px-3 py-3">다움 350</div>
+                  <div className="px-3 py-3">고급형</div>
+                  <div className="px-3 py-3">고급형</div>
                 </div>
                 <div className="grid grid-cols-5">
                   <div className="bg-slate-50 px-3 py-3 text-left text-xs font-medium text-slate-600 md:text-sm">
@@ -346,7 +346,7 @@ export default function Mubinsosang130Page() {
                   },
                   {
                     name: "봉안함",
-                    name2: "봉안함은 화장한 유골을 보관하기 위해 만들어진 함을 뜻하며 장법에 따라 자연장 시엔 나무로 만들어진 목함을 사용하기도 합니다. 다움 220은 일반 봉안함 또는 목함을 기본으로 제공합니다.",
+                    name2: "봉안함은 화장한 유골을 보관하기 위해 만들어진 함을 뜻하며 장법에 따라 자연장 시엔 나무로 만들어진 목함을 사용하기도 합니다. 다움 무빈소 패키지는 일반 봉안함 또는 목함을 기본으로 제공합니다.",
                     desc: "일반 봉안함/목함",
                     price: "",
                     free: true,

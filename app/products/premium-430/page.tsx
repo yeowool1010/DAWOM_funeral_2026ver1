@@ -82,10 +82,9 @@ export default function Premium430Page() {
                 다움 450 장례는
               </h2>
               <p className="mt-2 text-sm leading-relaxed text-slate-700 md:text-base">
-                조문객이 많은 장례에 맞춰 접객 인력과 차량, 장례 용품을
-                다움 450으로 구성한 상품으로,
+              많은 조문객이 예상되는 장례를 위해접객 인력과 차량, 장례용품을 보다 여유 있게 구성한 다움 450 상품입니다.
                 <br className="hidden md:block" />
-                예우와 편의를 모두 고려한 반장 패키지입니다.
+                장례 규모에 맞춘 준비로, 유족이 장례에 온전히 집중할 수 있도록 돕습니다.
               </p>
             </div>
           </div>

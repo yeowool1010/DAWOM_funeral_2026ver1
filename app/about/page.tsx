@@ -38,8 +38,8 @@ const STATS = [
 ];
 
 const COMPANY_HISTORY = [
-  { year: 2026, dateLabel: "2026.3", title: "다움상조 출범" },
-  { year: 2009, dateLabel: "2009.4", title: "예람장례서비스 발족" },
+  { year: 2009, dateLabel: "2009.4", title: "예람장례서비스 설립" },
+  { year: 2026, dateLabel: "2026.3", title: "다움상조 브랜드 런칭" },
 ] as const;
 
 export default function AboutPage() {

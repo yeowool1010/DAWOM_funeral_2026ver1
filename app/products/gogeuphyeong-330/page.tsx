@@ -119,7 +119,7 @@ export default function Gogeuphyeong330Page() {
                 </div>
                 <div className="mt-4 text-sm text-slate-500">접객 도우미</div>
                 <div className="mt-1 text-lg font-semibold text-slate-900">
-                  2명
+                  6명
                 </div>
               </div>
               <div className="flex flex-col items-center rounded-2xl bg-slate-50 px-4 py-6">
@@ -223,7 +223,7 @@ export default function Gogeuphyeong330Page() {
                   <div className="px-3 py-3">없음</div>
                   <div className="px-3 py-3">2명</div>
                   <div className="bg-orange-50 px-3 py-3 font-semibold text-orange-600">
-                    2명
+                    6명
                   </div>
                   <div className="px-3 py-3">8명</div>
                 </div>
@@ -323,7 +323,7 @@ export default function Gogeuphyeong330Page() {
                   },
                   {
                     name: "봉안함",
-                    name2: "봉안함은 화장한 유골을 보관하기 위해 만들어진 함을 뜻하며 장법에 따라 자연장 시엔 나무로 만들어진 목함을 사용하기도 합니다. 다움 220은 일반 봉안함 또는 목함을 기본으로 제공합니다.",
+                    name2: "봉안함은 화장한 유골을 보관하기 위해 만들어진 함을 뜻하며 장법에 따라 자연장 시엔 나무로 만들어진 목함을 사용하기도 합니다. 다움 350은 일반 봉안함 또는 목함을 기본으로 제공합니다.",
                     desc: "일반 봉안함/목함",
                     price: "",
                     free: true,
