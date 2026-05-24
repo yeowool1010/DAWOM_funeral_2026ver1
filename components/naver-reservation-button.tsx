@@ -4,7 +4,8 @@ import Link from "next/link";
 import Image from "next/image";
 
 const NAVER_RESERVATION_URL =
-  process.env.NEXT_PUBLIC_NAVER_RESERVATION_URL || "https://booking.naver.com/";
+  process.env.NEXT_PUBLIC_NAVER_RESERVATION_URL ||
+  "https://map.naver.com/p/entry/place/2092825246?placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202605250055&locale=ko&svcName=map_pcv5&c=15.00,0,0,0,dh";
 
 export function NaverReservationButton() {
   return (

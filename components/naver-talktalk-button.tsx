@@ -4,7 +4,8 @@ import Link from "next/link";
 import Image from "next/image";
 
 const NAVER_TALKTALK_URL =
-  process.env.NEXT_PUBLIC_NAVER_TALKTALK_URL || "https://talk.naver.com/";
+  process.env.NEXT_PUBLIC_NAVER_TALKTALK_URL ||
+  "https://talk.naver.com/ct/wez1wde?frm=mnmb&frm=nmb_detail#nafullscreen";
 
 export function NaverTalkTalkButton() {
   return (
