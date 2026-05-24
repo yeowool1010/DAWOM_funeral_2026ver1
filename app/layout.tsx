@@ -13,8 +13,8 @@ export const metadata: Metadata = {
   description:
     "막막한 상황, 다움이 함께 합니다. 장례식장, 장지 추천부터 상조 서비스, 장례 상담, 임종 접수까지. 숨김없는 장례의 시작.",
   icons: {
-    icon: "/images/faviconnew.png",
-    apple: "/images/faviconnew.png",
+    icon: "/images/faviconnew2.png",
+    apple: "/images/faviconnew2.png",
   },
 };
 
