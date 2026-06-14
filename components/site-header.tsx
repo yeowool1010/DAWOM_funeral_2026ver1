@@ -78,7 +78,7 @@ export function SiteHeader() {
             카톡상담
           </a> */}
           <a
-            href="tel:1600-4417"
+            href="tel:032-344-4446"
             className="hidden items-center gap-2 rounded-full bg-stone-900 px-4 py-2 text-sm font-medium text-white transition hover:bg-stone-800 sm:flex"
           >
             <Phone className="h-4 w-4" />
@@ -119,7 +119,7 @@ export function SiteHeader() {
               카톡상담
             </a>
             <a
-              href="tel:1600-4417"
+              href="tel:032-344-4446"
               className="mt-2 flex items-center justify-center gap-2 rounded-lg bg-stone-900 py-3 text-sm font-medium text-white"
             >
               <Phone className="h-4 w-4" />
