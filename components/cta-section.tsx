@@ -8,7 +8,7 @@ export function CtaSection() {
           긴급 장례접수
           <br />
           <span className="text-stone-300">
-            <span className="text-red-500">24시간</span> 언제든 <span className="text-red-500">1600-7751</span>로 부담없이 연락해 주세요
+            <span className="text-red-500">24시간</span> 언제든 <span className="text-red-500">032-344-4446</span>로 부담없이 연락해 주세요
           </span>
         </h2>
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">

@@ -31,7 +31,7 @@ export function SiteFooter() {
             대표이사 : 박영광 | 개인정보관리책임자 : 박영광
           </p>
           <p className="mt-1">
-            주소 : 인천시 남동구 구월로 336번길 63-23 | 전화 문의: 1600-7751
+            주소 : 인천시 남동구 구월로 336번길 63-23 | 전화 문의: 032-344-4446
           </p>
           <p className="mt-1">이메일 : yr4417@naver.com</p>
           <p className="mt-1">
