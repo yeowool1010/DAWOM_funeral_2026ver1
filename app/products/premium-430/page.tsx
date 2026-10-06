@@ -37,11 +37,11 @@ export default function Premium430Page() {
                 많은 조문객을 위한 품격 있는 장례
               </p>
               <h1 className="mt-3 text-3xl font-bold text-slate-900 md:text-4xl">
-                다움 450 
+                예람 450 
               </h1>
               <Image
                     src="/images/products/premium/premium-430_main.png"
-                    alt="다움 450"
+                    alt="예람 450"
                     width={600}
                     height={400}
                     className="mt-8 rounded-3xl object-cover w-full max-w-xl mx-auto"
@@ -49,7 +49,7 @@ export default function Premium430Page() {
 
               <div className="mt-10 border-t border-slate-200 pt-8">
                 <p className="text-sm text-slate-700">
-                  다움 450 구성을{" "}
+                  예람 450 구성을{" "}
                   <span className="font-semibold text-slate-900">
                     한 번에
                   </span>{" "}
@@ -74,15 +74,15 @@ export default function Premium430Page() {
           </div>
         </section>
 
-        {/* 2. 다움 450 일반장 한줄 소개 */}
+        {/* 2. 예람 450 일반장 한줄 소개 */}
         <section className="bg-slate-50">
           <div className="mx-auto max-w-5xl px-4 py-8">
             <div className="rounded-2xl bg-white px-5 py-6 shadow-sm md:px-7 md:py-7">
               <h2 className="text-base font-semibold text-slate-900 md:text-lg">
-                다움 450 장례는
+                예람 450 장례는
               </h2>
               <p className="mt-2 text-sm leading-relaxed text-slate-700 md:text-base">
-              많은 조문객이 예상되는 장례를 위해접객 인력과 차량, 장례용품을 보다 여유 있게 구성한 다움 450 상품입니다.
+              많은 조문객이 예상되는 장례를 위해접객 인력과 차량, 장례용품을 보다 여유 있게 구성한 예람 450 상품입니다.
                 <br className="hidden md:block" />
                 장례 규모에 맞춘 준비로, 유족이 장례에 온전히 집중할 수 있도록 돕습니다.
               </p>
@@ -106,7 +106,7 @@ export default function Premium430Page() {
             </div> */}
 
             <h2 className="text-xl font-bold text-slate-900 md:text-2xl">
-              다움 450 장례 특징
+              예람 450 장례 특징
             </h2>
             <p className="mt-2 text-sm text-slate-600 md:text-base">
               많은 조문객과 긴 장례 일정에도 여유 있게 대응할 수 있는 구성을
@@ -194,11 +194,11 @@ export default function Premium430Page() {
           </div>
         </section>
 
-        {/* 5. 다움의 변하지 않는 약속 */}
+        {/* 5. 예람의 변하지 않는 약속 */}
         {/* <section className="bg-white">
           <div className="mx-auto max-w-5xl px-4 py-10 md:py-12">
             <h2 className="text-xl font-bold text-slate-900 md:text-2xl">
-              다움의 변하지 않는 약속
+              예람의 변하지 않는 약속
             </h2>
             <p className="mt-2 text-sm text-slate-600 md:text-base">
               장례를 장례답게 만들기 위한 최소한의 원칙이에요.
@@ -218,14 +218,14 @@ export default function Premium430Page() {
           </div>
         </section> */}
 
-        {/* 6. 다움 전체 서비스 비교 - 다움 450 일반장 포함 */}
+        {/* 6. 예람 전체 서비스 비교 - 예람 450 일반장 포함 */}
         <section className="bg-slate-50">
           <div className="mx-auto max-w-5xl px-4 py-10 md:py-12">
             <h2 className="text-xl font-bold text-slate-900 md:text-2xl">
-              다움 전체 서비스 비교
+              예람 전체 서비스 비교
             </h2>
             <p className="mt-2 text-sm text-slate-600 md:text-base">
-              무빈소장, 다움 220, 다움 350, 다움 450의 차이를 한눈에 비교해 보세요.
+              무빈소장, 예람 220, 예람 350, 예람 450의 차이를 한눈에 비교해 보세요.
             </p>
 
             <div className="mt-6 overflow-hidden rounded-2xl border bg-white text-sm md:text-base">
@@ -234,9 +234,9 @@ export default function Premium430Page() {
                   구분
                 </div>
                 <div className="px-3 py-3">무빈소장</div>
-                <div className="px-3 py-3">다움 220</div>
-                <div className="px-3 py-3">다움 350</div>
-                <div className="px-3 py-3 text-emerald-700">다움 450</div>
+                <div className="px-3 py-3">예람 220</div>
+                <div className="px-3 py-3">예람 350</div>
+                <div className="px-3 py-3 text-emerald-700">예람 450</div>
               </div>
               <div className="divide-y text-center">
                 <div className="grid grid-cols-5">
@@ -288,11 +288,11 @@ export default function Premium430Page() {
           </div>
         </section>
 
-        {/* 7. 다움 450 일반장 구성품 상세 (요약형) */}
+        {/* 7. 예람 450 일반장 구성품 상세 (요약형) */}
         <section className="bg-white">
           <div className="mx-auto max-w-5xl px-4 py-10 md:py-12">
             <h2 className="text-xl font-bold text-slate-900 md:text-2xl">
-              다움450 구성품 상세
+              예람450 구성품 상세
             </h2>
             <p className="mt-2 text-sm text-slate-600 md:text-base">
               장례 용품, 인력, 차량 구성을 한눈에 확인하세요.
@@ -318,7 +318,7 @@ export default function Premium430Page() {
                     desc: "",
                     price: "",
                     discount: null,
-                    img: "/images/products/오동관1.png",
+                    img: "/images/products/오동관2.png",
                   },
                   {
                     name: "고급 가진 수의",
@@ -347,7 +347,7 @@ export default function Premium430Page() {
                   {
                     name: "진공 봉안함",
                     name2:
-                      "진공 처리된 봉안함으로 화장 유골을 보관합니다. 밀폐성을 높여 보관에 유리하며, 다움 450 상품에 포함됩니다.",
+                      "진공 처리된 봉안함으로 화장 유골을 보관합니다. 밀폐성을 높여 보관에 유리하며, 예람 450 상품에 포함됩니다.",
                     desc: "",
                     price: "",
                     free: true,
@@ -612,7 +612,7 @@ export default function Premium430Page() {
                     aria-label="리무진/장의버스 설명 보기"
                   >
                     <Image
-                      src="/images/products/리무진3.png"
+                      src="/images/products/리무진4.png"
                       alt="리무진/장의버스"
                       fill
                       className="object-cover"
@@ -639,11 +639,11 @@ export default function Premium430Page() {
           </div>
         </section>
 
-        {/* 8. 다움 450 일반장 안내사항 */}
+        {/* 8. 예람 450 일반장 안내사항 */}
         <section className="bg-slate-50">
           <div className="mx-auto max-w-5xl px-4 py-10 md:py-12">
             <h2 className="text-xl font-bold text-slate-900 md:text-2xl">
-              다움 450 안내사항
+              예람 450 안내사항
             </h2>
             <div className="mt-4 rounded-2xl bg-white px-5 py-6 text-sm leading-relaxed text-slate-700 shadow-sm md:px-7 md:text-base">
               <ul className="list-disc space-y-2 pl-5">
@@ -668,7 +668,7 @@ export default function Premium430Page() {
                   당 공제는 불가능합니다.
                 </li>
                 <li>
-                  다움 이송차량은 관외 이용 시 추가 비용이 발생하며, 금액은 거리와
+                  예람 이송차량은 관외 이용 시 추가 비용이 발생하며, 금액은 거리와
                   상황에 따라 책정됩니다.
                 </li>
                 <li>
@@ -715,7 +715,7 @@ export default function Premium430Page() {
 
             <div>
               <h2 className="text-xl font-bold text-slate-900 md:text-2xl">
-                다움 450 일반장 이용 후기
+                예람 450 일반장 이용 후기
               </h2>
               <p className="mt-2 text-sm text-slate-600 md:text-base">
                 많은 조문객을 모신 장례에서도 만족스러웠던 실제 이용 후기를
@@ -727,7 +727,7 @@ export default function Premium430Page() {
                   장례에 집중할 수 있었다는 후기가 많아요.
                 </div>
                 <div className="rounded-2xl bg-slate-50 px-5 py-4">
-                  다움 450 구성이었지만 사전에 안내된 비용 안에서 진행되어
+                  예람 450 구성이었지만 사전에 안내된 비용 안에서 진행되어
                   예산 관리가 수월했다는 의견이 많습니다.
                 </div>
               </div>

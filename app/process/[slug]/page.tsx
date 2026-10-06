@@ -35,9 +35,9 @@ export async function generateMetadata({
 }: ProcessPostPageProps): Promise<Metadata> {
   const { slug } = await params;
   const post = getProcessPostBySlug(slug);
-  if (!post) return { title: "글을 찾을 수 없습니다 | 다움상조" };
+  if (!post) return { title: "글을 찾을 수 없습니다 | 예람상조" };
   return {
-    title: `${post.title} | 장례 정보 | 다움상조`,
+    title: `${post.title} | 장례 정보 | 예람상조`,
     description:
       stripProcessBodyEmphasis(post.body[0] ?? "").slice(0, 155) ||
       post.title,

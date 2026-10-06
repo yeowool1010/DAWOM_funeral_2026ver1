@@ -8,7 +8,7 @@ export function PackageCards() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="text-center">
           <h2 className="text-2xl font-bold text-stone-900 sm:text-3xl">
-            다움 패키지 종류 한눈에 보기
+            예람 패키지 종류 한눈에 보기
           </h2>
           <p className="mt-3 text-stone-600">
             모든 패키지는 가입 당일부터 즉시 이용할 수 있어요
@@ -44,10 +44,10 @@ export function PackageCards() {
       <section className="bg-slate-50 mt-12">
           <div className="mx-auto max-w-5xl px-4 py-10 md:py-12">
             <h2 className="text-xl font-bold text-slate-900 md:text-2xl">
-              다움 전체 서비스 비교
+              예람 전체 서비스 비교
             </h2>
             <p className="mt-2 text-sm text-slate-600 md:text-base">
-              무빈소장, 다움 220, 다움 350, 다움 450의 차이를 한눈에 비교해 보세요.
+              무빈소장, 예람 220, 예람 350, 예람 450의 차이를 한눈에 비교해 보세요.
             </p>
 
             <div className="mt-6 overflow-hidden rounded-2xl border bg-white text-sm md:text-base">
@@ -56,9 +56,9 @@ export function PackageCards() {
                   구분
                 </div>
                 <div className="px-3 py-3">무빈소장</div>
-                <div className="px-3 py-3">다움 220</div>
-                <div className="px-3 py-3">다움 350</div>
-                <div className="px-3 py-3">다움 450</div>
+                <div className="px-3 py-3">예람 220</div>
+                <div className="px-3 py-3">예람 350</div>
+                <div className="px-3 py-3">예람 450</div>
               </div>
               <div className="divide-y text-center">
                 <div className="grid grid-cols-5">

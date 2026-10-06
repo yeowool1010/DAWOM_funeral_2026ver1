@@ -14,7 +14,7 @@ const slides = [
     image: "https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?w=1200&q=80",
   },
   {
-    title: "다움 프라임",
+    title: "예람 프라임",
     image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1200&q=80",
   },
   {

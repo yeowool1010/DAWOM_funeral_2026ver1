@@ -9,12 +9,12 @@ export function PrimeSection() {
           <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
             <div className="flex-1">
               <h2 className="text-xl font-bold text-stone-900 sm:text-2xl">
-                매달 금액을 나눠 내는 다움 프라임
+                매달 금액을 나눠 내는 예람 프라임
               </h2>
               <p className="mt-3 text-stone-600">
                 월 100원만 내면 가입할 수 있는
                 <br />
-                다움 월 납입 상품을 살펴보세요
+                예람 월 납입 상품을 살펴보세요
               </p>
             </div>
             <div className="flex flex-1 flex-col gap-6 lg:items-end">

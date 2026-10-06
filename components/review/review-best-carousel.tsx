@@ -26,7 +26,7 @@ export function ReviewBestCarousel() {
     <section className="bg-stone-50 py-12 sm:py-16">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <h2 className="text-2xl font-bold text-stone-900 sm:text-3xl">
-          다움 베스트 후기
+          예람 베스트 후기
         </h2>
         <div className="mt-8 flex items-center gap-4">
           <button

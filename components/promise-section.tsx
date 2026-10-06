@@ -36,7 +36,7 @@ export function PromiseSection() {
     <section className="bg-white py-16 sm:py-24">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <h2 className="text-center text-2xl font-bold text-stone-900 sm:text-3xl">
-          완전후불제 다움상조
+          완전후불제 예람상조
         </h2>
         <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {promises.map((promise) => {

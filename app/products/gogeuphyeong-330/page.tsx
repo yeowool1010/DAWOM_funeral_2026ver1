@@ -34,14 +34,14 @@ export default function Gogeuphyeong330Page() {
           <div className="mx-auto max-w-5xl px-4 py-12 md:py-16">
             <div className="mx-auto max-w-xl rounded-3xl bg-[#F3F5FF] text-center">
               <p className="text-sm font-medium text-slate-700">
-                예우를 한층 더 높인 다움 350
+                예우를 한층 더 높인 예람 350
               </p>
               <h1 className="mt-3 text-3xl font-bold text-slate-900 md:text-4xl">
-                다움 350
+                예람 350
               </h1>
               <Image
                     src="/images/products/gogeuphyeong/gogeuphyeong-330_main.png"
-                    alt="다움 350"
+                    alt="예람 350"
                     width={600}
                     height={400}
                     className="mt-8 rounded-3xl object-cover w-full max-w-xl mx-auto"
@@ -74,12 +74,12 @@ export default function Gogeuphyeong330Page() {
           </div>
         </section>
 
-        {/* 2. 다움 350 다움 220 한줄 소개 */}
+        {/* 2. 예람 350 예람 220 한줄 소개 */}
         <section className="bg-slate-50">
           <div className="mx-auto max-w-5xl px-4 py-8">
             <div className="rounded-2xl bg-white px-5 py-6 shadow-sm md:px-7 md:py-7">
               <h2 className="text-base font-semibold text-slate-900 md:text-lg">
-                다움 350은
+                예람 350은
               </h2>
               <p className="mt-2 text-sm leading-relaxed text-slate-700 md:text-base">
                대중적인 장례를 진행할 때 필요한 기본 구성으로 큰 격식보단 
@@ -106,7 +106,7 @@ export default function Gogeuphyeong330Page() {
             </div> */}
 
             <h2 className="text-xl font-bold text-slate-900 md:text-2xl">
-              다움 350 특징
+              예람 350 특징
             </h2>
             <p className="mt-2 text-sm text-slate-600 md:text-base">
               더 많은 조문객과 정성스러운 예우를 위한 구성을 확인해 보세요.
@@ -195,14 +195,14 @@ export default function Gogeuphyeong330Page() {
         </section>
 
 
-        {/* 6. 다움 전체 서비스 비교 - 다움 350 다움 220 강조 */}
+        {/* 6. 예람 전체 서비스 비교 - 예람 350 예람 220 강조 */}
         <section className="bg-slate-50">
           <div className="mx-auto max-w-5xl px-4 py-10 md:py-12">
             <h2 className="text-xl font-bold text-slate-900 md:text-2xl">
-              다움 전체 서비스 비교
+              예람 전체 서비스 비교
             </h2>
             <p className="mt-2 text-sm text-slate-600 md:text-base">
-              무빈소장, 다움 220, 다움 350, 다움 450의 차이를 한눈에 비교해 보세요.
+              무빈소장, 예람 220, 예람 350, 예람 450의 차이를 한눈에 비교해 보세요.
             </p>
 
             <div className="mt-6 overflow-hidden rounded-2xl border bg-white text-sm md:text-base">
@@ -211,9 +211,9 @@ export default function Gogeuphyeong330Page() {
                   구분
                 </div>
                 <div className="px-3 py-3">무빈소장</div>
-                <div className="px-3 py-3">다움 220</div>
-                <div className="px-3 py-3 text-emerald-700">다움 350</div>
-                <div className="px-3 py-3">다움 450</div>
+                <div className="px-3 py-3">예람 220</div>
+                <div className="px-3 py-3 text-emerald-700">예람 350</div>
+                <div className="px-3 py-3">예람 450</div>
               </div>
               <div className="divide-y text-center">
                 <div className="grid grid-cols-5">
@@ -265,11 +265,11 @@ export default function Gogeuphyeong330Page() {
           </div>
         </section>
 
-        {/* 7. 다움 350 구성품 상세 (요약형) */}
+        {/* 7. 예람 350 구성품 상세 (요약형) */}
         <section className="bg-white">
           <div className="mx-auto max-w-5xl px-4 py-10 md:py-12">
             <h2 className="text-xl font-bold text-slate-900 md:text-2xl">
-              다움350 구성품 상세
+              예람350 구성품 상세
             </h2>
             <p className="mt-2 text-sm text-slate-600 md:text-base">
               장례 용품, 인력, 차량 구성을 한눈에 확인하세요.
@@ -295,7 +295,7 @@ export default function Gogeuphyeong330Page() {
                     desc: "",
                     price: "",
                     discount: null,
-                    img: "/images/products/오동관1.png",
+                    img: "/images/products/오동관2.png",
                   },
                   {
                     name: "고급 가진 수의",
@@ -323,7 +323,7 @@ export default function Gogeuphyeong330Page() {
                   },
                   {
                     name: "봉안함",
-                    name2: "봉안함은 화장한 유골을 보관하기 위해 만들어진 함을 뜻하며 장법에 따라 자연장 시엔 나무로 만들어진 목함을 사용하기도 합니다. 다움 350은 일반 봉안함 또는 목함을 기본으로 제공합니다.",
+                    name2: "봉안함은 화장한 유골을 보관하기 위해 만들어진 함을 뜻하며 장법에 따라 자연장 시엔 나무로 만들어진 목함을 사용하기도 합니다. 예람 350은 일반 봉안함 또는 목함을 기본으로 제공합니다.",
                     desc: "일반 봉안함/목함",
                     price: "",
                     free: true,
@@ -586,7 +586,7 @@ export default function Gogeuphyeong330Page() {
                     aria-label="리무진/장의버스 설명 보기"
                   >
                     <Image
-                      src="/images/products/리무진3.png"
+                      src="/images/products/리무진4.png"
                       alt="리무진/장의버스"
                       fill
                       className="object-cover"
@@ -615,11 +615,11 @@ export default function Gogeuphyeong330Page() {
           </div>
         </section>
 
-        {/* 8. 다움 350 다움 220 안내사항 */}
+        {/* 8. 예람 350 예람 220 안내사항 */}
         <section className="bg-slate-50">
           <div className="mx-auto max-w-5xl px-4 py-10 md:py-12">
             <h2 className="text-xl font-bold text-slate-900 md:text-2xl">
-              다움 350 안내사항
+              예람 350 안내사항
             </h2>
             <div className="mt-4 rounded-2xl bg-white px-5 py-6 text-sm leading-relaxed text-slate-700 shadow-sm md:px-7 md:text-base">
               <ul className="list-disc space-y-2 pl-5">
@@ -644,7 +644,7 @@ export default function Gogeuphyeong330Page() {
                   당 공제는 불가능합니다.
                 </li>
                 <li>
-                  다움 이송차량은 관외 이용 시 추가 비용이 발생하며, 금액은 거리와
+                  예람 이송차량은 관외 이용 시 추가 비용이 발생하며, 금액은 거리와
                   상황에 따라 책정됩니다.
                 </li>
                 <li>
@@ -691,7 +691,7 @@ export default function Gogeuphyeong330Page() {
 
             <div>
               <h2 className="text-xl font-bold text-slate-900 md:text-2xl">
-                다움 350 다움 220 이용 후기
+                예람 350 예람 220 이용 후기
               </h2>
               <p className="mt-2 text-sm text-slate-600 md:text-base">
                 예우와 구성에 만족했다는 실제 이용 후기의 핵심 내용을

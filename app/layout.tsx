@@ -11,9 +11,9 @@ const siteUrl =
       ? `https://${process.env.VERCEL_URL}`
       : "http://localhost:3000");
 
-const siteTitle = "숨김없는 장례의 시작, 다움";
+const siteTitle = "숨김없는 장례의 시작, 예람";
 const siteDescription =
-  "막막한 상황, 다움이 함께 합니다. 장례식장, 장지 추천부터 상조 서비스, 장례 상담, 임종 접수까지. 숨김없는 장례의 시작.";
+  "막막한 상황, 예람이 함께 합니다. 장례식장, 장지 추천부터 상조 서비스, 장례 상담, 임종 접수까지. 숨김없는 장례의 시작.";
 const shareImage = {
   url: "/images/og-main.jpg",
   width: 1200,

@@ -14,9 +14,9 @@ interface ReviewsPageProps {
 }
 
 export const metadata = {
-  title: "다움 이용 후기 | 숨김없는 장례의 시작, 다움",
+  title: "예람 이용 후기 | 숨김없는 장례의 시작, 예람",
   description:
-    "비슷한 고민을 하셨던 상주님들의 후기를 살펴보세요. 다움장례연구소 이용 후기를 확인할 수 있습니다.",
+    "비슷한 고민을 하셨던 상주님들의 후기를 살펴보세요. 예람장례연구소 이용 후기를 확인할 수 있습니다.",
 };
 
 async function ReviewsListContent({

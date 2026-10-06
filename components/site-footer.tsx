@@ -26,19 +26,19 @@ export function SiteFooter() {
           ))}
         </div> */}
         <div className="mt-8 border-t border-stone-200 pt-8 text-center text-sm text-stone-500">
-          <p className="font-medium text-stone-700">(주) 다움상조</p>
+          <p className="font-medium text-stone-700">(주) 예람상조</p>
           <p className="mt-1">
-            대표이사 : 박영광 | 개인정보관리책임자 : 박영광
+            대표이사 : 박철진 | 개인정보관리책임자 : 박철진
           </p>
           <p className="mt-1">
             주소 : 인천시 남동구 구월로 336번길 63-23 | 전화 문의: 032-344-4446
           </p>
           <p className="mt-1">이메일 : yr4417@naver.com</p>
           <p className="mt-1">
-            사업자 등록번호 : 130-86-45409 | 통신판매업신고번호 : 2026-인천남동-2417
+            사업자 등록번호 : 130-86-41271 | 통신판매업신고번호 : 121111-0184431
           </p>
           <p className="mt-4 text-xs text-stone-400">
-            © 2026. (주)다움상조
+            © 2026. (주)예람상조
           </p>
         </div>
       </div>

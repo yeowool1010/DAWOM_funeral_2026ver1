@@ -17,7 +17,7 @@ export function PrimeHero() {
         <p className="mx-auto mt-6 max-w-2xl text-lg text-stone-600">
           납입금 부담 없이 가격 보장형 후불제 상조.
           <br />
-          다움 프라임으로 장례 비용을 미리 준비하세요.
+          예람 프라임으로 장례 비용을 미리 준비하세요.
         </p>
         <Link
           href="/estimate"

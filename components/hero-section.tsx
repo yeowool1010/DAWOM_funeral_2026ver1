@@ -16,7 +16,7 @@ export function HeroSection() {
             장례다움
           </h1>
           <p className="mt-4 text-stone-600">
-          24시간 언제든, 슬픈 이별의 순간 장례 시작부터 마지막 이별까지 다움이 함께 하겠습니다. 
+          24시간 언제든, 슬픈 이별의 순간 장례 시작부터 마지막 이별까지 예람이 함께 하겠습니다. 
           </p>
           <Link
             href="/about"

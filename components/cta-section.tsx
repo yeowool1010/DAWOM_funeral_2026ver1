@@ -33,7 +33,7 @@ export function CtaSection() {
           href="/about"
           className="mt-8 inline-block text-sm text-stone-400 underline hover:text-white"
         >
-          다움, 믿을 만한 곳인가요? 더 알아보기
+          예람, 믿을 만한 곳인가요? 더 알아보기
         </a> */}
       </div>
     </section>

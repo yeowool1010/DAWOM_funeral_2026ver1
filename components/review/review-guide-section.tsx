@@ -23,7 +23,7 @@ export function ReviewGuideSection() {
               <p className="mt-3 text-stone-600">
                 필요한 절차, 예상 비용, 준비 체크리스트를 정리한
                 <br />
-                &apos;다움 장례 가이드북&apos;을 5초 안에 받아보세요.
+                &apos;예람 장례 가이드북&apos;을 5초 안에 받아보세요.
               </p>
             </div>
             <div className="w-full lg:max-w-sm">

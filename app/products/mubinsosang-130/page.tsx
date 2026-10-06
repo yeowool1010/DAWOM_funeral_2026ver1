@@ -202,11 +202,11 @@ export default function Mubinsosang130Page() {
           </div>
         </section>
 
-        {/* 5. 다움의 변하지 않는 약속 */}
+        {/* 5. 예람의 변하지 않는 약속 */}
         {/* <section className="bg-white">
           <div className="mx-auto max-w-5xl px-4 py-10 md:py-12">
             <h2 className="text-xl font-bold text-slate-900 md:text-2xl">
-              다움의 변하지 않는 약속
+              예람의 변하지 않는 약속
             </h2>
             <p className="mt-2 text-sm text-slate-600 md:text-base">
               장례를 장례답게 만들기 위한 최소한의 원칙이에요.
@@ -226,11 +226,11 @@ export default function Mubinsosang130Page() {
           </div>
         </section> */}
 
-        {/* 6. 다움 전체 서비스 비교 */}
+        {/* 6. 예람 전체 서비스 비교 */}
         <section className="bg-slate-50">
           <div className="mx-auto max-w-5xl px-4 py-10 md:py-12">
             <h2 className="text-xl font-bold text-slate-900 md:text-2xl">
-              다움 전체 서비스 비교
+              예람 전체 서비스 비교
             </h2>
             <p className="mt-2 text-sm text-slate-600 md:text-base">
               다른 서비스와 어떤 차이가 있는지 살펴보세요.
@@ -242,9 +242,9 @@ export default function Mubinsosang130Page() {
                   구분
                 </div>
                 <div className="px-3 py-3 text-emerald-700">무빈소장</div>
-                <div className="px-3 py-3">다움 220</div>
-                <div className="px-3 py-3">다움 350</div>
-                <div className="px-3 py-3">다움 450</div>
+                <div className="px-3 py-3">예람 220</div>
+                <div className="px-3 py-3">예람 350</div>
+                <div className="px-3 py-3">예람 450</div>
               </div>
               <div className="divide-y text-center">
                 <div className="grid grid-cols-5">
@@ -326,7 +326,7 @@ export default function Mubinsosang130Page() {
                     desc: "",
                     price: "",
                     discount: null,
-                    img: "/images/products/오동관1.png",
+                    img: "/images/products/오동관2.png",
                   },
                   {
                     name: "가진 수의",
@@ -346,7 +346,7 @@ export default function Mubinsosang130Page() {
                   },
                   {
                     name: "봉안함",
-                    name2: "봉안함은 화장한 유골을 보관하기 위해 만들어진 함을 뜻하며 장법에 따라 자연장 시엔 나무로 만들어진 목함을 사용하기도 합니다. 다움 무빈소 패키지는 일반 봉안함 또는 목함을 기본으로 제공합니다.",
+                    name2: "봉안함은 화장한 유골을 보관하기 위해 만들어진 함을 뜻하며 장법에 따라 자연장 시엔 나무로 만들어진 목함을 사용하기도 합니다. 예람 무빈소 패키지는 일반 봉안함 또는 목함을 기본으로 제공합니다.",
                     desc: "일반 봉안함/목함",
                     price: "",
                     free: true,
@@ -575,7 +575,7 @@ export default function Mubinsosang130Page() {
                     aria-label="리무진/장의버스 설명 보기"
                   >
                     <Image
-                      src="/images/products/리무진3.png"
+                      src="/images/products/리무진4.png"
                       alt="리무진/장의버스"
                       fill
                       className="object-cover"
@@ -621,7 +621,7 @@ export default function Mubinsosang130Page() {
                   당 공제는 불가능합니다.
                 </li>
                 <li>
-                  다움 이송차량은 관외 이용 시 추가 비용이 발생하며, 금액은 거리와
+                  예람 이송차량은 관외 이용 시 추가 비용이 발생하며, 금액은 거리와
                   상황에 따라 책정됩니다.
                 </li>
                 <li>
@@ -655,7 +655,7 @@ export default function Mubinsosang130Page() {
 
             <div>
               <h2 className="text-xl font-bold text-slate-900 md:text-2xl">
-                다움 150상품 이용 후기
+                예람 150상품 이용 후기
               </h2>
               <p className="mt-2 text-sm text-slate-600 md:text-base">
                 실제 유가족분들의 솔직한 후기를 확인해 보세요.

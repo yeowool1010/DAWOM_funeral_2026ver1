@@ -39,7 +39,7 @@ const STATS = [
 
 const COMPANY_HISTORY = [
   { year: 2009, dateLabel: "2009.4", title: "예람장례서비스 설립" },
-  { year: 2026, dateLabel: "2026.3", title: "다움상조 브랜드 런칭" },
+  { year: 2026, dateLabel: "2026.3", title: "예람 장례서비스 후불제 서비스 개시" },
 ] as const;
 
 export default function AboutPage() {
@@ -102,9 +102,9 @@ export default function AboutPage() {
         <div className="absolute inset-0 bg-black/50" aria-hidden />
         <div className="relative z-10 flex min-h-[85vh] flex-col items-center justify-center px-4 text-center">
           <h1 className="text-3xl font-bold leading-[2] text-white sm:text-4xl md:text-5xl sm:leading-loose">
-            사람다움을 지키는 장례, 
+            장례다움을 지키는 장례, 
             <br />
-            그것이 다움입니다.
+            그것이 예람입니다.
           </h1>
           <button
             type="button"
@@ -365,7 +365,7 @@ export default function AboutPage() {
               사랑하는 가족이 이별의 순간에 온전히 집중할 수 있도록 돕습니다.
               <br />
               <br />
-              그것이 다움 장례지도사들의 평생 소명입니다.
+              그것이 예람 장례지도사들의 평생 소명입니다.
             </p>
           </div>
         </div>
@@ -382,7 +382,7 @@ export default function AboutPage() {
         />
         <div className="relative z-10 flex min-h-[85vh] flex-col items-center justify-center gap-12 px-4 pb-24 pt-16 text-center sm:gap-16 sm:pt-20">
           <h1 className="text-lg font-bold leading-loose text-white sm:text-lg md:text-3xl sm:leading-loose">
-            다움상조는 오늘도
+            예람상조는 오늘도
             <br />
             사람답고 아름다운 이별을 준비합니다.
           </h1>

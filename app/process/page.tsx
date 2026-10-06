@@ -4,7 +4,7 @@ import { ProcessArticleList } from "@/components/process/process-article-list";
 import { SiteFooter } from "@/components/site-footer";
 
 export const metadata = {
-  title: "장례정보 | 다움상조",
+  title: "장례정보 | 예람상조",
   description:
     "임종 접수부터 추모까지 단계별 장례 절차와, 임종 전·장례 중·이후에 알아두면 좋은 장례 정보 글을 안내합니다.",
 };

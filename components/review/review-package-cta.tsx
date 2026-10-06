@@ -9,14 +9,14 @@ export function ReviewPackageCta() {
           <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
             <div className="flex-1">
               <h2 className="text-xl font-bold text-stone-900 sm:text-2xl">
-                후기가 입증한 다움 상조 서비스,
+                후기가 입증한 예람 상조 서비스,
                 <br />
                 미리 알아보신다면
               </h2>
               <p className="mt-3 text-stone-600">
                 간단하게 진행하는 무빈소 장례부터
                 <br />
-                한번 납입으로 큰 혜택을 보장받을 수 있는 다움 450상품까지
+                한번 납입으로 큰 혜택을 보장받을 수 있는 예람 450상품까지
               </p>
             </div>
             <div className="flex flex-wrap gap-3">

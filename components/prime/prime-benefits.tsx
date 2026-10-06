@@ -23,7 +23,7 @@ export function PrimeBenefits() {
     <section className="bg-white py-16 sm:py-24">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <h2 className="text-center text-2xl font-bold text-stone-900 sm:text-3xl">
-          다움 프라임이 특별한 이유
+          예람 프라임이 특별한 이유
         </h2>
         <div className="mt-12 grid gap-8 sm:grid-cols-3">
           {benefits.map((b) => {

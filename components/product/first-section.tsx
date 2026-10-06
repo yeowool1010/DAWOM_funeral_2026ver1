@@ -3,15 +3,15 @@ import { Shield } from "lucide-react";
 
 const products = [
   {
-    name: "다움 퍼스트3",
-    tag: "#다움 220289",
+    name: "예람 퍼스트3",
+    tag: "#예람 220289",
     desc: "딱 한 번 3만원 결제하고 차액은 장례 후 납부하기",
     cta: "가입하기",
     href: "/estimate",
   },
   {
-    name: "다움 퍼스트10",
-    tag: "#다움 220289",
+    name: "예람 퍼스트10",
+    tag: "#예람 220289",
     badge: "혜택상품",
     desc: "딱 한 번 10만원 결제하고 차액은 장례 후 납부하기",
     sub: "10만원 추가 할인 최종 혜택가 2,790,000원",
@@ -26,7 +26,7 @@ export function FirstSection() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="text-center">
           <h2 className="text-2xl font-bold text-stone-900 sm:text-3xl">
-            한 번 내고 평생 보장받는 다움 퍼스트
+            한 번 내고 평생 보장받는 예람 퍼스트
           </h2>
           <p className="mt-3 text-stone-600">
             계약금 딱 한 번 결제로

@@ -20,7 +20,7 @@ export function ReviewsSection() {
     <section id="reviews" className="bg-stone-50 py-16 sm:py-24">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <h2 className="text-center text-2xl font-bold text-stone-900 sm:text-3xl">
-          다움 베스트 후기
+          예람 베스트 후기
         </h2>
         <div className="mt-8 flex flex-wrap justify-center gap-2">
           {TAGS.map((tag) => (
@@ -65,7 +65,7 @@ export function ReviewsSection() {
             href="/reviews"
             className="inline-flex items-center gap-2 text-stone-800 font-medium hover:text-stone-600"
           >
-            다움 이용 후기 전체 보기
+            예람 이용 후기 전체 보기
             <ChevronRight className="h-4 w-4" />
           </Link>
         </div>

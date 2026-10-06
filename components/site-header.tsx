@@ -32,21 +32,13 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-stone-200 bg-white/95 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
-        <Link href="/" className="flex items-center gap-2 font-bold text-stone-800">
+        <Link href="/" className="flex items-center font-bold text-stone-800">
           <Image
-            src="/images/logo1.png"
-            alt="다움 로고 1"
-            width={120}
-            height={40}
-            className="h-8 w-auto object-contain"
-            priority
-          />
-          <Image
-            src="/images/logo2.png"
-            alt="다움 로고 2"
-            width={120}
-            height={40}
-            className="h-8 w-auto object-contain"
+            src="/images/예람로고.png"
+            alt="예람 로고"
+            width={48}
+            height={48}
+            className="h-10 w-10 object-contain"
             priority
           />
         </Link>
